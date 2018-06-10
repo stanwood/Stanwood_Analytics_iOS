@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StanwoodAnalytics  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="StanwoodAnalytics  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          StanwoodAnalytics Docs
+        </a>
+         (0% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/stanwood/Stanwood_Analytics_iOS">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">StanwoodAnalytics Reference</a>
+      <img class="carat" src="img/carat.png" />
+      StanwoodAnalytics  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='stanwood-analytics-ios' class='heading'>Stanwood Analytics iOS</h1>
+
+<p><a href=""><img src="https://img.shields.io/badge/Swift-4.0.x-orange.svg" alt="Swift Version"></a>
+<a href=""><img src="https://img.shields.io/badge/iOS-10+-EB7943.svg" alt="iOS 8+"></a></p>
+
+<p>The Stanwood Analytics framework is a wrapper to reduce the effort involved in adding analytics and logging frameworks to iOS projects and to make the implementation consistent. The pod consists of a base install, and optional extras defined as sub-specs. There is still work in progress to add support for more frameworks. </p>
+
+<ol>
+<li>Fabric [Base]</li>
+<li>Crashlytics [Base]</li>
+<li>TestFairy [Base]</li>
+<li>Firebase Analytics [Base]</li>
+<li>GoogleAnalytics</li>
+<li>MixPanel</li>
+<li>BugFender</li>
+<li>Adjust [In progress]</li>
+<li>IVW Tracking [Planned]</li>
+</ol>
+<h2 id='table-of-contents' class='heading'>Table of contents</h2>
+
+<ul>
+<li><a href="#example">Example</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#basic-configuration">Basic Configuration</a></li>
+<li><a href="#gdpr-compliance">GDPR Compliance</a></li>
+<li><a href="#firebase">Firebase</a></li>
+<li><a href="#google-analytics">Google Analytics</a></li>
+<li><a href="#mixpanel">Mixpanel</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#bugfender-tracker">BugFender</a></li>
+<li><a href="#analytics-tracking-api-functions">Analytics Tracking API Functions</a></li>
+<li><a href="#updating-analytics-in-existing-projects">Updating Analytics in Existing Projects</a></li>
+<li><a href="#release-notes">Release Notes</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>Before running the project, it is necessary to register with both Fabric and Firebase Analytics.</p>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>1. Crashlytics &amp; Fabric</li>
+</ul>
+
+<p>Follow the <a href="https://fabric.io/kits/ios/crashlytics/install">install instructions for Fabric</a> to add the run script and API key additions to the Info.plist. Do not add the pods to the Podfile, nor call the initialize function - this framework handles that part.</p>
+
+<p>Note that the run script path will be different to that stated on the Fabric website.</p>
+<pre class="highlight ruby"><code><span class="s2">"${PODS_ROOT}/StanwoodAnalytics/Frameworks/Fabric.framework/run"</span> 
+</code></pre>
+
+<ul>
+<li>2. Firebase Analytics</li>
+</ul>
+
+<p>See the <a href="https://firebase.google.com/docs/ios/setup?authuser=0">documentation</a> on how to configure your project. The only necessary requirement is to add the GoogleServices.plist file. Do not call FirebaseApp.configure(). </p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>StanwoodAnalytics is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, add the following line to your Podfile:</p>
+<pre class="highlight plaintext"><code>pod 'StanwoodAnalytics'
+</code></pre>
+
+<p>This framework has has a base install that by default includes Fabric, Crashlytics, FirebaseAnalytics and TestFairy. Sub specs are defined for BugFender, Google Analytics and Mixpanel.</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'StanwoodAnalytics/Mixpanel'</span>
+<span class="n">pod</span> <span class="s1">'StanwoodAnalytics/BugFender'</span>
+<span class="n">pod</span> <span class="s1">'StanwoodAnalytics/Google'</span>
+</code></pre>
+
+<p>If the project already has existing analytics frameworks, see the <a href="#updating-analytics-in-existing-projects">Updating a Project</a> section.</p>
+<h2 id='basic-configuration' class='heading'>Basic Configuration</h2>
+
+<p>Add the following code into the AppDelegate, or a helper class. Create a tracker with the builder helper class and add it to the analytics builder. Call the build() function to create the instance. </p>
+<pre class="highlight plaintext"><code>let testFairyKey = "abc123def456"
+
+let fabricTracker = FabricTracker.FabricBuilder(context: application, key: nil).build()
+let testFairyTracker = TestFairyTracker.TestFairyBuilder(context: application, key: testFairyKey).build()
+
+let analyticsBuilder = StanwoodAnalytics.builder()
+   .add(tracker: fabricTracker)
+   .add(tracker: testFairyTracker)
+analytics = analyticsBuilder.build()       
+</code></pre>
+<h2 id='gdpr-compliance' class='heading'>GDPR Compliance</h2>
+
+<p>As of the 25th of May 2018, all companies have to comply with the EU rgulation on tracking personal data. Tracking is enabled by default and an application must provide a switch to disable it. If the application has a signup process, tracking must be disabled by default and allow a user to enable it.</p>
+<pre class="highlight plaintext"><code>analytics.setTracking(enable: Bool)
+</code></pre>
+
+<p>The framework stores the value of the switch internally in UserDefaults. Use the static function <code>StanwoodAnalytics.trackingEnabled()</code>to read the current state, and update the switch accordingly. </p>
+<h2 id='firebase' class='heading'>Firebase</h2>
+
+<p>The base install includes Firebase/Analytics and its dependencies so it is not necessary to define it in the Podfile. </p>
+
+<p>The Firebase tracker has an optional init parameter to pass in the name of a configuration property list so as to support different configurations depending on the configuration being run (for debug, beta, release and so on). </p>
+
+<p>For example, add a function in the application configuration struct:</p>
+<pre class="highlight plaintext"><code>static func firebaseConfigurationFileName() -&gt; String {
+        #if DEBUG
+            return "FirebaseService-DEBUG-Info"
+        #else
+            return "FirebaseService-RELEASE-Info"
+        #endif
+}
+</code></pre>
+
+<p>Then init the tracker with that function:</p>
+<pre class="highlight ruby"><code>   <span class="n">let</span> <span class="n">firebaseTracker</span> <span class="o">=</span> <span class="no">FirebaseTracker</span><span class="o">.</span><span class="no">FirebaseBuilder</span><span class="p">(</span><span class="ss">context: </span><span class="n">application</span><span class="p">,</span> <span class="ss">configFileName: </span><span class="no">Configuration</span><span class="p">.</span><span class="nf">firebaseConfigurationFileName</span><span class="p">())</span>
+   <span class="p">.</span><span class="nf">.</span><span class="p">.</span>
+   <span class="nf">.</span><span class="n">add</span><span class="p">(</span><span class="ss">tracker: </span><span class="n">firebaseTracker</span><span class="p">)</span>
+</code></pre>
+
+<p><strong>WARNING:</strong> If the application has a previous configuration for Firebase, remember to remove the call to FirebaseApp.configure() as it can only be called once, or the app will crash.</p>
+<h2 id='google-analytics' class='heading'>Google Analytics</h2>
+<pre class="highlight plaintext"><code>   pod 'StanwoodAnalytics/Google'
+</code></pre>
+<pre class="highlight plaintext"><code>   let googleTracker = GoogleAnalyticsTracker.GoogleAnalyticsBuilder(context: application, key: googleTrackingKey).build()
+   ... 
+   .add(tracker: googleTracker)
+</code></pre>
+<h3 id='map-function' class='heading'>Map Function</h3>
+
+<p>The tracker uses a default map function that can be replaced if required. </p>
+<pre class="highlight plaintext"><code>public protocol MapFunction {
+    func mapCategory(parameters: TrackingParameters) -&gt; String?
+    func mapAction(parameters: TrackingParameters) -&gt; String?
+    func mapLabel(parameters: TrackingParameters) -&gt; String?
+    func mapScreenName(parameters: TrackingParameters) -&gt; String?
+    func mapKeys(keys: TrackerKeys) -&gt; [String:String]?
+}
+
+public struct GoogleMapFunction: MapFunction {
+    public func mapCategory(parameters: TrackingParameters) -&gt; String? {
+        return parameters.eventName
+    }
+
+    public func mapAction(parameters: TrackingParameters) -&gt; String? {
+        return parameters.name
+    }
+
+    public func mapLabel(parameters: TrackingParameters) -&gt; String? {
+        return parameters.itemId
+    }
+
+    public func mapScreenName(parameters: TrackingParameters) -&gt; String? {
+
+        if parameters.eventName.lowercased() == TrackingEvent.viewItem.rawValue.lowercased() {
+            return parameters.name
+        }
+        return nil
+    }
+
+    public func mapKeys(keys: TrackerKeys) -&gt; [String:String]? {
+        return nil
+    }
+}
+</code></pre>
+
+<p>A custom map function can be assigned in the GoogleAnalyticsBuilder. </p>
+
+<p>If you need to track custom dimensions, first add the value into the GA web dashboard (Select Admin, then under Property (second column) select Custom Definitions, and then Custom Dimensions) and then use the index number as the key. Add this tracking code: </p>
+<pre class="highlight plaintext"><code>let index = YOUR-VALUE
+var trackerKeys = TrackerKeys.init()
+trackerKeys.customKeys = [String(describing:index):screenName]
+analytics?.track(trackerKeys: trackerKeys)
+</code></pre>
+<h2 id='mixpanel' class='heading'>Mixpanel</h2>
+<pre class="highlight ruby"><code>  <span class="n">pod</span> <span class="s1">'StanwoodAnalytics/Mixpanel'</span>
+</code></pre>
+<pre class="highlight ruby"><code><span class="n">let</span> <span class="n">mixpanelTracker</span> <span class="o">=</span> <span class="no">MixpanelTracker</span><span class="o">.</span><span class="no">MixpanelBuilder</span><span class="p">(</span><span class="ss">context: </span><span class="n">application</span><span class="p">,</span> <span class="ss">key: </span><span class="n">mixpanelToken</span><span class="p">).</span><span class="nf">build</span><span class="p">()</span>
+<span class="p">.</span><span class="nf">.</span><span class="p">.</span>
+<span class="nf">.</span><span class="n">add</span><span class="p">(</span><span class="ss">tracker: </span><span class="n">mixpanelTracker</span><span class="p">)</span>
+
+</code></pre>
+<h2 id='notifications' class='heading'>Notifications</h2>
+
+<p>This framework uses local notifications (iOS 10.0 +) to display events to help with debugging and verifying analytics logging. The analytics init function has an optional parameter that must conform to the UNUserNotificationCenterDelegate protocol.</p>
+
+<p>First add an extension to a view controller:</p>
+<pre class="highlight plaintext"><code>extension ViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -&gt; Void) {
+
+        completionHandler([.alert])
+    }
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -&gt; Void) {
+
+        let alert = UIAlertController(title: "Tracker Alert", message: "We have tracking for this event", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Thanks!", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+
+        completionHandler()
+    }
+}
+</code></pre>
+
+<p>Then pass this object as a parameter to the init.</p>
+<pre class="highlight plaintext"><code>let window = application.windows.first
+        let viewController = window?.rootViewController
+        analytics = analyticsBuilder.setNotificationDelegate(delegate: viewController!).build()
+
+</code></pre>
+
+<p>It is useful to only enable the notifications for debug / testing. Ensure they are not visible in release builds. </p>
+<h2 id='bugfender' class='heading'>BugFender</h2>
+
+<p>In the Podfile add:</p>
+<pre class="highlight plaintext"><code>pod 'StanwoodAnalytics/BugFender'
+</code></pre>
+
+<p>Then in the tracking class:</p>
+<pre class="highlight plaintext"><code>    let bugFenderKey = "abcdef"
+    let bugfenderTracker = BugfenderTracker.BugfenderBuilder(context: application, key: bugFenderKey)
+            .setUIEventLogging(enable: true)
+            .build()
+   ...  
+   .add(tracker: bugfenderTracker)
+</code></pre>
+<h2 id='analytics-tracking-api-functions' class='heading'>Analytics Tracking API Functions</h2>
+
+<p>The 4 functions for tracking are: </p>
+<pre class="highlight ruby"><code>   <span class="n">func</span> <span class="n">track</span><span class="p">(</span><span class="ss">trackingParameters: </span><span class="no">TrackingParameters</span><span class="p">)</span>
+   <span class="n">func</span> <span class="n">track</span><span class="p">(</span><span class="ss">trackerKeys: </span><span class="no">TrackerKeys</span><span class="p">)</span>
+   <span class="n">func</span> <span class="n">trackScreen</span><span class="p">(</span><span class="ss">name: </span><span class="no">String</span><span class="p">,</span> <span class="ss">className: </span><span class="no">String</span><span class="p">?</span> <span class="o">=</span> <span class="kp">nil</span><span class="p">)</span>
+   <span class="n">func</span> <span class="n">track</span><span class="p">(</span><span class="ss">error: </span><span class="no">NSError</span><span class="p">)</span>
+</code></pre>
+
+<p>where TrackingParameters and TrackerKeys are structs.</p>
+<h3 id='trackingparameters' class='heading'>TrackingParameters</h3>
+<pre class="highlight plaintext"><code>    let eventName: String
+    var itemId: String?
+    var name: String?
+    var description: String?
+    var category: String?
+    var contentType: String?
+</code></pre>
+<h3 id='trackerkeys' class='heading'>TrackerKeys</h3>
+
+<p>This struct contains a single mutable dictionary [String:Any]. It should be used to set custom keys and values.</p>
+<h2 id='updating-analytics-in-existing-projects' class='heading'>Updating Analytics in Existing Projects</h2>
+
+<p>If Fabric and Crashltyics are already in use in a project, it is necessary to remove the pods from the Podfile, and remove any import statements in the project source code. Also check for references of Crashlytics in the code - they should all be removed first before adding Stanwood Analytics. Made sure the app compiles and runs for a few minutes. If the app previously has integrations with Firebase, remove the call to FirebaseApp.configure() or it will crash. There can only be one call to this function.</p>
+<pre class="highlight ruby"><code><span class="c1"># Remove all of these pods.</span>
+  <span class="n">pod</span> <span class="s1">'Fabric'</span>
+  <span class="n">pod</span> <span class="s1">'Crashlytics'</span>
+  <span class="n">pod</span> <span class="s1">'Firebase'</span>
+  <span class="n">pod</span> <span class="s1">'Firebase/Core'</span>
+  <span class="n">pod</span> <span class="s1">'Firebase/Analytics'</span>
+  <span class="n">pod</span> <span class="s1">'BugfenderSDK'</span>
+  <span class="n">pod</span> <span class="s1">'TestFairy'</span>
+  <span class="n">pod</span> <span class="s1">'GoogleAnalytics'</span>
+  <span class="n">pod</span> <span class="s1">'Mixpanel'</span>
+
+</code></pre>
+
+<p>See the example project on how to replace the calls to Fabric/Crashlytics with the new analytics framework.</p>
+
+<p>IMPORTANT: If you get linker errors when compiling the app, check the build settings OTHER LINKER FLAGS in the project and ensure that any references to Crashlytics and Fabric are removed. </p>
+
+<p>If you still experience problems with Fabric, first try to remove all references to it in the project and get it to run, and then add the framework again. </p>
+<h2 id='ios9-support' class='heading'>iOS9 Support</h2>
+
+<p>As local notifications are used for help in debugging analytics tracking, and this is using an iOS 10 API, since a few projects are not updated just yet there is a compatibility branch. </p>
+<pre class="highlight plaintext"><code>pod 'StanwoodAnalytics', git: 'git@github.com:stanwood/Stanwood_Analytics_iOS.git', branch: 'hotfix/iOS9-Compatibility'
+</code></pre>
+<h2 id='release-notes' class='heading'>Release Notes</h2>
+
+<p>1.0: Release candidate. Removing keys for all the frameworks. Added code to prevent crashes when the configuration for Firebase and Fabric are not prevent. </p>
+
+<p>0.11.0: Added internal support for FirebaseTracker. Added internal changes to setTracking to start the tracking frameworks when the state changes from off to on when the application started with tracking off. </p>
+
+<p>0.10.1 - 0.10.9: Bug fixes. </p>
+
+<p>0.10.0: Added support for an alert to give a warning when disabling tracking.</p>
+
+<p>0.9.2: Update build version push out changes.</p>
+
+<p>0.9.1: Fixed compiler warnings for FirebaseTracker.</p>
+
+<p>0.9.0: Added support for enable and disable tracking for GDPR compliance. </p>
+
+<p>0.8.0: Mixpanel is fully integrated into the release. Google Analytics support extended to include custom dimensions. Fixed issues with GA after updating to CocoaPods 1.5.0. TestFairy is part of the base install. </p>
+
+<p>0.7.1: Added support for Google Analytics custom dimensions. In BugFender tracker, made the parameter optional. Updated: </p>
+<pre class="highlight plaintext"><code>customParameters: [String:Any]
+</code></pre>
+
+<p>0.7.0: Added basic support for both Google Analytics and Mixpanel.</p>
+
+<p>0.6.0: Removed FirebaseAnalytics and embedded frameworks. </p>
+
+<p>0.5.0: Fixed issues with dependencies for Firebase</p>
+
+<p>0.4.5: Added UserNotifications as a framework dependency</p>
+
+<p>0.4.4: Updated the example project.</p>
+
+<p>0.4.3: Made screen class parameter optional in trackScreen.</p>
+
+<p>0.4.2: Added trackScreen function to StanwoodAnalytics class.</p>
+<pre class="highlight plaintext"><code>open func trackScreen(name: String, className: String)
+</code></pre>
+
+<p>0.4.1: Updated FirebaseTracker to call Analytics.setScreenName().</p>
+
+<p>0.4.0: Added notification to help with debugging analytics tracking. This requires a min of iOS 10.</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Ronan O Ciosoig <a href="mailto:ronan.o.ciosoig@stanwood.de">ronan.o.ciosoig@stanwood.de</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>StanwoodAnalytics is under MIT licence. See the <a href="https://github.com/stanwood/Stanwood_Core/blob/master/LICENSE">LICENSE</a> file for more info.</p>
+<h2 id='troubleshooting' class='heading'>Troubleshooting</h2>
+<h3 id='compile-error' class='heading'>Compile error</h3>
+<pre class="highlight plaintext"><code>Undefined symbols for architecture x86_64:
+  "_kFIRServiceRemoteConfig", referenced from:
+      -[FIRRemoteConfig(FIRApp) configureConfig:] in FirebaseRemoteConfig(FIRRemoteConfig+FIRApp_090f076533867dc11958284cd1b529ac.o)
+  "_kServiceInfoFileName", referenced from:
+      -[FIRRemoteConfig(FIRApp) configureConfig:] in FirebaseRemoteConfig(FIRRemoteConfig+FIRApp_090f076533867dc11958284cd1b529ac.o)
+  "_kServiceInfoFileType", referenced from:
+      -[FIRRemoteConfig(FIRApp) configureConfig:] in FirebaseRemoteConfig(FIRRemoteConfig+FIRApp_090f076533867dc11958284cd1b529ac.o)
+</code></pre>
+
+<p>Ensure that the Podfile includes <code>pod Firebase/Analytics</code></p>
+<h3 id='linker-error' class='heading'>Linker Error</h3>
+<pre class="highlight plaintext"><code>ld: framework not found Fabric for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+</code></pre>
+
+<p>This can be a few things, but first try to remove all references to the analytics framework from the project, and get it to compile. Then add the pod, then code back again. </p>
+<h3 id='firebase-crash-signal-sigabrt' class='heading'>Firebase Crash signal SIGABRT</h3>
+
+<p>The application crashes on calling FirebaseApp.configure()</p>
+
+<p>Ensure that there is only one call to this function. If Firebase was previously used in the app before adding the analytics framework, remove the reference first. </p>
+
+<p>Also check that the bundle Id matches the one specified in the GoogleServices info.plist. </p>
+<h3 id='framework-compile-errors' class='heading'>Framework Compile errors</h3>
+
+<p>With the update in CocoaPods 1.5.0 came some other compile erorrs. The solution was to delete the Xcode preferences. </p>
+<pre class="highlight plaintext"><code>cd ~/Library/Preferences
+ls -l | grep xcode -i
+rm com.apple.dt.xcodebuild.plist
+</code></pre>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>2018 Stanwood GmbH</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

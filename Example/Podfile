@@ -1,0 +1,23 @@
+
+use_frameworks!
+inhibit_all_warnings!
+
+platform :ios, '10.0'
+
+target 'StanwoodAnalytics_Example' do
+  pod 'StanwoodAnalytics', :path => '../'
+  pod 'StanwoodAnalytics/BugFender', :path => '../'
+  pod 'StanwoodAnalytics/Google', :path => '../'
+  pod 'StanwoodAnalytics/Mixpanel', :path => '../'
+
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Performance'
+  
+end
+
+target 'StanwoodAnalytics_Tests' do
+    pod 'StanwoodAnalytics', :path => '../'
+    pod 'Firebase'
+end
+

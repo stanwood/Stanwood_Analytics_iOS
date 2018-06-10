@@ -1,0 +1,726 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/AlertFactory.swift",
+      "line": 28,
+      "symbol": "AlertFactory",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 28,
+      "symbol": "DataStorage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/DataStore.swift",
+      "line": 33,
+      "symbol": "DataStore",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 29,
+      "symbol": "ParameterMapper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 33,
+      "symbol": "TrackingEvent",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 45,
+      "symbol": "TrackingParameters",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 128,
+      "symbol": "StanwoodAnalytics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/Tracker.swift",
+      "line": 33,
+      "symbol": "Tracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/TrackerKeys.swift",
+      "line": 28,
+      "symbol": "TrackerKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/BugFender/BugfenderTracker.swift",
+      "line": 29,
+      "symbol": "BugfenderType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/BugFender/BugfenderTracker.swift",
+      "line": 44,
+      "symbol": "BugfenderTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/BugFender/BugfenderTracker.swift",
+      "line": 133,
+      "symbol": "BugfenderBase",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Fabric/FabricTracker.swift",
+      "line": 30,
+      "symbol": "FabricTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Fabric/FabricTracker.swift",
+      "line": 30,
+      "symbol": "FabricTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Fabric/FabricTracker.swift",
+      "line": 30,
+      "symbol": "FabricTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 65,
+      "symbol": "FirebaseCoreEnabler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 65,
+      "symbol": "FirebaseCoreEnabler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 65,
+      "symbol": "FirebaseCoreEnabler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 69,
+      "symbol": "FirebaseAnalyticsEnabler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 69,
+      "symbol": "FirebaseAnalyticsEnabler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 69,
+      "symbol": "FirebaseAnalyticsEnabler",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 74,
+      "symbol": "FirebaseTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 74,
+      "symbol": "FirebaseTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Firebase/FirebaseTracker.swift",
+      "line": 74,
+      "symbol": "FirebaseTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/GoogleAnalytics/GoogleAnalyticsTracker.swift",
+      "line": 28,
+      "symbol": "MapFunction",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/GoogleAnalytics/GoogleAnalyticsTracker.swift",
+      "line": 36,
+      "symbol": "GoogleMapFunction",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/GoogleAnalytics/GoogleAnalyticsTracker.swift",
+      "line": 63,
+      "symbol": "GoogleAnalyticsTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/Mixpanel/MixpanelTracker.swift",
+      "line": 29,
+      "symbol": "MixpanelTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/TestFairy/TestFairyTracker.swift",
+      "line": 28,
+      "symbol": "TestFairyTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/TestFairy/TestFairyTracker.swift",
+      "line": 28,
+      "symbol": "TestFairyTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/TestFairy/TestFairyTracker.swift",
+      "line": 28,
+      "symbol": "TestFairyTracker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes"
+}

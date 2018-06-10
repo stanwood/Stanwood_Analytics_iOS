@@ -1,0 +1,10 @@
+/* 
+  DE.strings
+  Pods
+
+  Created by Ronan on 23/05/2018.
+  
+*/
+
+"ALERT_MESSAGE" = "Bitte beachten Sie, dass Sie die App aus dem Multi-Tasking-Menu komplett beenden müssen, bevor das Tracking aller Dienste vollständig abgeschaltet ist.";
+"ALERT_BUTTON_TITLE" = "OK";

@@ -1,0 +1,10 @@
+/* 
+  English.strings
+  Pods
+
+  Created by Ronan on 23/05/2018.
+  
+*/
+
+"ALERT_MESSAGE" = "Please note, that some services need you to restart the app from the multitasking menu for the tracking to stop entirely.";
+"ALERT_BUTTON_TITLE" = "OK";
