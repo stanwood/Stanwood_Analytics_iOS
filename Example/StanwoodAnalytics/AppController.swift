@@ -6,10 +6,10 @@
 //  Copyright © 2018 Stanwood GmbH. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol Actionable {
-    func setTracking(enable: Bool)
+    func setTracking(enable: Bool, viewController: UIViewController?)
 }
 
 class AppController: Actionable {
@@ -22,8 +22,8 @@ class AppController: Actionable {
         dataProvider = DataProvider(with: appData)
     }
     
-    func setTracking(enable: Bool) {
-        AnalyticsService.setTracking(enable: enable)
+    func setTracking(enable: Bool, viewController: UIViewController?) {
+        AnalyticsService.setTracking(enable: enable,viewController:viewController)
     }
     
     func secondScreen() -> SecondViewController {

@@ -38,7 +38,7 @@ class SecondViewController: UIViewController {
     
     @IBAction func switchDidChangeAction(_ sender: Any) {
         guard let trackingSwitch = sender as? UISwitch else { return }
-        action?.setTracking(enable: trackingSwitch.isOn)
+        action?.setTracking(enable: trackingSwitch.isOn, viewController: self)
     }
     
     @IBAction func crashButtonAction(_ sender: Any) {
