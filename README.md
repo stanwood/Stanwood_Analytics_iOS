@@ -2,6 +2,7 @@
 
 [![Swift Version](https://img.shields.io/badge/Swift-4.0.x-orange.svg)]()
 [![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]()
+[![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://stanwood.github.io/Stanwood_Analytics_iOS/)
 
 The Stanwood Analytics framework is a wrapper to reduce the effort involved in adding analytics and logging frameworks to iOS projects and to make the implementation consistent. The pod consists of a base install, and optional extras defined as sub-specs. There is still work in progress to add support for more frameworks. 
 
