@@ -137,6 +137,11 @@ open class StanwoodAnalytics {
     private var notificationsEnabled = false
     private let options: UNAuthorizationOptions = [.alert]
     
+    /**
+     
+     The tracking keys used when the switch value is changed.
+ 
+    */
     private let trackingOptOut = "tracking_opt_out"
     private let trackingOptIn = "tracking_opt_in"
     
