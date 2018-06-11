@@ -35,20 +35,20 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
   s.subspec 'Base' do |ss|
       ss.dependency 'StanwoodAnalytics/Core'
       ss.dependency 'StanwoodAnalytics/Fabric'
-      ss.dependency 'StanwoodAnalytics/Firebase'
+      #ss.dependency 'StanwoodAnalytics/Firebase'
       ss.dependency 'StanwoodAnalytics/TestFairy'
   end
   
-  s.subspec 'Firebase' do |ss|
-      ss.dependency 'StanwoodAnalytics/Core'
-      ss.dependency 'Firebase/Analytics'
-      ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Firebase/'
-      ss.frameworks = ['FirebaseCore',
-      'FirebaseInstanceID',
-      'FirebaseAnalytics',
-      'FirebaseCoreDiagnostics',
-      'FirebaseNanoPB']
-  end
+  #s.subspec 'Firebase' do |ss|
+  #    ss.dependency 'StanwoodAnalytics/Core'
+  #    ss.dependency 'Firebase/Analytics'
+  #    ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Firebase/'
+  #    ss.frameworks = ['FirebaseCore',
+  #    'FirebaseInstanceID',
+  #    'FirebaseAnalytics',
+  #    'FirebaseCoreDiagnostics',
+  #    'FirebaseNanoPB']
+  #end
   
   s.subspec 'Fabric' do |ss|
       ss.dependency 'StanwoodAnalytics/Core'
