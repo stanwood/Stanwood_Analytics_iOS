@@ -36,7 +36,7 @@ The Stanwood Analytics framework is a wrapper to reduce the effort involved in a
 
 ## Example
 
-Before running the project, it is necessary to register with both Fabric and Firebase Analytics.
+Before running the project, it is recommended to register with both Fabric and Firebase Analytics. Set the keys in the Configuration.swift file. 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
