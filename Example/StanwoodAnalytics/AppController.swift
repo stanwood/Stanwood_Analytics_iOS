@@ -20,11 +20,9 @@ class AppController: Actionable {
     init() {
         AnalyticsService.configure()
         dataProvider = DataProvider(with: appData)
-        // AnalyticsService.setTracking(enable: dataProvider.trackingEnabled())
     }
     
     func setTracking(enable: Bool) {
-        dataProvider.setTracking(enable: enable)
         AnalyticsService.setTracking(enable: enable)
     }
     

@@ -9,8 +9,7 @@
 import Foundation
 
 protocol SecondViewParametable {
-    func setTracking(enable: Bool)
-    func trackingEnabled() -> Bool
+
 }
 
 class DataProvider: SecondViewParametable {
@@ -19,13 +18,5 @@ class DataProvider: SecondViewParametable {
     
     init(with appData: AppData) {
         self.appData = appData
-    }
-    
-    func trackingEnabled() -> Bool {
-        return appData.readTrackingEnable()
-    }
-    
-    func setTracking(enable: Bool) {
-        appData.saveTracking(enable: enable)
     }
 }
