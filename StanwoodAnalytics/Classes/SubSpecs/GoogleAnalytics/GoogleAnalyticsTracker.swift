@@ -134,7 +134,8 @@ open class GoogleAnalyticsTracker: Tracker {
         // Sending custom dimentions
         if let builder = GAIDictionaryBuilder.createScreenView() {
             builder.set(screenName, forKey: GAIFields.customDimension(for: 1))
-            tracker?.send(builder.build() as? [AnyHashable : Any]!)
+            let parameters = builder.build() as! [AnyHashable: Any]
+            tracker?.send(parameters)
         }
     }
     
