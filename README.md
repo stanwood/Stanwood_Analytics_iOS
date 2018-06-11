@@ -36,9 +36,13 @@ The Stanwood Analytics framework is a wrapper to reduce the effort involved in a
 
 ## Example
 
-Before running the project, it is recommended to register with both Fabric and Firebase Analytics. Set the keys in the Configuration.swift file. 
+Before running the project, it is recommended to register with both Fabric and Firebase Analytics. Optionally register with Google Analytics, Mixpanel, BugFender and TestFairy. Set the keys in the Configuration.swift file. 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+The example app consists of 2 screens, the first with buttons and text fields to log user data and events, and the second to track custom events (Google Analytics) and a switch to toggle the tracking. It is on by default. It is a global disable switch which is intented to comply to the legal requirements for GDPR. Since some frameworks will continue to send information even after tracking is disabled, an alert is displayed on turning off the switch to inform users that data will continue to be sent until the app has been restarted. Some frameworks will also send data on restarting the application when tracking and logging is disabled, but this is usually only a single call. If the switch is off at startup, turning it on will call the start() function of all the trackers. 
+
+The changes in the switch setting are tracked in the frameworks using 2 keys: "tracking_opt_out" and "tracking_opt_in". The change is tracked immediately before it is turned off, or immediately after it is turned on.
 
 ## Requirements
 
@@ -99,7 +103,7 @@ As of the 25th of May 2018, all companies have to comply with the EU rgulation o
 ```
 analytics.setTracking(enable: Bool)
 ```
-The framework stores the value of the switch internally in UserDefaults. Use the static function ``StanwoodAnalytics.trackingEnabled()``to read the current state, and update the switch accordingly. 
+The framework stores the value of the switch internally in UserDefaults. Use the static function ``StanwoodAnalytics.trackingEnabled()``to read the current state, and update the switch accordingly. Do not call setTracking at startup, as this is done internally. 
 
 ## Firebase
 
@@ -325,7 +329,9 @@ pod 'StanwoodAnalytics', git: 'git@github.com:stanwood/Stanwood_Analytics_iOS.gi
 
 ## Release Notes
 
-1.0: Release candidate. Removing keys for all the frameworks. Added code to prevent crashes when the configuration for Firebase and Fabric are not prevent. 
+1.0.1: Updating the example project and readme to reflect changes in the API for 0.9 onwards.
+
+1.0.0: Release candidate. Removing keys for all the frameworks. Added code to prevent crashes when the configuration for Firebase and Fabric are not prevent. 
 
 0.11.0: Added internal support for FirebaseTracker. Added internal changes to setTracking to start the tracking frameworks when the state changes from off to on when the application started with tracking off. 
 

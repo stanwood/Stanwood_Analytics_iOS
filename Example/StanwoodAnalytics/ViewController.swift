@@ -79,7 +79,6 @@ class ViewController: UIViewController {
     @IBAction func nextButtonAction() {
         showNextScreen()
         trackNextButtonAction()
-        print("next button action pressed.")
     }
     
     func showNextScreen() {
