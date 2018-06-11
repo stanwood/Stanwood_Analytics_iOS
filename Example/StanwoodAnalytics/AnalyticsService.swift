@@ -125,9 +125,9 @@ struct AnalyticsService {
         return StanwoodAnalytics.trackingEnabled()
     }
     
-    static func setTracking(enable: Bool) {
+    static func setTracking(enable: Bool, viewController: UIViewController? = nil) {
         guard let analytics = AnalyticsService.analytics else { return }
-        analytics.setTracking(enable: enable)
+        analytics.setTracking(enable: enable, on: viewController)
     }
     
     static func track(error: Error) {

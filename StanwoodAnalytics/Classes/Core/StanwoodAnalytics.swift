@@ -135,10 +135,13 @@ open class StanwoodAnalytics {
     private var trackers: [Tracker] = []
     private var notificationsEnabled = false
     /**
+     
+     The tracking keys used when the switch value is changed.
  
-     The root window reference. 
     */
-    // private var window: UIWindow
+    private let trackingOptOut = "tracking_opt_out"
+    private let trackingOptIn = "tracking_opt_in"
+    
     /**
      
      Keys for user parameters.
@@ -225,7 +228,7 @@ open class StanwoodAnalytics {
     
     private func trackSwitch(enabled: Bool) {
         
-        let eventName = enabled ? "tracking_opt_out" : "tracking_opt_in"
+        let eventName = enabled ? trackingOptOut : trackingOptIn
         
         let params = TrackingParameters(eventName: eventName,
                                         itemId: "",

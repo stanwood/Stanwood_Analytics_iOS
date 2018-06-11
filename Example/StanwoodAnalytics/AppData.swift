@@ -9,22 +9,5 @@
 import Foundation
 
 class AppData {
-    static let userDefaultsKey = "tracking"
-    
-    init() {
-        registerDefaults()
-    }
-    
-    private func registerDefaults() {
-        UserDefaults.standard.register(defaults: [AppData.userDefaultsKey : false])
-    }
-    
-    func saveTracking(enable: Bool) {
-        UserDefaults.standard.set(enable, forKey: AppData.userDefaultsKey)
-    }
-    
-    func readTrackingEnable() -> Bool {
-        return UserDefaults.standard.bool(forKey: AppData.userDefaultsKey)
-        // ?? false
-    }
+    // The state of the tracking switch is handled internally in the framework.
 }
