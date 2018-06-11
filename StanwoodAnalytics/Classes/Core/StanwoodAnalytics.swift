@@ -24,7 +24,6 @@
 //  THE SOFTWARE.
 
 import UIKit
-import UserNotifications
 
 public protocol ParameterMapper {
     func map(parameters: TrackingParameters) -> [String:NSString]
@@ -135,7 +134,6 @@ open class StanwoodAnalytics {
     */
     private var trackers: [Tracker] = []
     private var notificationsEnabled = false
-    private let options: UNAuthorizationOptions = [.alert]
     /**
  
      The root window reference. 
@@ -178,34 +176,11 @@ open class StanwoodAnalytics {
         
         notificationsEnabled = builder.notificationsEnabled
         
-        if notificationsEnabled == true {
-            addNotifications(with: builder.notificationDelegate!)
-        }
-        
         trackingEnable = DataStore.trackingEnabled
         
         if trackingEnable == true {
             trackSwitch(enabled: trackingEnable)
         }
-    }
-    
-    fileprivate func addNotifications(with delegate: UIViewController) {
-        let center = UNUserNotificationCenter.current()
-        
-        center.requestAuthorization(options: options) {
-            (granted, error) in
-            if !granted {
-                print("Something went wrong")
-            }
-        }
-        
-        center.getNotificationSettings { (settings) in
-            if settings.authorizationStatus != .authorized {
-                // Notifications not allowed
-            }
-        }
-        
-        center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
     
     // NODOC
@@ -234,31 +209,9 @@ open class StanwoodAnalytics {
     open func track(trackingParameters: TrackingParameters) {
         if trackingEnable == true {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
-            
-            showNotification(with: trackingParameters.debugInfo())
         }
     }
-    
-    fileprivate func showNotification(with message: String) {
-        if notificationsEnabled == true {
-            let content = UNMutableNotificationContent()
-            content.title = "Track event"
-            content.body = message
-            content.sound = UNNotificationSound.default()
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
-            let center = UNUserNotificationCenter.current()
-            let identifier = "Tracking Notification"
-            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-            center.add(request, withCompletionHandler: { (error) in
-                if error != nil {
-                    print("Error: something is not right with this. ")
-                } else {
-                    print("Should be working.")
-                }
-            })
-        }
-    }
+
     
     /**
      Returns the stored value for the tracking setting.
@@ -363,8 +316,6 @@ open class StanwoodAnalytics {
     open func track(trackerKeys: TrackerKeys) {
         if trackingEnable == true {
             trackers.forEach {$0.track(trackerKeys: trackerKeys) }
-            
-            showNotification(with: serializeKeys(trackerKeys: trackerKeys))
         }
     }
     

@@ -100,19 +100,3 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UNUserNotificationCenterDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
-        completionHandler([.alert])
-    }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
-        let alert = UIAlertController(title: "Tracker Alert", message: "We have tracking for this event", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Thanks!", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-
-        completionHandler()
-    }
-}

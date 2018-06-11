@@ -77,7 +77,7 @@ struct AnalyticsService {
     
     // static let shared
     
-    static func configure(notificationDelegate: UNUserNotificationCenterDelegate? = nil) {
+    static func configure() {
         let application = UIApplication.shared
         let fabricTracker = FabricTracker.FabricBuilder(context: application, key: nil).build()
         let parameterMapper = DefaultParameterMapper()
