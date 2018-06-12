@@ -102,7 +102,7 @@ open class FirebaseTracker: Tracker {
     }
     
     private func hasConfigurationFile() -> Bool {
-        guard let firebaseConfigFile = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") else {
+        guard let _ = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") else {
             print("StanwoodAnalytics Error: The GoogleService-Info property list used to configure Firebase Analytics cannot be found.")
             return false }
         return true

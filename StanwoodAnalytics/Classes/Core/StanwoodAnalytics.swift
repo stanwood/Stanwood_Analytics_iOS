@@ -343,13 +343,11 @@ open class StanwoodAnalytics {
             rootViewController = viewController!
         }
         
-        if rootViewController is UIViewController {
-            let message = localised(key: "ALERT_MESSAGE")
-            let buttonTitle = localised(key: "ALERT_BUTTON_TITLE")
-            let alert = AlertFactory.makeAlert(message: message, buttonTitle: buttonTitle)
+        let message = localised(key: "ALERT_MESSAGE")
+        let buttonTitle = localised(key: "ALERT_BUTTON_TITLE")
+        let alert = AlertFactory.makeAlert(message: message, buttonTitle: buttonTitle)
             
-            rootViewController.present(alert, animated: true, completion: nil)
-        }
+        rootViewController.present(alert, animated: true, completion: nil)
     }
     
     private func localised(key: String) -> String {
