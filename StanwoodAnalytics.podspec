@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodAnalytics'
-  s.version          = '1.0.3'
+  s.version          = '1.0.5'
   s.summary          = 'StanwoodAnalytics encapsulates the frameworks Stanwood uses from various vendors used in analytics and logging.'
   s.description      = <<-DESC
 A framework to encapsulate analytics and logging frameworks from Fabric, Crashlytics, Google, Firebase and BugFender.
@@ -8,9 +8,8 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
 
   s.homepage         = 'https://github.com/stanwood/Stanwood_Analytics_iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Ronan O Ciosoig' => 'ronan.o.ciosoig@stanwood.de' }
+  s.author           = { 'stanwood' => 'ios.frameworks@stanwood.io' }
   s.source           = { :git => 'https://github.com/stanwood/Stanwood_Analytics_iOS.git', :tag => s.version.to_s}
-  
   
   s.ios.deployment_target = '10.0'
   s.static_framework = true
