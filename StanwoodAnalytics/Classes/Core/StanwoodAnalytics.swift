@@ -176,9 +176,6 @@ open class StanwoodAnalytics {
     */
     public init(builder: Builder) {
         trackers = builder.trackers
-        
-        notificationsEnabled = builder.notificationsEnabled
-        
         trackingEnable = DataStore.trackingEnabled
         
         if trackingEnable == true {
@@ -212,9 +209,29 @@ open class StanwoodAnalytics {
     open func track(trackingParameters: TrackingParameters) {
         if trackingEnable == true {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
+            
+            showNotification(with: trackingParameters.debugInfo())
         }
     }
-
+    
+    fileprivate func showNotification(with message: String) {
+        if notificationsEnabled == true {
+            let content = UNMutableNotificationContent()
+            content.title = "Track event"
+            content.body = message
+            content.sound = UNNotificationSound.default()
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+            let center = UNUserNotificationCenter.current()
+            let identifier = "Tracking Notification"
+            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+            center.add(request, withCompletionHandler: { (error) in
+                if error != nil {
+                    print("StanwoodAnalytics Error: Completion block for notification.")
+                }
+            })
+        }
+    }
     
     /**
      Returns the stored value for the tracking setting.
@@ -295,13 +312,11 @@ open class StanwoodAnalytics {
             rootViewController = viewController!
         }
         
-        if rootViewController is UIViewController {
-            let message = localised(key: "ALERT_MESSAGE")
-            let buttonTitle = localised(key: "ALERT_BUTTON_TITLE")
-            let alert = AlertFactory.makeAlert(message: message, buttonTitle: buttonTitle)
+        let message = localised(key: "ALERT_MESSAGE")
+        let buttonTitle = localised(key: "ALERT_BUTTON_TITLE")
+        let alert = AlertFactory.makeAlert(message: message, buttonTitle: buttonTitle)
             
-            rootViewController.present(alert, animated: true, completion: nil)
-        }
+        rootViewController.present(alert, animated: true, completion: nil)
     }
     
     private func localised(key: String) -> String {
@@ -363,17 +378,9 @@ open class StanwoodAnalytics {
     */
     open class Builder {
         var trackers: [Tracker] = []
-        var notificationsEnabled = false
-        var notificationDelegate: UIViewController?
         
         public func add(tracker: Tracker) -> Builder {
             trackers.append(tracker)
-            return self
-        }
-        
-        public func setNotificationDelegate(delegate: UIViewController) -> Builder {
-            notificationsEnabled = true
-            notificationDelegate = delegate
             return self
         }
         
