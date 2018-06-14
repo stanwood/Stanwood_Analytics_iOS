@@ -256,9 +256,7 @@ open class StanwoodAnalytics {
             let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
             center.add(request, withCompletionHandler: { (error) in
                 if error != nil {
-                    print("Error: something is not right with this. ")
-                } else {
-                    print("Should be working.")
+                    print("StanwoodAnalytics Error: Completion block for notification.")
                 }
             })
         }
