@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 protocol Actionable {
     func setTracking(enable: Bool, viewController: UIViewController?)
@@ -18,8 +19,23 @@ class AppController: Actionable {
     var dataProvider: DataProvider!
     
     init() {
-        AnalyticsService.configure()
         dataProvider = DataProvider(with: appData)
+        guard let firebaseConfigFile = Bundle.main.path(forResource: Configuration.Static.Analytics.firebaseConfigFileName, ofType: "plist") else {
+            configure()
+            return
+        }
+        
+        guard let firebaseOptions = FirebaseOptions(contentsOfFile: firebaseConfigFile) else {
+            configure()
+            return
+        }
+        
+        FirebaseApp.configure(options: firebaseOptions)
+        configure()
+    }
+    
+    func configure() {
+        AnalyticsService.configure()
     }
     
     func setTracking(enable: Bool, viewController: UIViewController?) {
