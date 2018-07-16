@@ -86,18 +86,24 @@ open class FirebaseTracker: Tracker {
         
         AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(StanwoodAnalytics.trackingEnabled())
         
-        if builder.configFileName != nil {
-            guard let firebaseConfigFile = Bundle.main.path(forResource: builder.configFileName, ofType: "plist") else {
-                let fileName = builder.configFileName!
-                print("StanwoodAnalytics Error: The file \(String(describing: fileName)) cannot be found.")
-                return
+        if FirebaseApp.app() == nil {
+        
+            if builder.configFileName != nil {
+                guard let firebaseConfigFile = Bundle.main.path(forResource: builder.configFileName, ofType: "plist") else {
+                    let fileName = builder.configFileName!
+                    print("StanwoodAnalytics Error: The file \(String(describing: fileName)) cannot be found.")
+                    return
+                }
+                let firebaseOptions = FirebaseOptions(contentsOfFile: firebaseConfigFile)
+                FirebaseApp.configure(options: firebaseOptions!)
+            } else {
+                if hasConfigurationFile() == true {
+                    FirebaseApp.configure()
+                }
             }
-            let firebaseOptions = FirebaseOptions(contentsOfFile: firebaseConfigFile)
-            FirebaseApp.configure(options: firebaseOptions!)
+            
         } else {
-            if hasConfigurationFile() == true {
-                FirebaseApp.configure()
-            }
+            print("StanwoodAnalytics Warning: Firebase has been configured elsewhere.")
         }
     }
     
