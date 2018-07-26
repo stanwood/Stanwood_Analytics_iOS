@@ -51,6 +51,7 @@ public struct TrackingParameters {
     public var category: String?
     public var contentType: String?
     public var customParameters: [String:Any] = [:]
+    public var postNotifications: Bool = false
     
     public init(eventName: String) {
         self.eventName = eventName
@@ -123,6 +124,22 @@ public struct TrackingParameters {
         
         return line1
     }
+    
+    public func payload() -> [String:String] {
+        var payload: [String:String] = [StanwoodAnalytics.Keys.eventName: eventName]
+        if itemId != nil {
+            payload[StanwoodAnalytics.Keys.itemId] = itemId
+        }
+        if category != nil {
+            payload[StanwoodAnalytics.Keys.category] = category
+        }
+        
+        if contentType != nil {
+            payload[StanwoodAnalytics.Keys.contentType] = contentType
+        }
+        
+        return payload
+    }
 }
 
 open class StanwoodAnalytics {
@@ -135,6 +152,7 @@ open class StanwoodAnalytics {
     */
     private var trackers: [Tracker] = []
     private var notificationsEnabled = false
+    private var postNotificationsEnabled: Bool = false
     private let options: UNAuthorizationOptions = [.alert]
     
     /**
@@ -157,6 +175,14 @@ open class StanwoodAnalytics {
         public static let userName = "userName"
         public static let screenName = "screenName"
         public static let screenClass = "screenClass"
+        
+        // Used in the dictionary payload of the notification posted to the debugger.
+        public static let eventName = "eventName"
+        public static let itemId = "itemId"
+        public static let contentType = "contentType"
+        public static let category = "category"
+        
+        public static let notificationName = "io.stanwood.debugger.didReceiveAnalyticsItem"
     }
     
     public enum TrackingEvent: String {
@@ -181,6 +207,7 @@ open class StanwoodAnalytics {
         trackers = builder.trackers
         
         notificationsEnabled = builder.notificationsEnabled
+        postNotificationsEnabled = builder.postNotificationsEnabled
         
         if notificationsEnabled == true {
             addNotifications(with: builder.notificationDelegate!)
@@ -199,7 +226,7 @@ open class StanwoodAnalytics {
         center.requestAuthorization(options: options) {
             (granted, error) in
             if !granted {
-                print("Something went wrong")
+                print("Stanwood Analytics Warning: Notifications permission is not granted by the user.")
             }
         }
         
@@ -212,6 +239,13 @@ open class StanwoodAnalytics {
         center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
     
+    fileprivate func postNotification(trackingParameters: TrackingParameters) {
+        let notificationCentre = NotificationCenter.default
+        let payload = trackingParameters.payload()
+        let notification = Notification.init(name: Notification.Name(rawValue: Keys.notificationName), object: nil, userInfo: payload)
+        notificationCentre.post(notification)
+    }
+
     // NODOC
     private func start() {
         trackers.forEach {
@@ -240,6 +274,10 @@ open class StanwoodAnalytics {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
             
             showNotification(with: trackingParameters.debugInfo())
+            
+            if postNotificationsEnabled == true {
+                
+            }
         }
     }
     
@@ -411,6 +449,7 @@ open class StanwoodAnalytics {
         var trackers: [Tracker] = []
         var notificationsEnabled = false
         var notificationDelegate: UIViewController?
+        var postNotificationsEnabled: Bool = false
         
         public func add(tracker: Tracker) -> Builder {
             trackers.append(tracker)
@@ -423,13 +462,20 @@ open class StanwoodAnalytics {
             return self
         }
         
+        public func setDebuggerNotifications(enabled: Bool) -> Builder {
+            postNotificationsEnabled = enabled
+            return self
+        }
+        
         public func build() -> StanwoodAnalytics {
             return StanwoodAnalytics(builder: self)
         }
         
-        public func setExceptionTracking(enable: Bool) {
+        public func setExceptionTracking(enabled: Bool) {
             
         }
+        
+
     }
 }
 

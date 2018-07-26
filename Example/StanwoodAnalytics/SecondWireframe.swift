@@ -9,11 +9,17 @@
 import UIKit
 
 struct SecondWireframe {
-    static func prepare(parameters:SecondViewParametable, action: Actionable) -> SecondViewController {
+    static func makeViewController() -> SecondScreenViewController {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        secondViewController.action = action
-        secondViewController.parameters = parameters
-        return secondViewController
+        return storyboard.instantiateViewController(withIdentifier: "SecondScreenViewController") as! SecondScreenViewController
+    }
+    
+    static func prepare(viewController: SecondScreenViewController,
+                        parameters:SecondScreenParameterable,
+                        actions: SecondScreenActionable) {
+        let presenter = SecondScreenPresenter(viewController: viewController, actions: actions, parameters: parameters)
+        viewController.presenter = presenter
+        presenter.viewController = viewController
     }
 }
+

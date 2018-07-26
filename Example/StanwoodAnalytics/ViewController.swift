@@ -13,8 +13,7 @@ import UserNotifications
 class ViewController: UIViewController {
     
     var analyticsService: AnalyticsService!
-    var appController: AppController!
-    
+    var presenter: FirstScreenPresenter?
     let screenName = "mainScreen"
     
     @IBOutlet weak var userIdentifierTextField: UITextField!
@@ -77,25 +76,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextButtonAction() {
-        showNextScreen()
-        trackNextButtonAction()
-    }
-    
-    func showNextScreen() {
-        let secondViewController = appController.secondScreen()
-        let navigationController = self.navigationController
-        navigationController?.pushViewController(secondViewController, animated: true)
-    }
-    
-    func trackNextButtonAction() {
-        let params = TrackingParameters(eventName: "NextButtonAction",
-                                        itemId: "101",
-                                        name: "Example",
-                                        description: nil,
-                                        category: "Abstract",
-                                        contentType: "info-1234567890")
-        
-        AnalyticsService.track(trackingParameters: params)
+        presenter?.nextButtonAction()
     }
 }
 

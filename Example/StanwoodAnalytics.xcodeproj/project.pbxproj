@@ -18,7 +18,14 @@
 		AF36CF89208F59F900D59D11 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36CF88208F59F900D59D11 /* AppData.swift */; };
 		AF36CF8E208F63E300D59D11 /* SecondWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36CF8D208F63E300D59D11 /* SecondWireframe.swift */; };
 		AF49AA7C201B515700356FD1 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49AA7B201B515700356FD1 /* AnalyticsService.swift */; };
-		AF86F226207667090061B331 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86F225207667090061B331 /* SecondViewController.swift */; };
+		AF5255C92108B801002DD811 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255C82108B800002DD811 /* Coordinator.swift */; };
+		AF5255CB2108C6FD002DD811 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255CA2108C6FC002DD811 /* SecondScreenPresenter.swift */; };
+		AF5255CD2108C772002DD811 /* FirstScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255CC2108C772002DD811 /* FirstScreenPresenter.swift */; };
+		AF5255CF2108D279002DD811 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255CE2108D279002DD811 /* Actions.swift */; };
+		AF5255D12108D6C5002DD811 /* SecondScreenActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255D02108D6C5002DD811 /* SecondScreenActions.swift */; };
+		AF5255D32108D6E2002DD811 /* FirstScreenActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255D22108D6E2002DD811 /* FirstScreenActions.swift */; };
+		AF5255D52109D031002DD811 /* FirstScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5255D42109D031002DD811 /* FirstScreenWireframe.swift */; };
+		AF86F226207667090061B331 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86F225207667090061B331 /* SecondScreenViewController.swift */; };
 		AF888C6020FCD2D1009E0E39 /* FirebaseService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF888C5F20FCD2D1009E0E39 /* FirebaseService-Info.plist */; };
 		AFE651DC208A463600047252 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE651DB208A463600047252 /* AppController.swift */; };
 		AFE651E0208A484A00047252 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE651DF208A484A00047252 /* Configuration.swift */; };
@@ -59,7 +66,14 @@
 		AF36CF88208F59F900D59D11 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		AF36CF8D208F63E300D59D11 /* SecondWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWireframe.swift; sourceTree = "<group>"; };
 		AF49AA7B201B515700356FD1 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
-		AF86F225207667090061B331 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AF5255C82108B800002DD811 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AF5255CA2108C6FC002DD811 /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
+		AF5255CC2108C772002DD811 /* FirstScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenter.swift; sourceTree = "<group>"; };
+		AF5255CE2108D279002DD811 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		AF5255D02108D6C5002DD811 /* SecondScreenActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenActions.swift; sourceTree = "<group>"; };
+		AF5255D22108D6E2002DD811 /* FirstScreenActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenActions.swift; sourceTree = "<group>"; };
+		AF5255D42109D031002DD811 /* FirstScreenWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenWireframe.swift; sourceTree = "<group>"; };
+		AF86F225207667090061B331 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		AF888C5F20FCD2D1009E0E39 /* FirebaseService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FirebaseService-Info.plist"; sourceTree = "<group>"; };
 		AFB46424201E2B0A009777B8 /* StanwoodAnalytics_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StanwoodAnalytics_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		AFE651DB208A463600047252 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -186,6 +200,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				AF5255CC2108C772002DD811 /* FirstScreenPresenter.swift */,
+				AF5255D22108D6E2002DD811 /* FirstScreenActions.swift */,
+				AF5255D42109D031002DD811 /* FirstScreenWireframe.swift */,
 			);
 			name = "First Screen";
 			sourceTree = "<group>";
@@ -193,8 +210,10 @@
 		AF36CF8C208F63AF00D59D11 /* Second Screen */ = {
 			isa = PBXGroup;
 			children = (
-				AF86F225207667090061B331 /* SecondViewController.swift */,
+				AF86F225207667090061B331 /* SecondScreenViewController.swift */,
 				AF36CF8D208F63E300D59D11 /* SecondWireframe.swift */,
+				AF5255CA2108C6FC002DD811 /* SecondScreenPresenter.swift */,
+				AF5255D02108D6C5002DD811 /* SecondScreenActions.swift */,
 			);
 			name = "Second Screen";
 			sourceTree = "<group>";
@@ -224,6 +243,8 @@
 				AFE651DB208A463600047252 /* AppController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				AF36CF86208F59E900D59D11 /* DataProvider.swift */,
+				AF5255C82108B800002DD811 /* Coordinator.swift */,
+				AF5255CE2108D279002DD811 /* Actions.swift */,
 			);
 			name = "Stanwood ";
 			sourceTree = "<group>";
@@ -473,15 +494,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF36CF8E208F63E300D59D11 /* SecondWireframe.swift in Sources */,
-				AF86F226207667090061B331 /* SecondViewController.swift in Sources */,
+				AF5255D12108D6C5002DD811 /* SecondScreenActions.swift in Sources */,
+				AF5255CD2108C772002DD811 /* FirstScreenPresenter.swift in Sources */,
+				AF86F226207667090061B331 /* SecondScreenViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				AF5255D32108D6E2002DD811 /* FirstScreenActions.swift in Sources */,
+				AF5255CB2108C6FD002DD811 /* SecondScreenPresenter.swift in Sources */,
+				AF5255D52109D031002DD811 /* FirstScreenWireframe.swift in Sources */,
 				AFE651E2208E239E00047252 /* Logger.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				AF49AA7C201B515700356FD1 /* AnalyticsService.swift in Sources */,
+				AF5255C92108B801002DD811 /* Coordinator.swift in Sources */,
 				AF36CF87208F59E900D59D11 /* DataProvider.swift in Sources */,
 				AFE651E0208A484A00047252 /* Configuration.swift in Sources */,
 				AFE651DC208A463600047252 /* AppController.swift in Sources */,
 				AF36CF89208F59F900D59D11 /* AppData.swift in Sources */,
+				AF5255CF2108D279002DD811 /* Actions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

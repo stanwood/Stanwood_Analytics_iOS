@@ -14,19 +14,12 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var viewController: ViewController?
-    let appController = AppController()
+    var appController: AppController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-        if let navigationController = window?.rootViewController as? UINavigationController {
-            
-            let viewController = navigationController.viewControllers.first as! ViewController
-            //let notificationDelegate = viewController as UNUserNotificationCenterDelegate
-            self.viewController = viewController
-            viewController.appController = appController
-        }
         
+        appController = AppController(window: window!)
+        appController?.configure()
         return true
     }
 

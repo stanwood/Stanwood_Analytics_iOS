@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SecondScreenViewController.swift
 //  StanwoodAnalytics_Example
 //
 //  Created by Ronan on 05/04/2018.
@@ -8,9 +8,9 @@
 
 import UIKit
 import StanwoodAnalytics
-import Crashlytics
 
-class SecondViewController: UIViewController {
+
+class SecondScreenViewController: UIViewController {
     let screenName = "secondView"
     
     @IBOutlet weak var trackingSwitch: UISwitch!
@@ -18,8 +18,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var customEvent1Button: UIButton!
     @IBOutlet weak var customEvent2Button: UIButton!
     
-    var action: Actionable?
-    var parameters: SecondViewParametable?
+    var presenter: SecondScreenPresenter!
     
     @IBAction func customEvent1Action(_ sender: Any) {
         let index = 1
@@ -38,11 +37,11 @@ class SecondViewController: UIViewController {
     
     @IBAction func switchDidChangeAction(_ sender: Any) {
         guard let trackingSwitch = sender as? UISwitch else { return }
-        action?.setTracking(enable: trackingSwitch.isOn, viewController: self)
+        presenter.switchDidChangeAction(isOn: trackingSwitch.isOn)
     }
     
     @IBAction func crashButtonAction(_ sender: Any) {
-        Crashlytics.sharedInstance().crash()
+        presenter.crashButtonAction()
     }
     
     override func viewDidAppear(_ animated: Bool) {
