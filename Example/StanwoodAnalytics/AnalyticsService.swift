@@ -120,7 +120,7 @@ struct AnalyticsService {
         #endif
          
     #else
-        analytics = analyticsBuilder.build()
+        analytics = analyticsBuilder.setDebuggerNotifications(enabled: true).build()
     #endif
         
     }

@@ -37,6 +37,7 @@ class AppController {
         coordinator?.start()
         actions?.coordinator = coordinator
         AnalyticsService.configure()
+        observeDebuggerNotifications()
     }
     
     func observeDebuggerNotifications() {
@@ -48,7 +49,12 @@ class AppController {
     }
     
     @objc func didReceiveNotification(notification: Notification) {
+        print("did receive notification")
         // let payload = notification.userInfo
+        
+        let rootViewController = window?.rootViewController
+        let alertController = makeAlert(message: "Demo Note", buttonTitle: "OK")
+        rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
     fileprivate func makeAlert(viewController: UIViewController? = nil, message: String, buttonTitle: String) -> UIAlertController {

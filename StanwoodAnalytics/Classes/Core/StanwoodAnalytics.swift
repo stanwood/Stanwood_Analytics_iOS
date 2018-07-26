@@ -276,7 +276,7 @@ open class StanwoodAnalytics {
             showNotification(with: trackingParameters.debugInfo())
             
             if postNotificationsEnabled == true {
-                
+                postNotification(trackingParameters: trackingParameters)
             }
         }
     }
