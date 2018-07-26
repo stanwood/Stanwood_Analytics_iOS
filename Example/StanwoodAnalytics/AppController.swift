@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import StanwoodAnalytics
 
 class AppController {
     private let appData = AppData()
@@ -49,11 +50,10 @@ class AppController {
     }
     
     @objc func didReceiveNotification(notification: Notification) {
-        print("did receive notification")
-        // let payload = notification.userInfo
-        
+        let payload = notification.userInfo
+        let message = payload![StanwoodAnalytics.Keys.eventName] as! String
         let rootViewController = window?.rootViewController
-        let alertController = makeAlert(message: "Demo Note", buttonTitle: "OK")
+        let alertController = makeAlert(message: message, buttonTitle: "OK")
         rootViewController?.present(alertController, animated: true, completion: nil)
     }
     

@@ -331,8 +331,7 @@ open class StanwoodAnalytics {
      If tracking is off, then turning the switch on will call start in all the trackers.
      
      This functionality is intended to be compatibly with the EU law on GDPR, and allows users to disable tracking.
- 
-     
+
     */
     
     open func setTracking(enable: Bool, on viewController: UIViewController? = nil) {
@@ -474,8 +473,6 @@ open class StanwoodAnalytics {
         public func setExceptionTracking(enabled: Bool) {
             
         }
-        
-
     }
 }
 
