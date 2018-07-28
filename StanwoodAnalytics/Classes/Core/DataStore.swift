@@ -30,20 +30,27 @@ public protocol DataStorage {
     static var trackingEnabled: Bool { get }
 }
 
+/// Wrapper class for saving tracking flag to UserDefaults
 public class DataStore: DataStorage {
     
+    /// The key
     private static let userDefaultsKey = "Stanwood.Analytics.tracking"
     
+    /// Read the stored value
     public static var trackingEnabled: Bool {
         get {
             return UserDefaults.standard.bool(forKey: DataStore.userDefaultsKey)
         }
     }
     
+    /// Register defaults
     public static func registerDefaults() {
         UserDefaults.standard.register(defaults: [DataStore.userDefaultsKey : true])
     }
     
+    /// Set tracking boolean value
+    ///
+    /// - Parameter enabled: boolean value
     public static func setTracking(enabled: Bool) {
         UserDefaults.standard.set(enabled, forKey: DataStore.userDefaultsKey)
         UserDefaults.standard.synchronize()

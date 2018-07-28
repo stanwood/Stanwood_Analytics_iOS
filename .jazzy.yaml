@@ -13,8 +13,9 @@ theme: fullwidth
 custom_categories: 
   - name: Core
     children:
-    - AlertFactory
-    - DataStore
     - StanwoodAnalytics
+    - TrackingParameters
     - Tracker
     - TrackerKeys
+    - DataStore
+    - AlertFactory

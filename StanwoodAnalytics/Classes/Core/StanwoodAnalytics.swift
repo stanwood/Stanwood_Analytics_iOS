@@ -27,28 +27,6 @@ import UIKit
 import UserNotifications
 
 /**
- Protocol to map tracking parameters to a dictionary of [String:NSString] and removes all optionals.
- */
-public protocol ParameterMapper {
-    func map(parameters: TrackingParameters) -> [String:NSString]
-}
-
-/**
- An enumeration to define the event type.
- */
-public enum TrackingEvent: String {
-    case viewItem = "view_item"
-    case addToCart = "add_to_cart"
-    case login = "login"
-    case selectContent = "select_content"
-    case viewItemList = "view_item_list"
-    case viewSearchResults = "view_search_results"
-    case share = "share"
-    case message = "message"
-    case debug = "debug"
-}
-
-/**
   The base class for Analytics 
 */
 open class StanwoodAnalytics {
@@ -85,6 +63,7 @@ open class StanwoodAnalytics {
      The event types used for tracking.
     */
     public enum TrackingEvent: String {
+        
         case viewItem = "view_item"
         case purchase = "ecommerce_purchase"
         case login = "login"

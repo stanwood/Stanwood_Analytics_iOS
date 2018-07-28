@@ -6,7 +6,16 @@
 //
 
 import Foundation
-    
+
+/**
+  Protocol to map tracking parameters to a dictionary of [String:NSString] and removes all optionals.
+ 
+  Implement this protocol when it is necessary to map keys to other values for different trackers.
+ */
+public protocol ParameterMapper {
+    func map(parameters: TrackingParameters) -> [String:NSString]
+}
+
 /**
  A struct to hold all the values to be sent to the trackers.
  */
@@ -25,10 +34,10 @@ public struct TrackingParameters {
     public var contentType: String?
     /// Define custom parameters here
     public var customParameters: [String:Any] = [:]
-    
-    /**
-     Init with event name only. The remaining parameters are all set to nil.
-     */
+
+    /// Init with event name only. The remaining parameters are all set to nil.
+    ///
+    /// - Parameter eventName: event name
     public init(eventName: String) {
         self.eventName = eventName
         self.itemId = nil
@@ -38,9 +47,15 @@ public struct TrackingParameters {
         self.contentType = nil
     }
     
-    /**
-     Init with all the parameters. Event name is required, the remaining parameters are optionals.
-     */
+    /// Init with all the parameters. Event name is required, the remaining parameters are optionals.
+    ///
+    /// - Parameters:
+    ///   - eventName: event name
+    ///   - itemId: item id
+    ///   - name: name
+    ///   - description: description
+    ///   - category: category
+    ///   - contentType: content type
     public init(eventName: String,
                 itemId: String?,
                 name: String?,
@@ -56,9 +71,11 @@ public struct TrackingParameters {
         self.contentType = contentType
     }
     
-    /**
-     Init with event name and content type only. The remaining parameters are all set to nil.
-     */
+    /// Init with event name and content type only. The remaining parameters are all set to nil.
+    ///
+    /// - Parameters:
+    ///   - eventName: event name
+    ///   - contentType: content type
     public init(eventName: String,
                 contentType: String?) {
         
@@ -70,9 +87,11 @@ public struct TrackingParameters {
         self.contentType = contentType
     }
     
-    /**
-     Init with event name and name only. The remaining parameters are all set to nil.
-     */
+    /// Init with event name and name only. The remaining parameters are all set to nil.
+    ///
+    /// - Parameters:
+    ///   - eventName: event name
+    ///   - name: name
     public init(eventName: String,
                 name: String?) {
         
@@ -84,6 +103,9 @@ public struct TrackingParameters {
         self.contentType = nil
     }
     
+    /// The info displayed for the local notification when debugging tracking.
+    ///
+    /// - Returns: A string with each non-nil parameter 
     public func debugInfo() -> String {
         var line1 = "Event: " + eventName + "\n"
         
