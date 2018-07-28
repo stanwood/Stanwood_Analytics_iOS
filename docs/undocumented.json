@@ -191,254 +191,1703 @@
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 29,
-      "symbol": "ParameterMapper",
-      "symbol_kind": "source.lang.swift.decl.protocol",
+      "line": 33,
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "symbol": "ParameterMapper.map(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
-      "line": 33,
-      "symbol": "TrackingEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 40,
+      "symbol": "TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 41,
+      "symbol": "TrackingEvent.addToCart",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 42,
+      "symbol": "TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 43,
+      "symbol": "TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 44,
+      "symbol": "TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 45,
-      "symbol": "TrackingParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol": "TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 46,
+      "symbol": "TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 47,
+      "symbol": "TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 48,
+      "symbol": "TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
       "line": 128,
-      "symbol": "StanwoodAnalytics",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "TrackingParameters.debugInfo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 180,
+      "symbol": "StanwoodAnalytics.Keys.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 181,
+      "symbol": "StanwoodAnalytics.Keys.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 182,
+      "symbol": "StanwoodAnalytics.Keys.email",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 183,
+      "symbol": "StanwoodAnalytics.Keys.userName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 184,
+      "symbol": "StanwoodAnalytics.Keys.screenName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 185,
+      "symbol": "StanwoodAnalytics.Keys.screenClass",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 192,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 193,
+      "symbol": "StanwoodAnalytics.TrackingEvent.purchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 194,
+      "symbol": "StanwoodAnalytics.TrackingEvent.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 195,
+      "symbol": "StanwoodAnalytics.TrackingEvent.selectContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 196,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewItemList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 197,
+      "symbol": "StanwoodAnalytics.TrackingEvent.viewSearchResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 198,
+      "symbol": "StanwoodAnalytics.TrackingEvent.share",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 199,
+      "symbol": "StanwoodAnalytics.TrackingEvent.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 200,
+      "symbol": "StanwoodAnalytics.TrackingEvent.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/Core/StanwoodAnalytics.swift",
+      "line": 201,
+      "symbol": "StanwoodAnalytics.TrackingEvent.identifyUser",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
@@ -722,5 +2171,5 @@
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes"
+  "source_directory": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS"
 }

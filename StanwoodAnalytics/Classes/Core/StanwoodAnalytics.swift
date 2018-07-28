@@ -26,10 +26,16 @@
 import UIKit
 import UserNotifications
 
+/**
+ Protocol to map tracking parameters to a dictionary of [String:NSString] and removes all optionals.
+ */
 public protocol ParameterMapper {
     func map(parameters: TrackingParameters) -> [String:NSString]
 }
 
+/**
+ An enumeration to define the event type.
+ */
 public enum TrackingEvent: String {
     case viewItem = "view_item"
     case addToCart = "add_to_cart"
@@ -42,107 +48,23 @@ public enum TrackingEvent: String {
     case debug = "debug"
 }
 
-public struct TrackingParameters {
-    public let eventName: String
-    
-    public var itemId: String?
-    public var name: String?
-    public var description: String?
-    public var category: String?
-    public var contentType: String?
-    public var customParameters: [String:Any] = [:]
-    
-    public init(eventName: String) {
-        self.eventName = eventName
-        self.itemId = nil
-        self.name = nil
-        self.description = nil
-        self.category = nil
-        self.contentType = nil
-    }
-    
-    public init(eventName: String,
-                itemId: String?,
-                name: String?,
-                description: String?,
-                category: String?,
-                contentType: String?) {
-        
-        self.eventName = eventName
-        self.itemId = itemId
-        self.name = name
-        self.description = description
-        self.category = category
-        self.contentType = contentType
-    }
-    
-    public init(eventName: String,
-                contentType: String?) {
-        
-        self.eventName = eventName
-        self.itemId = nil
-        self.name = nil
-        self.description = nil
-        self.category = nil
-        self.contentType = contentType
-    }
-    
-    public init(eventName: String,
-                name: String?) {
-        
-        self.eventName = eventName
-        self.itemId = nil
-        self.name = name
-        self.description = nil
-        self.category = nil
-        self.contentType = nil
-    }
-    
-    public func debugInfo() -> String {
-        var line1 = "Event: " + eventName + "\n"
-        
-        if let debugName = name {
-            line1.append("Name: " + debugName + " ")
-        }
-        
-        if let debugId = itemId {
-            line1.append("ItemId: " + debugId + " ")
-        }
-        
-        if let debugDescription = description {
-            line1.append("Description: " + debugDescription + " ")
-        }
-        
-        if let debugCategory = category {
-            line1.append("Category: " + debugCategory + " ")
-        }
-        
-        if let debugContentType = contentType {
-            line1.append("Content Type: " + debugContentType + " ")
-        }
-        
-        return line1
-    }
-}
-
+/**
+  The base class for Analytics 
+*/
 open class StanwoodAnalytics {
     
+    // MARK: Properties
+    /// :nodoc:
     private var trackingEnable: Bool = false
-    /**
-     
-     All the trackers that have been registered for analytics and logging.
- 
-    */
+    /// :nodoc:
     private var trackers: [Tracker] = []
+    /// :nodoc:
     private var notificationsEnabled = false
+    /// :nodoc:
     private let options: UNAuthorizationOptions = [.alert]
-    
-    /**
-     
-     The tracking keys used when the switch value is changed.
- 
-    */
+    /// :nodoc:
     private let trackingOptOut = "tracking_opt_out"
+    /// :nodoc:
     private let trackingOptIn = "tracking_opt_in"
     
     /**
@@ -159,6 +81,9 @@ open class StanwoodAnalytics {
         public static let screenClass = "screenClass"
     }
     
+    /**
+     The event types used for tracking.
+    */
     public enum TrackingEvent: String {
         case viewItem = "view_item"
         case purchase = "ecommerce_purchase"
@@ -175,7 +100,9 @@ open class StanwoodAnalytics {
     /**
      
      Init method using the Builder pattern.
- 
+      
+     - Parameter builder: 
+         The builder pattern is used here to configure the analytics instance. 
     */
     public init(builder: Builder) {
         trackers = builder.trackers
@@ -193,6 +120,7 @@ open class StanwoodAnalytics {
         }
     }
     
+    /// :nodoc:
     fileprivate func addNotifications(with delegate: UIViewController) {
         let center = UNUserNotificationCenter.current()
         
@@ -212,7 +140,7 @@ open class StanwoodAnalytics {
         center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
     
-    // NODOC
+    /// :nodoc:
     private func start() {
         trackers.forEach {
             $0.start()
@@ -233,6 +161,8 @@ open class StanwoodAnalytics {
      Track the parameters. Which parameters that are actually tracked depends on
      the implementation of each tracker.
      
+     - Parameter: TrackingParameters
+
      */
     
     open func track(trackingParameters: TrackingParameters) {
@@ -243,6 +173,7 @@ open class StanwoodAnalytics {
         }
     }
     
+    /// :nodoc:
     fileprivate func showNotification(with message: String) {
         if notificationsEnabled == true {
             let content = UNMutableNotificationContent()
@@ -267,11 +198,11 @@ open class StanwoodAnalytics {
      
      This is the value used for the next application start.
  */
-    
     open static func trackingEnabled() -> Bool {
         return DataStore.trackingEnabled
     }
     
+    /// :nodoc:
     private func trackSwitch(enabled: Bool) {
         
         let eventName = enabled ? trackingOptOut : trackingOptIn
@@ -290,11 +221,17 @@ open class StanwoodAnalytics {
      Set this value to false to stop the tracking, and on the next start it will be fully disabled.
      It is on by default.
      
-     If tracking is off, then turning the switch on will call start in all the trackers.
+     If tracking is off, enabling it will call start in all the trackers.
      
-     This functionality is intended to be compatibly with the EU law on GDPR, and allows users to disable tracking.
+     This functionality is intended to be compatible with the EU directive on GDPR, and allows users to disable tracking in all frameworks.
+     
+     As tracking is not disabled immediately an alert (localised in English and German) is displayed informing the user of this. To display the alert the framework assumes that the root view controller is either a UIViewController or a UINavigationController. If this is not the case the alert will fail to show. An optional parameter is provided to support injecting a view controller so that the present method can be called on it and display the alert that way.
+     
+     - Parameter enable
+        Enable or disable tracking. Will display an alert when disabled.
  
-     
+     - Parameter viewController
+         An optional parameter for a viewController to display the alert controller when disabling tracking.
     */
     
     open func setTracking(enable: Bool, on viewController: UIViewController? = nil) {
@@ -327,6 +264,7 @@ open class StanwoodAnalytics {
         }
     }
     
+    /// :nodoc:
     private func showAlert(on viewController: UIViewController? = nil) {
         var rootViewController: UIViewController
         
@@ -348,6 +286,7 @@ open class StanwoodAnalytics {
         rootViewController.present(alert, animated: true, completion: nil)
     }
     
+    /// :nodoc:
     private func localised(key: String) -> String {
         let frameworkBundle = Bundle(for: StanwoodAnalytics.self)
         let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("StanwoodAnalytics.bundle")
@@ -368,6 +307,7 @@ open class StanwoodAnalytics {
         }
     }
     
+    /// :nodoc:
     fileprivate func serializeKeys(trackerKeys: TrackerKeys) -> String {
         var message = ""
         for (key,value) in trackerKeys.customKeys {
@@ -379,6 +319,8 @@ open class StanwoodAnalytics {
     /**
      
      Track NSError objects.
+     
+     - Parameter error
  
     */
     open func track(error: NSError) {
@@ -390,6 +332,9 @@ open class StanwoodAnalytics {
     /**
      
      Helper function to track the screen name along with the class name.
+     
+     - Parameter name
+     - Parameter className
      
     */
     
@@ -412,24 +357,34 @@ open class StanwoodAnalytics {
         var notificationsEnabled = false
         var notificationDelegate: UIViewController?
         
+        /**
+         Add a tracker to the builder.
+         
+         - Parameter tracker
+ */
         public func add(tracker: Tracker) -> Builder {
             trackers.append(tracker)
             return self
         }
         
+        /**
+         Set a delegate to display local notifications. This is used for debugging the tracking. It will display a local notification for each time track is called.
+        */
         public func setNotificationDelegate(delegate: UIViewController) -> Builder {
             notificationsEnabled = true
             notificationDelegate = delegate
             return self
         }
         
+        /**
+           Build the analytics object.
+        */
         public func build() -> StanwoodAnalytics {
             return StanwoodAnalytics(builder: self)
         }
-        
-        public func setExceptionTracking(enable: Bool) {
-            
-        }
+ 
+        // public func setExceptionTracking(enable: Bool) {
+        //}
     }
 }
 
