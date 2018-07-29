@@ -8,15 +8,6 @@
 import Foundation
 
 /**
-  Protocol to map tracking parameters to a dictionary of [String:NSString] and removes all optionals.
- 
-  Implement this protocol when it is necessary to map keys to other values for different trackers.
- */
-public protocol ParameterMapper {
-    func map(parameters: TrackingParameters) -> [String:NSString]
-}
-
-/**
  A struct to hold all the values to be sent to the trackers.
  */
 public struct TrackingParameters {
