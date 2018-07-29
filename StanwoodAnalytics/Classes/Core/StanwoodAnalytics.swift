@@ -213,21 +213,20 @@ open class StanwoodAnalytics {
          An optional parameter for a viewController to display the alert controller when disabling tracking.
     */
     
-    open func setTracking(enable: Bool, on viewController: UIViewController? = nil) {
+    open func setTracking(enabled: Bool, on viewController: UIViewController? = nil) {
         
-        if enable == false {
+        if enabled == false {
             showAlert(on: viewController)
         }
         
-        
         if trackingEnable == true {
-            if enable == false {
+            if enabled == false {
                 // turn off tracking
                 trackers.forEach {
-                    $0.setTracking(enable: enable)
+                    $0.setTracking(enabled: enabled)
                 }
 
-                trackSwitch(enabled: enable)
+                trackSwitch(enabled: enabled)
             }
         } else {
             // Tracked at startup was off.
@@ -235,11 +234,10 @@ open class StanwoodAnalytics {
             trackingEnable = true
         }
 
+        DataStore.setTracking(enabled: enabled)
         
-        DataStore.setTracking(enabled: enable)
-        
-        if enable == true {
-            trackSwitch(enabled: enable)
+        if enabled == true {
+            trackSwitch(enabled: enabled)
         }
     }
     

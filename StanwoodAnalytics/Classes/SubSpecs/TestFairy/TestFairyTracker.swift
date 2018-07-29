@@ -46,7 +46,7 @@ open class TestFairyTracker: Tracker {
         TestFairy.log(message)
     }
     
-    override open func setTracking(enable: Bool) {
+    override open func setTracking(enabled: Bool) {
         // NO-OP
     }
     

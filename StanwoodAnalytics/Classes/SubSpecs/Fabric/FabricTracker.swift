@@ -76,7 +76,7 @@ open class FabricTracker: Tracker {
         #endif
     }
     
-    override open func setTracking(enable: Bool) {
+    override open func setTracking(enabled: Bool) {
         
     }
     

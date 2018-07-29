@@ -90,7 +90,7 @@ open class Tracker {
     /// Enable or disable tracking. Called by StanwoodAnalytics class. This method must be overridden in a Tracker subclass.
     ///
     /// - Parameter enable: enable tracking
-    open func setTracking(enable: Bool) {
+    open func setTracking(enabled: Bool) {
         assert(false)
     }
     
@@ -124,8 +124,8 @@ open class Tracker {
         ///
         /// - Parameter enable: Enable the debug mode.
         /// - Returns: The builder object
-        open func setDebug(enable: Bool) -> Builder {
-            self.isDebug = enable
+        open func setDebug(enabled: Bool) -> Builder {
+            self.isDebug = enabled
             return self
         }
         
@@ -133,8 +133,8 @@ open class Tracker {
         ///
         /// - Parameter enable: Enable the logging mode.
         /// - Returns: The builder object
-        open func setLogging(enable: Bool) -> Builder {
-            self.loggingEnabled = enable
+        open func setLogging(enabled: Bool) -> Builder {
+            self.loggingEnabled = enabled
             return self
         }
         
@@ -142,8 +142,8 @@ open class Tracker {
         ///
         /// - Parameter enable: Enable exception tracking.
         /// - Returns: The builder object
-        open func setExceptionTracking(enable: Bool) -> Builder {
-            self.exceptionTrackingEnabled = enable
+        open func setExceptionTracking(enabled: Bool) -> Builder {
+            self.exceptionTrackingEnabled = enabled
             return self
         }
     }

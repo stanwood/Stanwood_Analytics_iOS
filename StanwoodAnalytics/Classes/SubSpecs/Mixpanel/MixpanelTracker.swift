@@ -78,10 +78,10 @@ open class MixpanelTracker: Tracker {
         Mixpanel.mainInstance().track(event: trackingParameters.eventName, properties: properties)
     }
     
-    override open func setTracking(enable: Bool) {
-        Mixpanel.mainInstance().loggingEnabled = enable
+    override open func setTracking(enabled: Bool) {
+        Mixpanel.mainInstance().loggingEnabled = enabled
         
-        if enable == true {
+        if enabled == true {
             Mixpanel.mainInstance().optInTracking()
         } else {
             Mixpanel.mainInstance().optOutTracking()

@@ -87,7 +87,7 @@ open class BugfenderTracker: Tracker {
                       message: trackingParameters.description ?? "")
     }
     
-    override open func setTracking(enable: Bool) {
+    override open func setTracking(enabled: Bool) {
         // NO-OP
     }
     

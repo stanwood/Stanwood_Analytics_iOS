@@ -127,7 +127,7 @@ struct AnalyticsService {
     
     static func setTracking(enable: Bool, viewController: UIViewController? = nil) {
         guard let analytics = AnalyticsService.analytics else { return }
-        analytics.setTracking(enable: enable, on: viewController)
+        analytics.setTracking(enabled: enable, on: viewController)
     }
     
     static func track(error: Error) {

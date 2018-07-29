@@ -95,9 +95,9 @@ open class GoogleAnalyticsTracker: Tracker {
         gai.optOut = false
     }
     
-    override open func setTracking(enable: Bool) {
+    override open func setTracking(enabled: Bool) {
         guard let gai = GAI.sharedInstance() else { return }
-        gai.optOut = !enable
+        gai.optOut = !enabled
     }
     
     override open func track(trackingParameters: TrackingParameters) {

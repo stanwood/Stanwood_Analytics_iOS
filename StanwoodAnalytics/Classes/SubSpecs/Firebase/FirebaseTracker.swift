@@ -118,8 +118,8 @@ open class FirebaseTracker: Tracker {
         AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(true)
     }
     
-    override open func setTracking(enable: Bool) {
-        AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(enable)
+    override open func setTracking(enabled: Bool) {
+        AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(enabled)
     }
     /**
      
