@@ -27,8 +27,16 @@ import Foundation
 import Crashlytics
 import Fabric
 
+
+/// Fabric Tracker
+///
+/// For this tracker to work, it is necessary to insert the Fabric and Crashlytics configuration into the Info.plist,
+/// and add a run script phase that calls Fabric.framework/run with the token.
 open class FabricTracker: Tracker {
     
+    /// Init function
+    ///
+    /// - Parameter builder: Tracker builder
     init(builder: FabricBuilder) {
         super.init(builder: builder)
         
@@ -37,6 +45,8 @@ open class FabricTracker: Tracker {
         }
     }
     
+    
+    /// Start the tracking. This function verifies that the Fabric key has been defined in the Application Info.plist
     open override func start() {
         if hasFabricKey() == true {
             Fabric.with([Crashlytics.self])
@@ -46,6 +56,7 @@ open class FabricTracker: Tracker {
         
     }
 
+    /// :nodoc:
     private func hasFabricKey() -> Bool {
         guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else { return false }
         guard let resourceFileDictionary = NSDictionary(contentsOfFile: path) else { return false }
@@ -53,16 +64,11 @@ open class FabricTracker: Tracker {
         guard let APIKey = fabricConfiguration["APIKey"] as? String else { return false }
         return APIKey.count > 0 ? true : false
     }
-
-    /**
-
-     Note: For Fabric and Crashlytics to work, you have to update the Info.plist file with the data from the Fabric website, and add a run script phase that calls Fabric.framework/run with the token.
-     
-     
-     Only the parameters event name, name and item Id are tracked using the CLSLogv function.
-     
-    */
     
+    /// Track data to the framework. This is called by StanwoodAnalytics.
+    /// Only the parameters eventName, name and itemId are tracked using the CLSLogv function.
+    ///
+    /// - Parameter trackingParameters: `TrackingParameters` struct
     override open func track(trackingParameters: TrackingParameters) {
         
         let logMessage = "Event: \(String(describing: trackingParameters.eventName)) "
@@ -76,16 +82,18 @@ open class FabricTracker: Tracker {
         #endif
     }
     
+    
+    /// Set Tracking. No implemented here is there is no switch for it in the framework.
+    /// The change will only take place on the next app start.
+    ///
+    /// - Parameter enabled: enable tracking
     override open func setTracking(enabled: Bool) {
         
     }
     
-    /**
-     
-     Passes the error directly to Crashlytics recordError method.
- 
-    */
-    
+    /// Track NSError to Crashlytics recordError method.
+    ///
+    /// - Parameter error: NSError
     override open func track(error: NSError) {
         Crashlytics.sharedInstance().recordError(error)
     }
@@ -100,6 +108,14 @@ open class FabricTracker: Tracker {
  
     */
     
+    
+    /// TrackerKeys Use this for tracking custom keys and values.
+    ///
+    /// The user name, email and identifier are set using the keys definied in the analytics class.
+    ///
+    /// It will send these data types to Crashlytics: Bool, Int32, Float, String or and object.
+    ///
+    /// - Parameter trackerKeys: trackerKeys
     override open func track(trackerKeys: TrackerKeys) {
         let customKeys = trackerKeys.customKeys
         
@@ -132,13 +148,8 @@ open class FabricTracker: Tracker {
             }
         }
     }
-    
-    /**
-     
-     The builder class for this tracker. Although the application is a required parameter, it is not used.
- 
-    */
-    
+
+    /// The builder class for this tracker. Although the application is a required parameter, it is not used.
     open class FabricBuilder: Tracker.Builder {
 
         public override init(context: UIApplication, key: String?) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AlertFactory Class Reference</title>
+    <title>TestFairyTracker Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/AlertFactory" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/TestFairyTracker" class="dashAnchor"></a>
 
-    <a title="AlertFactory Class Reference"></a>
+    <a title="TestFairyTracker Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">StanwoodAnalytics Reference</a>
       <img class="carat" src="../img/carat.png" />
-      AlertFactory Class Reference
+      TestFairyTracker Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -137,14 +137,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>AlertFactory</h1>
+            <h1>TestFairyTracker</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AlertFactory</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">TestFairyTracker</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Tracker.html">Tracker</a></span></code></pre>
 
                 </div>
               </div>
-            <p>A Factory class that returns an AlertController</p>
+            <p>TestFairy Tracker</p>
 
           </div>
         </section>
@@ -156,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17StanwoodAnalytics12AlertFactoryC04makeC0So17UIAlertControllerCSo06UIViewG0CSg04viewG0_SS7messageSS11buttonTitletFZ"></a>
-                    <a name="//apple_ref/swift/Method/makeAlert(viewController:message:buttonTitle:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17StanwoodAnalytics12AlertFactoryC04makeC0So17UIAlertControllerCSo06UIViewG0CSg04viewG0_SS7messageSS11buttonTitletFZ">makeAlert(viewController:message:buttonTitle:)</a>
+                    <a name="/s:17StanwoodAnalytics16TestFairyTrackerC5startyyF"></a>
+                    <a name="//apple_ref/swift/Method/start()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics16TestFairyTrackerC5startyyF">start()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,14 +166,66 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns an AlertViewController with an OK button and displays a message on the view controller.</p>
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">start</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17StanwoodAnalytics16TestFairyTrackerC5trackyAA18TrackingParametersV08trackingH0_tF"></a>
+                    <a name="//apple_ref/swift/Method/track(trackingParameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics16TestFairyTrackerC5trackyAA18TrackingParametersV08trackingH0_tF">track(trackingParameters:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">trackingParameters</span><span class="p">:</span> <span class="kt"><a href="../Structs/TrackingParameters.html">TrackingParameters</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17StanwoodAnalytics16TestFairyTrackerC11setTrackingySb7enabled_tF"></a>
+                    <a name="//apple_ref/swift/Method/setTracking(enabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics16TestFairyTrackerC11setTrackingySb7enabled_tF">setTracking(enabled:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set Tracking - Not implemented.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">makeAlert</span><span class="p">(</span><span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">buttonTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIAlertController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">setTracking</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -184,45 +236,89 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>viewController</em>
+                                <em>enabled</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The view controller to present the alert</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>message</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The message to display</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>buttonTitle</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The button title</p>
+                                  <p>Enabled</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17StanwoodAnalytics16TestFairyTrackerC5trackySo7NSErrorC5error_tF"></a>
+                    <a name="//apple_ref/swift/Method/track(error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics16TestFairyTrackerC5trackySo7NSErrorC5error_tF">track(error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Track Error - Not implemented.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
                       <div>
-                        <h4>Return Value</h4>
-                        <p>UIAlertController</p>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>NSError</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17StanwoodAnalytics16TestFairyTrackerC5trackyAA0E4KeysV07trackerG0_tF"></a>
+                    <a name="//apple_ref/swift/Method/track(trackerKeys:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics16TestFairyTrackerC5trackyAA0E4KeysV07trackerG0_tF">track(trackerKeys:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">trackerKeys</span><span class="p">:</span> <span class="kt"><a href="../Core.html#/s:17StanwoodAnalytics11TrackerKeysV">TrackerKeys</a></span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

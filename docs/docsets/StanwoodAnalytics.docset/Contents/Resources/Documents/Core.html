@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
           StanwoodAnalytics Docs
         </a>
-         (68% documented)
+         (71% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -75,6 +75,9 @@
                 <a class="nav-group-task-link" href="Classes/Tracker/Builder.html">– Builder</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Core.html#/s:17StanwoodAnalytics11TrackerKeysV">TrackerKeys</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/DataStore.html">DataStore</a>
               </li>
               <li class="nav-group-task">
@@ -82,6 +85,49 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Core.html#/s:17StanwoodAnalytics15ParameterMapperP">ParameterMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Core.html#/s:17StanwoodAnalytics11MapFunctionP">MapFunction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Trackers.html">Trackers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FabricTracker.html">FabricTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FabricTracker/FabricBuilder.html">– FabricBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FirebaseTracker.html">FirebaseTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GoogleAnalyticsTracker.html">GoogleAnalyticsTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GoogleAnalyticsTracker/GoogleAnalyticsBuilder.html">– GoogleAnalyticsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestFairyTracker.html">TestFairyTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BugfenderTracker.html">BugfenderTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MixpanelTracker.html">MixpanelTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MixpanelTracker/MixpanelBuilder.html">– MixpanelBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other Enums.html#/s:17StanwoodAnalytics13BugfenderTypeO">BugfenderType</a>
               </li>
             </ul>
           </li>
@@ -128,38 +174,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17StanwoodAnalytics18TrackingParametersV"></a>
-                    <a name="//apple_ref/swift/Struct/TrackingParameters" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17StanwoodAnalytics18TrackingParametersV">TrackingParameters</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A struct to hold all the values to be sent to the trackers.</p>
-
-                        <a href="Structs/TrackingParameters.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TrackingParameters</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -196,6 +210,38 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:17StanwoodAnalytics18TrackingParametersV"></a>
+                    <a name="//apple_ref/swift/Struct/TrackingParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics18TrackingParametersV">TrackingParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A struct to hold all the values to be sent to the trackers.</p>
+
+                        <a href="Structs/TrackingParameters.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TrackingParameters</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:17StanwoodAnalytics7TrackerC"></a>
                     <a name="//apple_ref/swift/Class/Tracker" class="dashAnchor"></a>
                     <a class="token" href="#/s:17StanwoodAnalytics7TrackerC">Tracker</a>
@@ -215,6 +261,37 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Tracker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17StanwoodAnalytics11TrackerKeysV"></a>
+                    <a name="//apple_ref/swift/Struct/TrackerKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics11TrackerKeysV">TrackerKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Struct to contain custom keys.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TrackerKeys</span></code></pre>
 
                         </div>
                       </div>
@@ -279,6 +356,38 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AlertFactory</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17StanwoodAnalytics11MapFunctionP"></a>
+                    <a name="//apple_ref/swift/Protocol/MapFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics11MapFunctionP">MapFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>MapFunction
+Use a map function to customise the mapping of the tracking parameter keys to the fields required for your application.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MapFunction</span></code></pre>
 
                         </div>
                       </div>

@@ -38,6 +38,13 @@ import FirebaseAnalytics
  
  */
 
+/// Custom parameter mapper for Firebase.
+///
+/// ItemId -> AnalyticsParameterItemID
+/// ContentType -> AnalyticsParameterContentType
+/// Category -> AnalyticsParameterItemCategory
+/// Name -> AnalyticsParameterItemName
+///
 struct FirebaseParameterMapper: ParameterMapper {
     func map(parameters: TrackingParameters) -> [String:NSString] {
         var keyValues: [String:NSString] = [:]
@@ -71,10 +78,18 @@ public protocol FirebaseAnalyticsEnabler {
     static func setScreenName()
 }
 
+/// FirebaseAnalytics Tracker
 open class FirebaseTracker: Tracker {
     
     var parameterMapper: ParameterMapper?
 
+    /// Init method for the tracker. It checks that tracking enabled is set in the StanwoodAnalytics framework.
+    /// It will then check for the existence for FirebaseApp to see if an init call already been called
+    /// and will print a warning to the console if it has been.
+    ///
+    /// It checks for the existence of GoogleService-Info.plist file is no file name has been passed in the configuration.
+    ///
+    /// - Parameter builder: <#builder description#>
     init(builder: FirebaseBuilder) {
         super.init(builder: builder)
         
@@ -114,30 +129,30 @@ open class FirebaseTracker: Tracker {
         return true
     }
     
+    /// Calls the enable function of the analytics collection function of the FirebaseAnalytics framework.
     open override func start() {
         AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(true)
     }
     
+    /// Sets the analytics collection enabled or disabled.
     override open func setTracking(enabled: Bool) {
         AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(enabled)
     }
-    /**
-     
-     Track the prameters in Firebase Analytics.
-     
-     Uses the paramater mapper to map the Tracking parameters to those used by Firebase Analytics.
-     
-     This mapping uses the following parameters:
-     
-     event name
-     name
-     category
-     contentType
-     itemId
-     description
- 
-    */
     
+    /// Track data in the TrackingParameters struct into FirebaseAnalytics.
+    ///
+    /// Uses the paramater mapper to map the Tracking parameters to those used by Firebase Analytics.
+    ///
+    /// This mapping uses the following parameters:
+    ///
+    /// event name
+    /// name
+    /// category
+    /// contentType
+    /// itemId
+    /// description
+    ///
+    /// - Parameter trackingParameters: TrackingParameters struct
     override open func track(trackingParameters: TrackingParameters) {
 
         if parameterMapper != nil {

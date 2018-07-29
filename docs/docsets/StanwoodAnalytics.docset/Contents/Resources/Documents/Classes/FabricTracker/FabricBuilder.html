@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Builder Class Reference</title>
+    <title>FabricBuilder Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/Builder" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/FabricBuilder" class="dashAnchor"></a>
 
-    <a title="Builder Class Reference"></a>
+    <a title="FabricBuilder Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../../index.html">StanwoodAnalytics Reference</a>
       <img class="carat" src="../../img/carat.png" />
-      Builder Class Reference
+      FabricBuilder Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -137,14 +137,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Builder</h1>
+            <h1>FabricBuilder</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Builder</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">FabricBuilder</span> <span class="p">:</span> <span class="kt"><a href="../../Classes/Tracker.html">Tracker</a></span><span class="o">.</span><span class="kt">Builder</span></code></pre>
 
                 </div>
               </div>
-            <p>The builder for this class.</p>
+            <p>The builder class for this tracker. Although the application is a required parameter, it is not used.</p>
 
           </div>
         </section>
@@ -156,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17StanwoodAnalyticsAAC7BuilderC3addAdA7TrackerC7tracker_tF"></a>
-                    <a name="//apple_ref/swift/Method/add(tracker:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17StanwoodAnalyticsAAC7BuilderC3addAdA7TrackerC7tracker_tF">add(tracker:)</a>
+                    <a name="/s:17StanwoodAnalytics13FabricTrackerC0C7BuilderCAESo13UIApplicationC7context_SSSg3keytcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(context:key:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17StanwoodAnalytics13FabricTrackerC0C7BuilderCAESo13UIApplicationC7context_SSSg3keytcfc">init(context:key:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,14 +166,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Add a tracker to the builder.</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">tracker</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Tracker.html">Tracker</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -183,36 +182,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17StanwoodAnalyticsAAC7BuilderC23setNotificationDelegateADSo16UIViewControllerC8delegate_tF"></a>
-                    <a name="//apple_ref/swift/Method/setNotificationDelegate(delegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17StanwoodAnalyticsAAC7BuilderC23setNotificationDelegateADSo16UIViewControllerC8delegate_tF">setNotificationDelegate(delegate:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Set a delegate to display local notifications. This is used for debugging the tracking. It will display a local notification for each time track is called.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationDelegate</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17StanwoodAnalyticsAAC7BuilderC5buildAByF"></a>
+                    <a name="/s:17StanwoodAnalytics13FabricTrackerC0C7BuilderC5buildACyF"></a>
                     <a name="//apple_ref/swift/Method/build()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17StanwoodAnalyticsAAC7BuilderC5buildAByF">build()</a>
+                    <a class="token" href="#/s:17StanwoodAnalytics13FabricTrackerC0C7BuilderC5buildACyF">build()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -220,14 +192,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Build the analytics object.</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/StanwoodAnalytics.html">StanwoodAnalytics</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/FabricTracker.html">FabricTracker</a></span></code></pre>
 
                         </div>
                       </div>

@@ -26,10 +26,14 @@
 import Foundation
 import Mixpanel
 
+/// Mixpanel Tracker
 open class MixpanelTracker: Tracker {
 
     var parameterMapper: ParameterMapper?
 
+    /// Init with the builder.
+    ///
+    /// - Parameter builder: Builder
     init(builder: MixpanelBuilder) {
         super.init(builder: builder)
         
@@ -40,11 +44,15 @@ open class MixpanelTracker: Tracker {
         }
     }
     
+    /// Start the tracking. Calls Mixpanel initialise. Logging is enabled.
     open override func start() {
         Mixpanel.initialize(token: key!)
         Mixpanel.mainInstance().loggingEnabled = loggingEnabled
     }
 
+    /// Tracks all the non-nil properties under event name.
+    ///
+    /// - Parameter trackingParameters: Tracking parameters struct
     override open func track(trackingParameters: TrackingParameters) {
 
         var properties: [String:String] = [:]
@@ -78,6 +86,10 @@ open class MixpanelTracker: Tracker {
         Mixpanel.mainInstance().track(event: trackingParameters.eventName, properties: properties)
     }
     
+    
+    /// Set the opt-in or opt-out tracking in the framework.
+    ///
+    /// - Parameter enabled: Enable tracking.
     override open func setTracking(enabled: Bool) {
         Mixpanel.mainInstance().loggingEnabled = enabled
         
@@ -87,17 +99,19 @@ open class MixpanelTracker: Tracker {
             Mixpanel.mainInstance().optOutTracking()
         }
     }
-
-    /**
-
-     Track the error using logEvent and the UserInfo dictionary.
-
-     */
-
+    
+    /// Track error is not implemented for this framework.
+    ///
+    /// - Parameter error: NSError
     override open func track(error: NSError) {
         // Not tracking errors
     }
 
+    /// Tracker Keys.
+    ///
+    /// Custom keys are used to track the user identifier, email or screen name.
+    ///
+    /// - Parameter trackerKeys: Tracker keys struct
     override open func track(trackerKeys: TrackerKeys) {
 
         for (key,value) in trackerKeys.customKeys {
@@ -114,7 +128,6 @@ open class MixpanelTracker: Tracker {
                     Mixpanel.mainInstance().people.set(property: "$email", to: userEmail)
                 }
             } else {
-                
                 if let anyValue = value as? MixpanelType {
                     Mixpanel.mainInstance().people.set(property: key, to: anyValue)
                 } else {
@@ -124,6 +137,7 @@ open class MixpanelTracker: Tracker {
         }
     }
 
+    /// Builder
     open class MixpanelBuilder: Tracker.Builder {
 
         var parameterMapper: ParameterMapper?
@@ -132,11 +146,18 @@ open class MixpanelTracker: Tracker {
             super.init(context: context, key: key)
         }
 
+        /// Set a custom parameter mapper.
+        ///
+        /// - Parameter mapper: Parameter mapper
+        /// - Returns: Builder so that it can be chained.
         open func add(mapper: ParameterMapper) -> MixpanelBuilder {
             parameterMapper = mapper
             return self
         }
 
+        /// Build the tracker
+        ///
+        /// - Returns: The tracker with the configuration.
         open override func build() -> MixpanelTracker {
             return MixpanelTracker(builder: self)
         }

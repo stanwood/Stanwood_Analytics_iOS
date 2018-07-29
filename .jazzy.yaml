@@ -20,11 +20,13 @@ custom_categories:
     - DataStore
     - AlertFactory
     - ParameterMapper
+    - MapFunction
 
-  - name: SubSpecs
+  - name: Trackers 
     children:
     - FabricTracker
     - FirebaseTracker
+    - GoogleAnalyticsTracker
     - TestFairyTracker
     - BugfenderTracker
     - MixpanelTracker

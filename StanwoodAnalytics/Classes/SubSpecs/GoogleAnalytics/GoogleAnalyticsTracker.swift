@@ -25,6 +25,9 @@
 
 import Foundation
 
+
+/// MapFunction
+/// Use a map function to customise the mapping of the tracking parameter keys to the fields required for your application.
 public protocol MapFunction {
     func mapCategory(parameters: TrackingParameters) -> String?
     func mapAction(parameters: TrackingParameters) -> String?
@@ -60,11 +63,13 @@ public struct GoogleMapFunction: MapFunction {
     }
 }
 
+/// GoogleAnalytics Tracker
 open class GoogleAnalyticsTracker: Tracker {
     private var activityTracking: Bool = false
     private var exceptionTracking: Bool = false
     private var adIdCollection: Bool = false
     
+    /// Map function
     var mapFunction: MapFunction?
     
     init(builder: GoogleAnalyticsBuilder) {
@@ -82,6 +87,7 @@ open class GoogleAnalyticsTracker: Tracker {
         }
     }
     
+    /// Start the tracking
     open override func start() {
         guard let gai = GAI.sharedInstance() else { return }
         gai.trackUncaughtExceptions = exceptionTracking
@@ -95,11 +101,17 @@ open class GoogleAnalyticsTracker: Tracker {
         gai.optOut = false
     }
     
+    /// Enable tracking. This method employs the opt-out flag in the framework.
+    ///
+    /// - Parameter enabled: enable flag
     override open func setTracking(enabled: Bool) {
         guard let gai = GAI.sharedInstance() else { return }
         gai.optOut = !enabled
     }
     
+    /// Track the parameters. If a map function is defined and screen name if not nil, it calls
+    ///
+    /// - Parameter trackingParameters: Tracking parameters struct
     override open func track(trackingParameters: TrackingParameters) {
         if let screenName = mapFunction?.mapScreenName(parameters: trackingParameters) {
             trackScreenView(screenName)
@@ -108,6 +120,7 @@ open class GoogleAnalyticsTracker: Tracker {
         }
     }
     
+    /// :nodoc:
     fileprivate func trackEvent(with parameters: TrackingParameters) {
         guard let action = mapFunction?.mapAction(parameters: parameters) else { return }
         guard let label = mapFunction?.mapLabel(parameters: parameters) else { return }
@@ -120,6 +133,7 @@ open class GoogleAnalyticsTracker: Tracker {
         }
     }
     
+    /// :nodoc:
     fileprivate func trackScreenView(_ screenName: String) {
         let tracker = GAI.sharedInstance().tracker(withTrackingId: key)
         tracker?.set(kGAIScreenName, value: screenName)
@@ -139,6 +153,9 @@ open class GoogleAnalyticsTracker: Tracker {
         }
     }
     
+    /// Track NSError as a non-fatal exception.
+    ///
+    /// - Parameter error: NSError
     override open func track(error: NSError) {
         let description = error.localizedDescription
         let gaiData = GAIDictionaryBuilder.createException(withDescription: description,
@@ -146,15 +163,14 @@ open class GoogleAnalyticsTracker: Tracker {
         let tracker = GAI.sharedInstance().tracker(withTrackingId: key)
         tracker?.send(gaiData?.build() as! [AnyHashable : Any])
     }
-    
-    /**
-     Track custom keys
-     
-     It is necessary to add a custom mapper for this to work, and implement the
-     mapKeys function, because the default is nil.
-     
-     The implementation here requires [Int:String] as the Int is a custom dimention parameter in GA.
-    */
+
+    /// Track custom keys
+    ///
+    /// It is necessary to add a custom mapper for this to work, and implement the mapKeys function, because the default is nil.
+    ///
+    /// The implementation here requires [Int:String] as the Int is a custom dimention parameter in GA.
+    ///
+    /// - Parameter trackerKeys: tracker keys struct
     override open func track(trackerKeys: TrackerKeys) {
         guard let mapped = self.mapFunction?.mapKeys(keys: trackerKeys) else { return }
         let tracker = GAI.sharedInstance().tracker(withTrackingId: key)
@@ -169,11 +185,15 @@ open class GoogleAnalyticsTracker: Tracker {
         }
     }
     
+    /// Set a value for kGAIUserId
+    ///
+    /// - Parameter clientID: Clinet Id.
     func set(clientID: String) {
         let tracker = GAI.sharedInstance().tracker(withTrackingId: key)
         tracker?.set(kGAIUserId, value: clientID)
     }
     
+    /// Builder
     open class GoogleAnalyticsBuilder: Tracker.Builder {
         var uiEventLogging = false
         var sampleRate: Int = 0
@@ -181,6 +201,11 @@ open class GoogleAnalyticsTracker: Tracker {
         var adIdCollection: Bool = false
         var mapFunction: MapFunction = GoogleMapFunction()
 
+        /// Init the builder
+        ///
+        /// - Parameters:
+        ///   - context: UIApplication context
+        ///   - key: GA Key
         public override init(context: UIApplication, key: String?) {
             super.init(context: context, key: key)
         }
@@ -189,13 +214,21 @@ open class GoogleAnalyticsTracker: Tracker {
             return GoogleAnalyticsTracker(builder: self)
         }
         
+        /// Set the Mapfunction
+        ///
+        /// - Parameter mapFunction: custom map function
+        /// - Returns: Builder so that it can be chained.
         open func set(mapFunction: MapFunction) -> GoogleAnalyticsBuilder {
             self.mapFunction = mapFunction
             return self
         }
         
-        open func setUIEventLogging(enable: Bool) -> GoogleAnalyticsTracker.Builder {
-            uiEventLogging = enable
+        /// Enable UI event logging.
+        ///
+        /// - Parameter enabled: Set UI event logging.
+        /// - Returns: Builder so that it can be chained.
+        open func setUIEventLogging(enabled: Bool) -> GoogleAnalyticsTracker.Builder {
+            uiEventLogging = enabled
             return self
         }
     }
