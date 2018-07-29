@@ -48,7 +48,7 @@ public struct GoogleMapFunction: MapFunction {
     
     public func mapScreenName(parameters: TrackingParameters) -> String? {
         
-        if parameters.eventName.lowercased() == TrackingEvent.viewItem.rawValue.lowercased() {
+        if parameters.eventName.lowercased() == StanwoodAnalytics.TrackingEvent.viewItem.rawValue.lowercased() {
             return parameters.name
         }
         return nil
