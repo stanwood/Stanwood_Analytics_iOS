@@ -42,6 +42,9 @@ open class TestFairyTracker: Tracker {
         TestFairy.begin(key)
     }
     
+    /// Track event. It records eventName, name and itemId.
+    ///
+    /// - Parameter trackingParameters: TrackingParameters struct
     override open func track(trackingParameters: TrackingParameters) {
         let message = "Event: \(String(describing: trackingParameters.eventName)) Name: \(String(describing: trackingParameters.name)) ItemId: \(String(describing: trackingParameters.itemId))"
         TestFairy.log(message)
@@ -49,7 +52,7 @@ open class TestFairyTracker: Tracker {
     
     /// Set Tracking - Not implemented.
     ///
-    /// - Parameter enabled: Enabled
+    /// - Parameter enabled: Bool
     override open func setTracking(enabled: Bool) {
         // NO-OP
     }
@@ -63,6 +66,10 @@ open class TestFairyTracker: Tracker {
         // #endif
     }
     
+    
+    /// Track custom parameters. Tracks a user identifier parameter, and ignores all others.
+    ///
+    /// - Parameter trackerKeys: TrackerKeys struct
     override open func track(trackerKeys: TrackerKeys) {
         
         for (key,value) in trackerKeys.customKeys {
@@ -74,6 +81,7 @@ open class TestFairyTracker: Tracker {
         }
     }
     
+    /// Buiulder for the tracker.
     open class TestFairyBuilder: Tracker.Builder {
         var uiEventLogging = false
         
@@ -85,8 +93,12 @@ open class TestFairyTracker: Tracker {
             return TestFairyTracker(builder: self)
         }
         
-        open func setUIEventLogging(enable: Bool) -> TestFairyTracker.Builder {
-            uiEventLogging = enable
+        /// Set UI event logging. This is not currently implemented.
+        ///
+        /// - Parameter enabled: Bool
+        /// - Returns: Builder object so that it can be chained.
+        open func setUIEventLogging(enabled: Bool) -> TestFairyTracker.Builder {
+            uiEventLogging = enabled
             return self
         }
     }
