@@ -143,16 +143,12 @@ open class StanwoodAnalytics {
     open static func builder() -> Builder {
         return Builder()
     }
-    
-    /**
-     
-     Track the parameters. Which parameters that are actually tracked depends on
-     the implementation of each tracker.
-     
-     - Parameter: TrackingParameters
 
-     */
-    
+    /// Track data using TrackingParameters struct. It iterates over all the trackers and calls track on each.
+    ///
+    /// The parameters that are tracked depends on how each tracker is configured.
+    ///
+    /// - Parameter trackingParameters: TrackingParameters struct
     open func track(trackingParameters: TrackingParameters) {
         if trackingEnable == true {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
@@ -180,12 +176,10 @@ open class StanwoodAnalytics {
             })
         }
     }
-    
-    /**
-     Returns the stored value for the tracking setting.
-     
-     This is the value used for the next application start.
- */
+
+    /// Tracking Enabled. This is the value used for the next application start.
+    ///
+    /// - Returns: Bool value that is stored in UserDefaults.
     open static func trackingEnabled() -> Bool {
         return DataStore.trackingEnabled
     }
@@ -204,24 +198,24 @@ open class StanwoodAnalytics {
         
         track(trackingParameters: params)
     }
-    
-    /**
-     Set this value to false to stop the tracking, and on the next start it will be fully disabled.
-     It is on by default.
-     
-     If tracking is off, enabling it will call start in all the trackers.
-     
-     This functionality is intended to be compatible with the EU directive on GDPR, and allows users to disable tracking in all frameworks.
-     
-     As tracking is not disabled immediately an alert (localised in English and German) is displayed informing the user of this. To display the alert the framework assumes that the root view controller is either a UIViewController or a UINavigationController. If this is not the case the alert will fail to show. An optional parameter is provided to support injecting a view controller so that the present method can be called on it and display the alert that way.
-     
-     - Parameter enable
-        Enable or disable tracking. Will display an alert when disabled.
- 
-     - Parameter viewController
-         An optional parameter for a viewController to display the alert controller when disabling tracking.
-    */
-    
+
+    /// Set this value to false to stop the tracking, and on the next start it will be fully disabled.
+    /// It is on by default.
+    ///
+    /// If tracking is off, enabling it will call start in all the trackers.
+    ///
+    /// This functionality is intended to be compatible with the EU directive on GDPR, and
+    /// allows users to disable tracking in all frameworks.
+    ///
+    /// As tracking is not disabled immediately an alert (localised in English and German) is displayed
+    /// informing the user of this. To display the alert the framework assumes that the root view controller
+    /// is either a UIViewController or a UINavigationController. If this is not the case the alert will
+    /// fail to show. An optional parameter is provided to support injecting a view controller so that the
+    /// present method can be called on it and display the alert that way.
+    ///
+    /// - Parameters:
+    ///   - enabled: Bool. Will display an alert when disabled.
+    ///   - viewController: UIViewController. An optional parameter for a viewController to display the alert controller when disabling tracking.
     open func setTracking(enabled: Bool, on viewController: UIViewController? = nil) {
         
         if enabled == false {
@@ -279,12 +273,10 @@ open class StanwoodAnalytics {
         let bundle = Bundle(url: bundleURL!)
         return NSLocalizedString(key, bundle: bundle!, comment: "")
     }
-    
-    /**
-     
-     Track specific keys.
-     
-    */
+
+    /// Track custom keys. The implementation depends on the mapping in the custom trackers.
+    ///
+    /// - Parameter trackerKeys: TrackerKeys struct
     open func track(trackerKeys: TrackerKeys) {
         if trackingEnable == true {
             trackers.forEach {$0.track(trackerKeys: trackerKeys) }
@@ -302,28 +294,20 @@ open class StanwoodAnalytics {
         return message
     }
     
-    /**
-     
-     Track NSError objects.
-     
-     - Parameter error
- 
-    */
+    /// Track NSError. Each tracker has a custom implementation for this method.
+    ///
+    /// - Parameter error: NSError
     open func track(error: NSError) {
         if trackingEnable == true {
             trackers.forEach { $0.track(error: error) }
         }
     }
-    
-    /**
-     
-     Helper function to track the screen name along with the class name.
-     
-     - Parameter name
-     - Parameter className
-     
-    */
-    
+
+    /// Track Screen: Helper function to track the screen name along with the class name.
+    ///
+    /// - Parameters:
+    ///   - name: String
+    ///   - className: String
     open func trackScreen(name: String, className: String? = nil) {
         var trackerKeys = TrackerKeys()
         trackerKeys.customKeys = [StanwoodAnalytics.Keys.screenName: name]
@@ -332,12 +316,8 @@ open class StanwoodAnalytics {
         }
         track(trackerKeys: trackerKeys)
     }
-    
-    /**
- 
-     The builder for this class.
-     
-    */
+
+    /// The builder for this class.
     open class Builder {
         var trackers: [Tracker] = []
         var notificationsEnabled = false
@@ -368,9 +348,6 @@ open class StanwoodAnalytics {
         public func build() -> StanwoodAnalytics {
             return StanwoodAnalytics(builder: self)
         }
- 
-        // public func setExceptionTracking(enable: Bool) {
-        //}
     }
 }
 

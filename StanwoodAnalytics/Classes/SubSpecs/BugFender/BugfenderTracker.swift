@@ -150,31 +150,3 @@ open class BugfenderTracker: Tracker {
         }
     }
 }
-
-
-//
-//public protocol BugfenderBase {
-//    static func activateLogger(_ key: String)
-//    static func enableUIEventLogging()
-//    static func log(lineNumber: Int?, method: String?, file: String?, level: BugfenderType, tag: String?, message: String)
-//}
-//
-//class BugfenderMock: BugfenderBase {
-//
-//    static func activateLogger(_ key: String) {
-//
-//    }
-//
-//    static func enableUIEventLogging() {
-//
-//    }
-//
-//    static func log(lineNumber: Int?, method: String?, file: String?, level: BugfenderType, tag: String?, message: String) {
-//        print("Line: \(String(describing:lineNumber))")
-//        print("Method: \(String(describing:method))")
-//        print("File: \(String(describing:file))")
-//        print("Tag: \(String(describing:tag))")
-//        print("Message: \(String(describing:message))")
-//    }
-//}
-

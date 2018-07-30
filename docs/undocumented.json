@@ -1455,27 +1455,6 @@
       "symbol": "GoogleMapFunction",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/TestFairy/TestFairyTracker.swift",
-      "line": 77,
-      "symbol": "TestFairyTracker.TestFairyBuilder",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/TestFairy/TestFairyTracker.swift",
-      "line": 77,
-      "symbol": "TestFairyTracker.TestFairyBuilder",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS/StanwoodAnalytics/Classes/SubSpecs/TestFairy/TestFairyTracker.swift",
-      "line": 77,
-      "symbol": "TestFairyTracker.TestFairyBuilder",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/ronanocsono/CustomerProjects/Stanwood/Stanwood_Analytics_iOS"
