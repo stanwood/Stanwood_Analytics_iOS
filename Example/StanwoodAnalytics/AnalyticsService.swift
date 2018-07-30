@@ -26,7 +26,7 @@ struct CustomMapFunction: MapFunction {
     
     public func mapScreenName(parameters: TrackingParameters) -> String? {
         
-        if parameters.eventName.lowercased() == TrackingEvent.viewItem.rawValue.lowercased() {
+        if parameters.eventName.lowercased() == StanwoodAnalytics.TrackingEvent.viewItem.rawValue.lowercased() {
             return parameters.name
         }
         return nil
@@ -127,7 +127,7 @@ struct AnalyticsService {
     
     static func setTracking(enable: Bool, viewController: UIViewController? = nil) {
         guard let analytics = AnalyticsService.analytics else { return }
-        analytics.setTracking(enable: enable, on: viewController)
+        analytics.setTracking(enabled: enable, on: viewController)
     }
     
     static func track(error: Error) {
@@ -149,7 +149,7 @@ struct AnalyticsService {
         guard let analytics = AnalyticsService.analytics else { return }
         analytics.trackScreen(name: name, className: className)
         
-        let trackingParameters = TrackingParameters.init(eventName: TrackingEvent.viewItem.rawValue, name: name)
+        let trackingParameters = TrackingParameters.init(eventName: StanwoodAnalytics.TrackingEvent.viewItem.rawValue, name: name)
         analytics.track(trackingParameters: trackingParameters)
     }
     

@@ -26,6 +26,11 @@
 import Foundation
 import BugfenderSDK
 
+/// An enum to define the type of log to record. Logs are filtered according to type.
+///
+/// - info: Info
+/// - warning: Warning
+/// - error: Error
 public enum BugfenderType: Int {
     case info
     case warning
@@ -41,6 +46,8 @@ public enum BugfenderType: Int {
     }
 }
 
+
+/// Bugfender Tracker
 open class BugfenderTracker: Tracker {
     
     init(builder: BugfenderBuilder) {
@@ -55,6 +62,7 @@ open class BugfenderTracker: Tracker {
         }
     }
     
+    /// Start logging. Calls activateLogger and enables UI event logging.
     open override func start() {
         Bugfender.activateLogger(key!)
         
@@ -63,6 +71,9 @@ open class BugfenderTracker: Tracker {
         }
     }
     
+    /// Track data using TrackingParameters description.
+    ///
+    /// - Parameter trackingParameters: TrackingParameters struct
     override open func track(trackingParameters: TrackingParameters) {
         
         guard let contentType = trackingParameters.contentType else { return }
@@ -87,7 +98,11 @@ open class BugfenderTracker: Tracker {
                       message: trackingParameters.description ?? "")
     }
     
-    override open func setTracking(enable: Bool) {
+    
+    /// Set Tracking. Not implemented.
+    ///
+    /// - Parameter enabled: Enabled
+    override open func setTracking(enabled: Bool) {
         // NO-OP
     }
     
@@ -102,12 +117,11 @@ open class BugfenderTracker: Tracker {
                           message: description)
         }
     }
+
     
-    /**
-     
-     Not used
- 
-    */
+    /// Track - no implemented.
+    ///
+    /// - Parameter trackerKeys: TrackerKeys struct
     override open func track(trackerKeys: TrackerKeys) {
         // Not used
     }
@@ -119,10 +133,17 @@ open class BugfenderTracker: Tracker {
             super.init(context: context, key: key)
         }
 
+        /// Build the tracker
+        ///
+        /// - Returns: Fully configured tracker
         open override func build() -> BugfenderTracker {
             return BugfenderTracker(builder: self)
         }
         
+        /// Enable UI event logging.
+        ///
+        /// - Parameter enable: Enable logging
+        /// - Returns: The builder
         open func setUIEventLogging(enable: Bool) -> BugfenderTracker.Builder {
             uiEventLogging = enable
             return self
@@ -130,28 +151,30 @@ open class BugfenderTracker: Tracker {
     }
 }
 
-public protocol BugfenderBase {
-    static func activateLogger(_ key: String)
-    static func enableUIEventLogging()
-    static func log(lineNumber: Int?, method: String?, file: String?, level: BugfenderType, tag: String?, message: String)
-}
 
-class BugfenderMock: BugfenderBase {
-    
-    static func activateLogger(_ key: String) {
-        
-    }
-    
-    static func enableUIEventLogging() {
-        
-    }
-    
-    static func log(lineNumber: Int?, method: String?, file: String?, level: BugfenderType, tag: String?, message: String) {
-        print("Line: \(String(describing:lineNumber))")
-        print("Method: \(String(describing:method))")
-        print("File: \(String(describing:file))")
-        print("Tag: \(String(describing:tag))")
-        print("Message: \(String(describing:message))")
-    }
-}
+//
+//public protocol BugfenderBase {
+//    static func activateLogger(_ key: String)
+//    static func enableUIEventLogging()
+//    static func log(lineNumber: Int?, method: String?, file: String?, level: BugfenderType, tag: String?, message: String)
+//}
+//
+//class BugfenderMock: BugfenderBase {
+//
+//    static func activateLogger(_ key: String) {
+//
+//    }
+//
+//    static func enableUIEventLogging() {
+//
+//    }
+//
+//    static func log(lineNumber: Int?, method: String?, file: String?, level: BugfenderType, tag: String?, message: String) {
+//        print("Line: \(String(describing:lineNumber))")
+//        print("Method: \(String(describing:method))")
+//        print("File: \(String(describing:file))")
+//        print("Tag: \(String(describing:tag))")
+//        print("Message: \(String(describing:message))")
+//    }
+//}
 

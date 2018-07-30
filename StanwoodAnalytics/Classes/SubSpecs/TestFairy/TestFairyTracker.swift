@@ -25,6 +25,7 @@
 
 import Foundation
 
+/// TestFairy Tracker
 open class TestFairyTracker: Tracker {
     
     init(builder: TestFairyBuilder) {
@@ -46,10 +47,16 @@ open class TestFairyTracker: Tracker {
         TestFairy.log(message)
     }
     
-    override open func setTracking(enable: Bool) {
+    /// Set Tracking - Not implemented.
+    ///
+    /// - Parameter enabled: Enabled
+    override open func setTracking(enabled: Bool) {
         // NO-OP
     }
     
+    /// Track Error - Not implemented.
+    ///
+    /// - Parameter error: NSError
     override open func track(error: NSError) {
         // #if DEBUG || BETA
         // TFLogv(message, getVaList(args))
