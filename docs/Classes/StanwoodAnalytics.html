@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           StanwoodAnalytics Docs
         </a>
-         (71% documented)
+         (72% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -111,6 +111,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/TestFairyTracker.html">TestFairyTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TestFairyTracker/TestFairyBuilder.html">– TestFairyBuilder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/BugfenderTracker.html">BugfenderTracker</a>
@@ -300,8 +303,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Track the parameters. Which parameters that are actually tracked depends on
-the implementation of each tracker.</p>
+                        <p>Track data using TrackingParameters struct. It iterates over all the trackers and calls track on each.</p>
+
+<p>The parameters that are tracked depends on how each tracker is configured.</p>
 
                       </div>
                       <div class="declaration">
@@ -311,6 +315,25 @@ the implementation of each tracker.</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">trackingParameters</span><span class="p">:</span> <span class="kt"><a href="../Structs/TrackingParameters.html">TrackingParameters</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trackingParameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>TrackingParameters struct</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -328,9 +351,7 @@ the implementation of each tracker.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the stored value for the tracking setting.</p>
-
-<p>This is the value used for the next application start.</p>
+                        <p>Tracking Enabled. This is the value used for the next application start.</p>
 
                       </div>
                       <div class="declaration">
@@ -340,6 +361,10 @@ the implementation of each tracker.</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">trackingEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool value that is stored in UserDefaults.</p>
                       </div>
                     </section>
                   </div>
@@ -362,9 +387,14 @@ It is on by default.</p>
 
 <p>If tracking is off, enabling it will call start in all the trackers.</p>
 
-<p>This functionality is intended to be compatible with the EU directive on GDPR, and allows users to disable tracking in all frameworks.</p>
+<p>This functionality is intended to be compatible with the EU directive on GDPR, and
+allows users to disable tracking in all frameworks.</p>
 
-<p>As tracking is not disabled immediately an alert (localised in English and German) is displayed informing the user of this. To display the alert the framework assumes that the root view controller is either a UIViewController or a UINavigationController. If this is not the case the alert will fail to show. An optional parameter is provided to support injecting a view controller so that the present method can be called on it and display the alert that way.</p>
+<p>As tracking is not disabled immediately an alert (localised in English and German) is displayed
+informing the user of this. To display the alert the framework assumes that the root view controller
+is either a UIViewController or a UINavigationController. If this is not the case the alert will
+fail to show. An optional parameter is provided to support injecting a view controller so that the
+present method can be called on it and display the alert that way.</p>
 
                       </div>
                       <div class="declaration">
@@ -374,6 +404,37 @@ It is on by default.</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setTracking</span><span class="p">(</span><span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">on</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bool. Will display an alert when disabled.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UIViewController. An optional parameter for a viewController to display the alert controller when disabling tracking.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -391,7 +452,7 @@ It is on by default.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Track specific keys.</p>
+                        <p>Track custom keys. The implementation depends on the mapping in the custom trackers.</p>
 
                       </div>
                       <div class="declaration">
@@ -401,6 +462,25 @@ It is on by default.</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">trackerKeys</span><span class="p">:</span> <span class="kt"><a href="../Core.html#/s:17StanwoodAnalytics11TrackerKeysV">TrackerKeys</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trackerKeys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>TrackerKeys struct</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -418,7 +498,7 @@ It is on by default.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Track NSError objects.</p>
+                        <p>Track NSError. Each tracker has a custom implementation for this method.</p>
 
                       </div>
                       <div class="declaration">
@@ -428,6 +508,25 @@ It is on by default.</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">track</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>NSError</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -445,7 +544,7 @@ It is on by default.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Helper function to track the screen name along with the class name.</p>
+                        <p>Track Screen: Helper function to track the screen name along with the class name.</p>
 
                       </div>
                       <div class="declaration">
@@ -455,6 +554,37 @@ It is on by default.</p>
                           <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">trackScreen</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">className</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>className</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
