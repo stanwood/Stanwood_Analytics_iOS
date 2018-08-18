@@ -9,7 +9,7 @@
 import UIKit
 
 struct SecondWireframe {
-    static func prepare(parameters:SecondViewParametable, action: Actionable) -> SecondViewController {
+    static func prepare(parameters: SecondViewParametable, action: Actionable) -> SecondViewController {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         secondViewController.action = action

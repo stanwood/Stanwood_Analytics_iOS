@@ -28,8 +28,7 @@ import Foundation
 /// A Struct to contain custom keys.
 public struct TrackerKeys {
     public var customKeys: [String: Any] = [:]
-    
+
     public init() {
-        
     }
 }

@@ -36,14 +36,14 @@ open class MixpanelTracker: Tracker {
     /// - Parameter builder: Builder
     init(builder: MixpanelBuilder) {
         super.init(builder: builder)
-        
+
         super.checkKey()
-        
+
         if StanwoodAnalytics.trackingEnabled() == true {
             start()
         }
     }
-    
+
     /// Start the tracking. Calls Mixpanel initialise. Logging is enabled.
     open override func start() {
         Mixpanel.initialize(token: key!)
@@ -53,9 +53,9 @@ open class MixpanelTracker: Tracker {
     /// Tracks all the non-nil properties under event name.
     ///
     /// - Parameter trackingParameters: Tracking parameters struct
-    override open func track(trackingParameters: TrackingParameters) {
+    open override func track(trackingParameters: TrackingParameters) {
 
-        var properties: [String:String] = [:]
+        var properties: [String: String] = [:]
         properties["EventName"] = trackingParameters.eventName
 
         if let name = trackingParameters.name {
@@ -77,33 +77,32 @@ open class MixpanelTracker: Tracker {
         if let description = trackingParameters.description {
             properties["Description"] = description
         }
-        
-        trackingParameters.customParameters.forEach { (arg) in
+
+        trackingParameters.customParameters.forEach { arg in
             let (key, value) = arg
             properties[key] = value as? String
         }
 
         Mixpanel.mainInstance().track(event: trackingParameters.eventName, properties: properties)
     }
-    
-    
+
     /// Set the opt-in or opt-out tracking in the framework.
     ///
     /// - Parameter enabled: Enable tracking.
-    override open func setTracking(enabled: Bool) {
+    open override func setTracking(enabled: Bool) {
         Mixpanel.mainInstance().loggingEnabled = enabled
-        
+
         if enabled == true {
             Mixpanel.mainInstance().optInTracking()
         } else {
             Mixpanel.mainInstance().optOutTracking()
         }
     }
-    
+
     /// Track error is not implemented for this framework.
     ///
     /// - Parameter error: NSError
-    override open func track(error: NSError) {
+    open override func track(error _: NSError) {
         // Not tracking errors
     }
 
@@ -112,9 +111,9 @@ open class MixpanelTracker: Tracker {
     /// Custom keys are used to track the user identifier, email or screen name.
     ///
     /// - Parameter trackerKeys: Tracker keys struct
-    override open func track(trackerKeys: TrackerKeys) {
+    open override func track(trackerKeys: TrackerKeys) {
 
-        for (key,value) in trackerKeys.customKeys {
+        for (key, value) in trackerKeys.customKeys {
             if key == StanwoodAnalytics.Keys.screenName {
                 if let screenName = value as? String {
                     Mixpanel.mainInstance().track(event: key, properties: [key: screenName])

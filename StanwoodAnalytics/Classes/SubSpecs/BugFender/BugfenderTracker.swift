@@ -35,7 +35,7 @@ public enum BugfenderType: Int {
     case info
     case warning
     case error
-    
+
     static func map(type: String) -> BugfenderType {
         if type.lowercased() == "warning" {
             return .warning
@@ -46,40 +46,39 @@ public enum BugfenderType: Int {
     }
 }
 
-
 /// Bugfender Tracker
 open class BugfenderTracker: Tracker {
-    
+
     init(builder: BugfenderBuilder) {
         super.init(builder: builder)
-        
+
         loggingEnabled = builder.uiEventLogging
-        
+
         super.checkKey()
-        
+
         if StanwoodAnalytics.trackingEnabled() == true {
             start()
         }
     }
-    
+
     /// Start logging. Calls activateLogger and enables UI event logging.
     open override func start() {
         Bugfender.activateLogger(key!)
-        
+
         if loggingEnabled == true {
             Bugfender.enableUIEventLogging()
         }
     }
-    
+
     /// Track data using TrackingParameters description.
     ///
     /// - Parameter trackingParameters: TrackingParameters struct
-    override open func track(trackingParameters: TrackingParameters) {
-        
+    open override func track(trackingParameters: TrackingParameters) {
+
         guard let contentType = trackingParameters.contentType else { return }
-        
+
         let level = BugfenderType.map(type: contentType)
-        
+
         var bugfenderLevel = BFLogLevel.default
         switch level {
         case .warning:
@@ -89,7 +88,7 @@ open class BugfenderTracker: Tracker {
         default:
             bugfenderLevel = BFLogLevel.default
         }
-        
+
         Bugfender.log(lineNumber: 0,
                       method: "",
                       file: "",
@@ -97,17 +96,16 @@ open class BugfenderTracker: Tracker {
                       tag: "",
                       message: trackingParameters.description ?? "")
     }
-    
-    
+
     /// Set Tracking. Not implemented.
     ///
     /// - Parameter enabled: Enabled
-    override open func setTracking(enabled: Bool) {
+    open override func setTracking(enabled _: Bool) {
         // NO-OP
     }
-    
-    override open func track(error: NSError) {
-        
+
+    open override func track(error: NSError) {
+
         if let description = error.userInfo[StanwoodAnalytics.Keys.localizedDescription] as? String {
             Bugfender.log(lineNumber: 0,
                           method: error.domain,
@@ -118,14 +116,13 @@ open class BugfenderTracker: Tracker {
         }
     }
 
-    
     /// Track - no implemented.
     ///
     /// - Parameter trackerKeys: TrackerKeys struct
-    override open func track(trackerKeys: TrackerKeys) {
+    open override func track(trackerKeys _: TrackerKeys) {
         // Not used
     }
-    
+
     open class BugfenderBuilder: Tracker.Builder {
         var uiEventLogging = false
 
@@ -139,7 +136,7 @@ open class BugfenderTracker: Tracker {
         open override func build() -> BugfenderTracker {
             return BugfenderTracker(builder: self)
         }
-        
+
         /// Enable UI event logging.
         ///
         /// - Parameter enable: Enable logging
