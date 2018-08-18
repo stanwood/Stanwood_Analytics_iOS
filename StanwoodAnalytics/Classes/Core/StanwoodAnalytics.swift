@@ -28,18 +28,18 @@ import UserNotifications
 
 /**
  Protocol to map tracking parameters to a dictionary of [String:NSString] and removes all optionals.
- 
+
  Implement this protocol when it is necessary to map keys to other values for different trackers.
  */
 public protocol ParameterMapper {
-    func map(parameters: TrackingParameters) -> [String:NSString]
+    func map(parameters: TrackingParameters) -> [String: NSString]
 }
 
 /**
-  The base class for Analytics 
-*/
+ The base class for Analytics
+ */
 open class StanwoodAnalytics {
-    
+
     // MARK: Properties
     /// :nodoc:
     private var trackingEnable: Bool = false
@@ -53,12 +53,12 @@ open class StanwoodAnalytics {
     private let trackingOptOut = "tracking_opt_out"
     /// :nodoc:
     private let trackingOptIn = "tracking_opt_in"
-    
+
     /**
-     
+
      Keys for user parameters.
- 
-    */
+
+     */
     public struct Keys {
         public static let localizedDescription = "localizedDescription"
         public static let identifier = "id"
@@ -67,79 +67,79 @@ open class StanwoodAnalytics {
         public static let screenName = "screenName"
         public static let screenClass = "screenClass"
     }
-    
+
     /**
      The event types used for tracking.
-    */
+     */
     public enum TrackingEvent: String {
-        
+
         case viewItem = "view_item"
         case purchase = "ecommerce_purchase"
-        case login = "login"
+        case login
         case selectContent = "select_content"
         case viewItemList = "view_item_list"
         case viewSearchResults = "view_search_results"
-        case share = "share"
-        case message = "message"
-        case debug = "debug"
+        case share
+        case message
+        case debug
         case identifyUser = "identify_user"
     }
 
     /**
-     
+
      Init method using the Builder pattern.
-      
-     - Parameter builder: 
-         The builder pattern is used here to configure the analytics instance. 
-    */
+
+     - Parameter builder:
+     The builder pattern is used here to configure the analytics instance.
+     */
     public init(builder: Builder) {
         trackers = builder.trackers
-        
+
         notificationsEnabled = builder.notificationsEnabled
-        
+
         if notificationsEnabled == true {
             addNotifications(with: builder.notificationDelegate!)
         }
-        
+
         trackingEnable = DataStore.trackingEnabled
-        
+
         if trackingEnable == true {
             trackSwitch(enabled: trackingEnable)
         }
     }
-    
+
     /// :nodoc:
     fileprivate func addNotifications(with delegate: UIViewController) {
         let center = UNUserNotificationCenter.current()
-        
+
         center.requestAuthorization(options: options) {
-            (granted, error) in
+            granted, _ in
             if !granted {
                 print("Something went wrong")
             }
         }
-        
-        center.getNotificationSettings { (settings) in
+
+        center.getNotificationSettings { settings in
             if settings.authorizationStatus != .authorized {
                 // Notifications not allowed
             }
         }
-        
+
         center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
-    
+
     /// :nodoc:
     private func start() {
         trackers.forEach {
             $0.start()
         }
     }
-    
+
     /**
-     
+
      The Builder for this class.
-     
-    */
+
+     */
     open static func builder() -> Builder {
         return Builder()
     }
@@ -152,11 +152,11 @@ open class StanwoodAnalytics {
     open func track(trackingParameters: TrackingParameters) {
         if trackingEnable == true {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
-            
+
             showNotification(with: trackingParameters.debugInfo())
         }
     }
-    
+
     /// :nodoc:
     fileprivate func showNotification(with message: String) {
         if notificationsEnabled == true {
@@ -164,12 +164,12 @@ open class StanwoodAnalytics {
             content.title = "Track event"
             content.body = message
             content.sound = UNNotificationSound.default()
-            
+
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
             let center = UNUserNotificationCenter.current()
             let identifier = "Tracking Notification"
             let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
-            center.add(request, withCompletionHandler: { (error) in
+            center.add(request, withCompletionHandler: { error in
                 if error != nil {
                     print("StanwoodAnalytics Error: Completion block for notification.")
                 }
@@ -183,19 +183,19 @@ open class StanwoodAnalytics {
     open static func trackingEnabled() -> Bool {
         return DataStore.trackingEnabled
     }
-    
+
     /// :nodoc:
     private func trackSwitch(enabled: Bool) {
-        
+
         let eventName = enabled ? trackingOptOut : trackingOptIn
-        
+
         let params = TrackingParameters(eventName: eventName,
                                         itemId: "",
                                         name: "",
                                         description: nil,
                                         category: "",
                                         contentType: "")
-        
+
         track(trackingParameters: params)
     }
 
@@ -217,11 +217,11 @@ open class StanwoodAnalytics {
     ///   - enabled: Bool. Will display an alert when disabled.
     ///   - viewController: UIViewController. An optional parameter for a viewController to display the alert controller when disabling tracking.
     open func setTracking(enabled: Bool, on viewController: UIViewController? = nil) {
-        
+
         if enabled == false {
             showAlert(on: viewController)
         }
-        
+
         if trackingEnable == true {
             if enabled == false {
                 // turn off tracking
@@ -238,19 +238,19 @@ open class StanwoodAnalytics {
         }
 
         DataStore.setTracking(enabled: enabled)
-        
+
         if enabled == true {
             trackSwitch(enabled: enabled)
         }
     }
-    
+
     /// :nodoc:
     private func showAlert(on viewController: UIViewController? = nil) {
         var rootViewController: UIViewController
-        
+
         if viewController == nil {
             rootViewController = (UIApplication.shared.keyWindow?.rootViewController)!
-            
+
             if rootViewController is UINavigationController {
                 let controller = rootViewController as! UINavigationController
                 rootViewController = controller.visibleViewController!
@@ -258,14 +258,14 @@ open class StanwoodAnalytics {
         } else {
             rootViewController = viewController!
         }
-        
+
         let message = localised(key: "ALERT_MESSAGE")
         let buttonTitle = localised(key: "ALERT_BUTTON_TITLE")
         let alert = AlertFactory.makeAlert(message: message, buttonTitle: buttonTitle)
-            
+
         rootViewController.present(alert, animated: true, completion: nil)
     }
-    
+
     /// :nodoc:
     private func localised(key: String) -> String {
         let frameworkBundle = Bundle(for: StanwoodAnalytics.self)
@@ -279,21 +279,21 @@ open class StanwoodAnalytics {
     /// - Parameter trackerKeys: TrackerKeys struct
     open func track(trackerKeys: TrackerKeys) {
         if trackingEnable == true {
-            trackers.forEach {$0.track(trackerKeys: trackerKeys) }
-            
+            trackers.forEach { $0.track(trackerKeys: trackerKeys) }
+
             showNotification(with: serializeKeys(trackerKeys: trackerKeys))
         }
     }
-    
+
     /// :nodoc:
     fileprivate func serializeKeys(trackerKeys: TrackerKeys) -> String {
         var message = ""
-        for (key,value) in trackerKeys.customKeys {
+        for (key, value) in trackerKeys.customKeys {
             message.append(key + " " + String(describing: value))
         }
         return message
     }
-    
+
     /// Track NSError. Each tracker has a custom implementation for this method.
     ///
     /// - Parameter error: NSError
@@ -322,29 +322,29 @@ open class StanwoodAnalytics {
         var trackers: [Tracker] = []
         var notificationsEnabled = false
         var notificationDelegate: UIViewController?
-        
+
         /**
          Add a tracker to the builder.
-         
+
          - Parameter tracker
- */
+         */
         public func add(tracker: Tracker) -> Builder {
             trackers.append(tracker)
             return self
         }
-        
+
         /**
          Set a delegate to display local notifications. This is used for debugging the tracking. It will display a local notification for each time track is called.
-        */
+         */
         public func setNotificationDelegate(delegate: UIViewController) -> Builder {
             notificationsEnabled = true
             notificationDelegate = delegate
             return self
         }
-        
+
         /**
-           Build the analytics object.
-        */
+         Build the analytics object.
+         */
         public func build() -> StanwoodAnalytics {
             return StanwoodAnalytics(builder: self)
         }

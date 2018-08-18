@@ -24,20 +24,20 @@ public struct TrackingParameters {
     /// Content Type
     public var contentType: String?
     /// Define custom parameters here
-    public var customParameters: [String:Any] = [:]
+    public var customParameters: [String: Any] = [:]
 
     /// Init with event name only. The remaining parameters are all set to nil.
     ///
     /// - Parameter eventName: event name
     public init(eventName: String) {
         self.eventName = eventName
-        self.itemId = nil
-        self.name = nil
-        self.description = nil
-        self.category = nil
-        self.contentType = nil
+        itemId = nil
+        name = nil
+        description = nil
+        category = nil
+        contentType = nil
     }
-    
+
     /// Init with all the parameters. Event name is required, the remaining parameters are optionals.
     ///
     /// - Parameters:
@@ -53,7 +53,7 @@ public struct TrackingParameters {
                 description: String?,
                 category: String?,
                 contentType: String?) {
-        
+
         self.eventName = eventName
         self.itemId = itemId
         self.name = name
@@ -61,7 +61,7 @@ public struct TrackingParameters {
         self.category = category
         self.contentType = contentType
     }
-    
+
     /// Init with event name and content type only. The remaining parameters are all set to nil.
     ///
     /// - Parameters:
@@ -69,15 +69,15 @@ public struct TrackingParameters {
     ///   - contentType: content type
     public init(eventName: String,
                 contentType: String?) {
-        
+
         self.eventName = eventName
-        self.itemId = nil
-        self.name = nil
-        self.description = nil
-        self.category = nil
+        itemId = nil
+        name = nil
+        description = nil
+        category = nil
         self.contentType = contentType
     }
-    
+
     /// Init with event name and name only. The remaining parameters are all set to nil.
     ///
     /// - Parameters:
@@ -85,41 +85,41 @@ public struct TrackingParameters {
     ///   - name: name
     public init(eventName: String,
                 name: String?) {
-        
+
         self.eventName = eventName
-        self.itemId = nil
+        itemId = nil
         self.name = name
-        self.description = nil
-        self.category = nil
-        self.contentType = nil
+        description = nil
+        category = nil
+        contentType = nil
     }
-    
+
     /// The info displayed for the local notification when debugging tracking.
     ///
-    /// - Returns: A string with each non-nil parameter 
+    /// - Returns: A string with each non-nil parameter
     public func debugInfo() -> String {
         var line1 = "Event: " + eventName + "\n"
-        
+
         if let debugName = name {
             line1.append("Name: " + debugName + " ")
         }
-        
+
         if let debugId = itemId {
             line1.append("ItemId: " + debugId + " ")
         }
-        
+
         if let debugDescription = description {
             line1.append("Description: " + debugDescription + " ")
         }
-        
+
         if let debugCategory = category {
             line1.append("Category: " + debugCategory + " ")
         }
-        
+
         if let debugContentType = contentType {
             line1.append("Content Type: " + debugContentType + " ")
         }
-        
+
         return line1
     }
 }
