@@ -27,52 +27,51 @@ import Foundation
 
 /// TestFairy Tracker
 open class TestFairyTracker: Tracker {
-    
+
     init(builder: TestFairyBuilder) {
         super.init(builder: builder)
-        
+
         super.checkKey()
-        
+
         if StanwoodAnalytics.trackingEnabled() == true {
             start()
         }
     }
-    
+
     open override func start() {
         TestFairy.begin(key)
     }
-    
+
     /// Track event. It records eventName, name and itemId.
     ///
     /// - Parameter trackingParameters: TrackingParameters struct
-    override open func track(trackingParameters: TrackingParameters) {
+    open override func track(trackingParameters: TrackingParameters) {
         let message = "Event: \(String(describing: trackingParameters.eventName)) Name: \(String(describing: trackingParameters.name)) ItemId: \(String(describing: trackingParameters.itemId))"
         TestFairy.log(message)
     }
-    
+
     /// Set Tracking - Not implemented.
     ///
     /// - Parameter enabled: Bool
-    override open func setTracking(enabled: Bool) {
+    open override func setTracking(enabled _: Bool) {
         // NO-OP
     }
-    
+
     /// Track Error - Not implemented.
     ///
     /// - Parameter error: NSError
-    override open func track(error: NSError) {
+    open override func track(error _: NSError) {
         // #if DEBUG || BETA
         // TFLogv(message, getVaList(args))
         // #endif
     }
-    
-    
+
     /// Track custom parameters. Tracks a user identifier parameter, and ignores all others.
     ///
     /// - Parameter trackerKeys: TrackerKeys struct
-    override open func track(trackerKeys: TrackerKeys) {
-        
-        for (key,value) in trackerKeys.customKeys {
+    open override func track(trackerKeys: TrackerKeys) {
+
+        for (key, value) in trackerKeys.customKeys {
             if key == StanwoodAnalytics.Keys.identifier {
                 if let userId = value as? String {
                     TestFairy.setUserId(userId)
@@ -80,19 +79,19 @@ open class TestFairyTracker: Tracker {
             }
         }
     }
-    
+
     /// Buiulder for the tracker.
     open class TestFairyBuilder: Tracker.Builder {
         var uiEventLogging = false
-        
+
         public override init(context: UIApplication, key: String?) {
             super.init(context: context, key: key)
         }
-        
+
         open override func build() -> TestFairyTracker {
             return TestFairyTracker(builder: self)
         }
-        
+
         /// Set UI event logging. This is not currently implemented.
         ///
         /// - Parameter enabled: Bool

@@ -25,10 +25,9 @@
 
 import UIKit
 
-
 /// A Factory class that returns an AlertController
 public class AlertFactory {
-    
+
     /// Returns an AlertViewController with an OK button and displays a message on the view controller.
     ///
     /// - Parameters:
