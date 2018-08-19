@@ -186,9 +186,7 @@ open class StanwoodAnalytics {
 
     /// :nodoc:
     private func trackSwitch(enabled: Bool) {
-
-        let eventName = enabled ? trackingOptOut : trackingOptIn
-
+        let eventName = enabled ? trackingOptIn : trackingOptOut
         let params = TrackingParameters(eventName: eventName,
                                         itemId: "",
                                         name: "",
