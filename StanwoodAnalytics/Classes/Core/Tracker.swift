@@ -30,6 +30,7 @@ struct BuildConfiguration {
     static let debug = true
 }
 
+/// The base class that must be subclassed for each analytics or logging frameworks
 open class Tracker {
     let key: String?
     var loggingEnabled: Bool = false
@@ -37,7 +38,10 @@ open class Tracker {
     let logLevel: Int
     let isDebug: Bool
     private let placeholderString = "your-key-here"
-    
+
+    /// Init method
+    ///
+    /// - Parameter builder: The build class for this tracker
     public init(builder: Builder) {
         DataStore.registerDefaults()
         context = builder.context
@@ -46,64 +50,97 @@ open class Tracker {
         logLevel = builder.logLevel
         isDebug = builder.isDebug
     }
-    
+
     final func checkKey() {
         if key == placeholderString || key?.count == 0 {
-            print("StanwoodAnalytics Error: No key defined for class: \(String(describing:self))")
+            print("StanwoodAnalytics Error: No key defined for class: \(String(describing: self))")
         }
     }
-    
+
+    /// Start method for the analytics framework. It is called if tracking is enabled (which is the default). This method must be overridden in a Tracker subclass.
     open func start() {
         assert(false)
     }
-    
-    open func track(trackingParameters: TrackingParameters) {
-        assert(false)
-    }
-    
-    open func track(trackerKeys: TrackerKeys) {
+
+    /// Track data using tracking parameters. Called by StanwoodAnalytics class. This method must be overridden in a Tracker subclass.
+    ///
+    /// - Parameter trackingParameters: A struct for all the parameters
+    open func track(trackingParameters _: TrackingParameters) {
         assert(false)
     }
 
-    open func track(error: NSError) {
+    /// Track using custom keys. Called by StanwoodAnalytics class. This method must be overridden in a Tracker subclass.
+    ///
+    /// - Parameter trackerKeys: A struct of custom keys.
+    open func track(trackerKeys _: TrackerKeys) {
         assert(false)
     }
-    
-    open func setTracking(enable: Bool) {
+
+    /// Track an NSError. Called by StanwoodAnalytics class. This method must be overridden in a Tracker subclass.
+    ///
+    /// - Parameter error: An NSError object
+    open func track(error _: NSError) {
         assert(false)
     }
-    
+
+    /// Enable or disable tracking. Called by StanwoodAnalytics class. This method must be overridden in a Tracker subclass.
+    ///
+    /// - Parameter enable: enable tracking
+    open func setTracking(enabled _: Bool) {
+        assert(false)
+    }
+
+    /// The builder for the tracker.
     open class Builder {
-        var isDebug:Bool = BuildConfiguration.debug
+        var isDebug: Bool = BuildConfiguration.debug
         var logLevel = 0
         var loggingEnabled: Bool = false
         var exceptionTrackingEnabled = true
         let context: UIApplication
         public let key: String?
-        
+
+        /// Init function. Pass in the application context as it is a required parameter. The key is optional.
+        ///
+        /// - Parameters:
+        ///   - context: The UIApplication context.
+        ///   - key: The key to enable the analytics framework.
         public init(context: UIApplication, key: String? = nil) {
             self.context = context
             self.key = key
         }
-        
+
+        /// Build the tracker.
+        ///
+        /// - Returns: The configured Tracker object.
         open func build() -> Tracker {
             return Tracker(builder: self)
         }
-        
-        open func setDebug(enable: Bool) -> Builder {
-            self.isDebug = enable
+
+        /// Enable the debug mode for the framework if aplicable. Returns the builder so that it can be chained.
+        ///
+        /// - Parameter enable: Enable the debug mode.
+        /// - Returns: The builder object
+        open func setDebug(enabled: Bool) -> Builder {
+            isDebug = enabled
             return self
         }
-        
-        open func setLogging(enable: Bool) -> Builder {
-            self.loggingEnabled = enable
+
+        /// Enable the logging feature if the framework supports it. Returns the builder so that it can be chained.
+        ///
+        /// - Parameter enable: Enable the logging mode.
+        /// - Returns: The builder object
+        open func setLogging(enabled: Bool) -> Builder {
+            loggingEnabled = enabled
             return self
         }
-        
-        open func setExceptionTracking(enable: Bool) -> Builder {
-            self.exceptionTrackingEnabled = enable
+
+        /// Enable the exception tracking feature if the framework supports it. Returns the builder so that it can be chained.
+        ///
+        /// - Parameter enable: Enable exception tracking.
+        /// - Returns: The builder object
+        open func setExceptionTracking(enabled: Bool) -> Builder {
+            exceptionTrackingEnabled = enabled
             return self
         }
     }
 }
-

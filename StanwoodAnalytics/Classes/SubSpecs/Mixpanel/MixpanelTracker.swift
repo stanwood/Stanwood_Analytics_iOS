@@ -26,28 +26,36 @@
 import Foundation
 import Mixpanel
 
+/// Mixpanel Tracker
 open class MixpanelTracker: Tracker {
 
     var parameterMapper: ParameterMapper?
 
+    /// Init with the builder.
+    ///
+    /// - Parameter builder: Builder
     init(builder: MixpanelBuilder) {
         super.init(builder: builder)
-        
+
         super.checkKey()
-        
+
         if StanwoodAnalytics.trackingEnabled() == true {
             start()
         }
     }
-    
+
+    /// Start the tracking. Calls Mixpanel initialise. Logging is enabled.
     open override func start() {
         Mixpanel.initialize(token: key!)
         Mixpanel.mainInstance().loggingEnabled = loggingEnabled
     }
 
-    override open func track(trackingParameters: TrackingParameters) {
+    /// Tracks all the non-nil properties under event name.
+    ///
+    /// - Parameter trackingParameters: Tracking parameters struct
+    open override func track(trackingParameters: TrackingParameters) {
 
-        var properties: [String:String] = [:]
+        var properties: [String: String] = [:]
         properties["EventName"] = trackingParameters.eventName
 
         if let name = trackingParameters.name {
@@ -69,38 +77,43 @@ open class MixpanelTracker: Tracker {
         if let description = trackingParameters.description {
             properties["Description"] = description
         }
-        
-        trackingParameters.customParameters.forEach { (arg) in
+
+        trackingParameters.customParameters.forEach { arg in
             let (key, value) = arg
             properties[key] = value as? String
         }
 
         Mixpanel.mainInstance().track(event: trackingParameters.eventName, properties: properties)
     }
-    
-    override open func setTracking(enable: Bool) {
-        Mixpanel.mainInstance().loggingEnabled = enable
-        
-        if enable == true {
+
+    /// Set the opt-in or opt-out tracking in the framework.
+    ///
+    /// - Parameter enabled: Enable tracking.
+    open override func setTracking(enabled: Bool) {
+        Mixpanel.mainInstance().loggingEnabled = enabled
+
+        if enabled == true {
             Mixpanel.mainInstance().optInTracking()
         } else {
             Mixpanel.mainInstance().optOutTracking()
         }
     }
 
-    /**
-
-     Track the error using logEvent and the UserInfo dictionary.
-
-     */
-
-    override open func track(error: NSError) {
+    /// Track error is not implemented for this framework.
+    ///
+    /// - Parameter error: NSError
+    open override func track(error _: NSError) {
         // Not tracking errors
     }
 
-    override open func track(trackerKeys: TrackerKeys) {
+    /// Tracker Keys.
+    ///
+    /// Custom keys are used to track the user identifier, email or screen name.
+    ///
+    /// - Parameter trackerKeys: Tracker keys struct
+    open override func track(trackerKeys: TrackerKeys) {
 
-        for (key,value) in trackerKeys.customKeys {
+        for (key, value) in trackerKeys.customKeys {
             if key == StanwoodAnalytics.Keys.screenName {
                 if let screenName = value as? String {
                     Mixpanel.mainInstance().track(event: key, properties: [key: screenName])
@@ -114,7 +127,6 @@ open class MixpanelTracker: Tracker {
                     Mixpanel.mainInstance().people.set(property: "$email", to: userEmail)
                 }
             } else {
-                
                 if let anyValue = value as? MixpanelType {
                     Mixpanel.mainInstance().people.set(property: key, to: anyValue)
                 } else {
@@ -124,6 +136,7 @@ open class MixpanelTracker: Tracker {
         }
     }
 
+    /// Builder
     open class MixpanelBuilder: Tracker.Builder {
 
         var parameterMapper: ParameterMapper?
@@ -132,11 +145,18 @@ open class MixpanelTracker: Tracker {
             super.init(context: context, key: key)
         }
 
+        /// Set a custom parameter mapper.
+        ///
+        /// - Parameter mapper: Parameter mapper
+        /// - Returns: Builder so that it can be chained.
         open func add(mapper: ParameterMapper) -> MixpanelBuilder {
             parameterMapper = mapper
             return self
         }
 
+        /// Build the tracker
+        ///
+        /// - Returns: The tracker with the configuration.
         open override func build() -> MixpanelTracker {
             return MixpanelTracker(builder: self)
         }

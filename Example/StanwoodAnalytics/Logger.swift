@@ -8,11 +8,11 @@
 
 import Foundation
 
-public func print(_ items: Any..., separator: String = " ", terminator: String = "\n"){
-    
+public func print(_ items: Any..., separator: String = " ", terminator _: String = "\n") {
+
     let output = items.compactMap({ "\($0)" }).joined(separator: separator)
     AnalyticsService.log(output, tag: nil, filename: #file, line: #line, method: #function)
-    
+
     if let errors = items.filter({ $0 is Error }) as? [Error] {
         errors.forEach({ error in
             AnalyticsService.track(error: error)
@@ -20,7 +20,7 @@ public func print(_ items: Any..., separator: String = " ", terminator: String =
     }
 }
 
-public func print(_ items: Any?..., separator: String = " ", terminator: String = "\n") {
+public func print(_ items: Any?..., separator _: String = " ", terminator _: String = "\n") {
     let items = items.compactMap({ $0 })
     guard items.count > 0 else { return }
     print(items)

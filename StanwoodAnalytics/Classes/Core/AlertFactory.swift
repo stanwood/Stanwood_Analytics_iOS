@@ -25,7 +25,16 @@
 
 import UIKit
 
+/// A Factory class that returns an AlertController
 public class AlertFactory {
+
+    /// Returns an AlertViewController with an OK button and displays a message on the view controller.
+    ///
+    /// - Parameters:
+    ///   - viewController: The view controller to present the alert
+    ///   - message: The message to display
+    ///   - buttonTitle: The button title
+    /// - Returns: UIAlertController
     public static func makeAlert(viewController: UIViewController? = nil, message: String, buttonTitle: String) -> UIAlertController {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: buttonTitle, style: .default) { _ in

@@ -15,7 +15,7 @@ protocol SecondScreenParameterable {
 class DataProvider: SecondScreenParameterable {
     
     let appData: AppData!
-    
+
     init(with appData: AppData) {
         self.appData = appData
     }

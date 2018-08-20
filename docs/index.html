@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
           StanwoodAnalytics Docs
         </a>
-         (0% documented)
+         (72% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -49,6 +49,90 @@
     <div class="content-wrapper">
       <nav class="navigation">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Core.html">Core</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StanwoodAnalytics.html">StanwoodAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StanwoodAnalytics.html#/s:17StanwoodAnalyticsAAC4KeysV">– Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StanwoodAnalytics.html#/s:17StanwoodAnalyticsAAC13TrackingEventO">– TrackingEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/StanwoodAnalytics/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/TrackingParameters.html">TrackingParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Tracker.html">Tracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Tracker/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Core.html#/s:17StanwoodAnalytics11TrackerKeysV">TrackerKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DataStore.html">DataStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AlertFactory.html">AlertFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Core.html#/s:17StanwoodAnalytics15ParameterMapperP">ParameterMapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Core.html#/s:17StanwoodAnalytics11MapFunctionP">MapFunction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Trackers.html">Trackers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FabricTracker.html">FabricTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FabricTracker/FabricBuilder.html">– FabricBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FirebaseTracker.html">FirebaseTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GoogleAnalyticsTracker.html">GoogleAnalyticsTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GoogleAnalyticsTracker/GoogleAnalyticsBuilder.html">– GoogleAnalyticsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestFairyTracker.html">TestFairyTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TestFairyTracker/TestFairyBuilder.html">– TestFairyBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BugfenderTracker.html">BugfenderTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MixpanelTracker.html">MixpanelTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MixpanelTracker/MixpanelBuilder.html">– MixpanelBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other Enums.html#/s:17StanwoodAnalytics13BugfenderTypeO">BugfenderType</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -59,8 +143,7 @@
             <h1 id='stanwood-analytics-ios' class='heading'>Stanwood Analytics iOS</h1>
 
 <p><a href=""><img src="https://img.shields.io/badge/Swift-4.0.x-orange.svg" alt="Swift Version"></a>
-<a href=""><img src="https://img.shields.io/badge/iOS-10+-EB7943.svg" alt="iOS 8+"></a>
-<a href="https://stanwood.github.io/Stanwood_Analytics_iOS/"><img src="https://img.shields.io/badge/docs-%E2%9C%93-blue.svg" alt="Docs"></a></p>
+<a href=""><img src="https://img.shields.io/badge/iOS-10+-EB7943.svg" alt="iOS 8+"></a></p>
 
 <p>The Stanwood Analytics framework is a wrapper to reduce the effort involved in adding analytics and logging frameworks to iOS projects and to make the implementation consistent. The pod consists of a base install, and optional extras defined as sub-specs. There is still work in progress to add support for more frameworks. </p>
 
@@ -154,7 +237,7 @@ analytics = analyticsBuilder.build()
 <pre class="highlight plaintext"><code>analytics.setTracking(enable: Bool)
 </code></pre>
 
-<p>The framework stores the value of the switch internally in UserDefaults. Use the static function <code>StanwoodAnalytics.trackingEnabled()</code>to read the current state, and update the switch accordingly. Do not call setTracking at startup, as this is done internally. </p>
+<p>The framework stores the value of the switch internally in UserDefaults. Use the static function <code><a href="Classes/StanwoodAnalytics.html#/s:17StanwoodAnalyticsAAC15trackingEnabledSbyFZ">StanwoodAnalytics.trackingEnabled()</a></code>to read the current state, and update the switch accordingly. Do not call setTracking at startup, as this is done internally. </p>
 <h2 id='firebase' class='heading'>Firebase</h2>
 
 <p>The base install includes Firebase/Analytics and its dependencies so it is not necessary to define it in the Podfile. </p>
@@ -420,8 +503,8 @@ rm com.apple.dt.xcodebuild.plist
       </article>
     </div>
     <section class="footer">
-      <p>2018 Stanwood GmbH</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>© 2018 <a class="link" href="https://www.stanwood.io" target="_blank" rel="external">Stanwood GmbH</a> under MIT license.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

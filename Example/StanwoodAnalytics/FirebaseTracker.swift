@@ -6,11 +6,11 @@
 //  Copyright © 2018 Stanwood. All rights reserved.
 //
 
-//import Foundation
-//import FirebaseAnalytics
-//import StanwoodAnalytics
+// import Foundation
+// import FirebaseAnalytics
+// import StanwoodAnalytics
 //
-///*
+/// *
 //
 // These event names are reserved and cannot be used:
 //
@@ -37,7 +37,7 @@
 //
 // */
 //
-//struct FirebaseParameterMapper: ParameterMapper {
+// struct FirebaseParameterMapper: ParameterMapper {
 //    func map(parameters: TrackingParameters) -> [String:NSString] {
 //        var keyValues: [String:NSString] = [:]
 //
@@ -59,9 +59,9 @@
 //
 //        return keyValues
 //    }
-//}
+// }
 //
-//open class FirebaseTracker: Tracker {
+// open class FirebaseTracker: Tracker {
 //
 //    var parameterMapper: ParameterMapper?
 //
@@ -197,4 +197,4 @@
 //            return FirebaseTracker(builder: self)
 //        }
 //    }
-//}
+// }

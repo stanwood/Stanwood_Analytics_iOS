@@ -24,14 +24,14 @@ class AppController {
         guard let firebaseConfigFile = Bundle.main.path(forResource: Configuration.Static.Analytics.firebaseConfigFileName, ofType: "plist") else {
             return
         }
-        
+
         guard let firebaseOptions = FirebaseOptions(contentsOfFile: firebaseConfigFile) else {
             return
         }
-        
+
         FirebaseApp.configure(options: firebaseOptions)
     }
-    
+
     func configure() {
         actions = Actions(appController: self)
         coordinator = Coordinator(window: window!, actions: actions!, dataProvider: dataProvider)
