@@ -16,11 +16,11 @@ class AppController {
     var window: UIWindow?
     var coordinator: Coordinator?
     var actions: Actions?
-    
+
     init(window: UIWindow) {
         self.window = window
         dataProvider = DataProvider(with: appData)
-        
+
         guard let firebaseConfigFile = Bundle.main.path(forResource: Configuration.Static.Analytics.firebaseConfigFileName, ofType: "plist") else {
             return
         }
@@ -40,7 +40,7 @@ class AppController {
         AnalyticsService.configure()
         observeDebuggerNotifications()
     }
-    
+
     func observeDebuggerNotifications() {
         let notificationName = AnalyticsService.notificationName()
         let notificationCenter = NotificationCenter.default
@@ -48,7 +48,7 @@ class AppController {
                                        name: Notification.Name(rawValue: notificationName),
                                        object: nil)
     }
-    
+
     @objc func didReceiveNotification(notification: Notification) {
         let payload = notification.userInfo
         let message = payload![StanwoodAnalytics.Keys.eventName] as! String
@@ -56,7 +56,7 @@ class AppController {
         let alertController = makeAlert(message: message, buttonTitle: "OK")
         rootViewController?.present(alertController, animated: true, completion: nil)
     }
-    
+
     fileprivate func makeAlert(viewController: UIViewController? = nil, message: String, buttonTitle: String) -> UIAlertController {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: buttonTitle, style: .default) { _ in

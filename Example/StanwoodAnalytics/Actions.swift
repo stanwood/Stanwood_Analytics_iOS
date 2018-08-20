@@ -9,13 +9,12 @@
 import UIKit
 
 protocol Actionable {
-    
 }
 
 class Actions: Actionable {
     var appController: AppController!
     var coordinator: Coordinator!
-    
+
     init(appController: AppController) {
         self.appController = appController
     }

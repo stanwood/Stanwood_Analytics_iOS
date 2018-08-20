@@ -66,14 +66,14 @@ open class StanwoodAnalytics {
         public static let userName = "userName"
         public static let screenName = "screenName"
         public static let screenClass = "screenClass"
-        
+
         // Used in the dictionary payload of the notification posted to the debugger.
         public static let eventName = "eventName"
         public static let itemId = "itemId"
         public static let contentType = "contentType"
         public static let category = "category"
         public static let createdAt = "createdAt"
-        
+
         public static let notificationName = "io.stanwood.debugger.didReceiveAnalyticsItem"
     }
 
@@ -106,7 +106,7 @@ open class StanwoodAnalytics {
 
         notificationsEnabled = builder.notificationsEnabled
         postNotificationsEnabled = builder.postNotificationsEnabled
-        
+
         if notificationsEnabled == true {
             addNotifications(with: builder.notificationDelegate!)
         }
@@ -137,7 +137,7 @@ open class StanwoodAnalytics {
 
         center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
-    
+
     fileprivate func postNotification(trackingParameters: TrackingParameters) {
         let notificationCentre = NotificationCenter.default
         let payload = trackingParameters.payload()
@@ -171,7 +171,7 @@ open class StanwoodAnalytics {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
 
             showNotification(with: trackingParameters.debugInfo())
-            
+
             if postNotificationsEnabled == true {
                 postNotification(trackingParameters: trackingParameters)
             }
@@ -342,7 +342,7 @@ open class StanwoodAnalytics {
         var notificationsEnabled = false
         var notificationDelegate: UIViewController?
         var postNotificationsEnabled: Bool = false
-        
+
         public func add(tracker: Tracker) -> Builder {
             trackers.append(tracker)
             return self
@@ -356,12 +356,12 @@ open class StanwoodAnalytics {
             notificationDelegate = delegate
             return self
         }
-        
+
         public func setDebuggerNotifications(enabled: Bool) -> Builder {
             postNotificationsEnabled = enabled
             return self
         }
-        
+
         public func build() -> StanwoodAnalytics {
             return StanwoodAnalytics(builder: self)
         }

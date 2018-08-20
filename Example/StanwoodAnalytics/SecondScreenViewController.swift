@@ -9,7 +9,6 @@
 import UIKit
 import StanwoodAnalytics
 
-
 class SecondScreenViewController: UIViewController {
     let screenName = "secondView"
 
@@ -17,10 +16,10 @@ class SecondScreenViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var customEvent1Button: UIButton!
     @IBOutlet weak var customEvent2Button: UIButton!
-    
+
     var presenter: SecondScreenPresenter!
-    
-    @IBAction func customEvent1Action(_ sender: Any) {
+
+    @IBAction func customEvent1Action(_: Any) {
         let index = 1
         var trackerKeys = TrackerKeys.init()
         trackerKeys.customKeys = [String(describing: index): screenName]
@@ -39,8 +38,8 @@ class SecondScreenViewController: UIViewController {
         guard let trackingSwitch = sender as? UISwitch else { return }
         presenter.switchDidChangeAction(isOn: trackingSwitch.isOn)
     }
-    
-    @IBAction func crashButtonAction(_ sender: Any) {
+
+    @IBAction func crashButtonAction(_: Any) {
         presenter.crashButtonAction()
     }
 

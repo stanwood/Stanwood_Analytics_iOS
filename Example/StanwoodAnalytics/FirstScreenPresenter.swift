@@ -12,19 +12,19 @@ import UserNotifications
 
 class FirstScreenPresenter {
     var actions: FirstScreenActionable!
-    
+
     unowned var viewController: ViewController
-    
+
     init(viewController: ViewController, actions: FirstScreenActionable) {
         self.actions = actions
         self.viewController = viewController
     }
-    
+
     func nextButtonAction() {
         actions.nextButtonAction()
         trackNextButtonAction()
     }
-    
+
     func trackNextButtonAction() {
         let params = TrackingParameters(eventName: "NextButtonAction",
                                         itemId: "101",
@@ -32,7 +32,7 @@ class FirstScreenPresenter {
                                         description: nil,
                                         category: "Abstract",
                                         contentType: "info-1234567890")
-        
+
         AnalyticsService.track(trackingParameters: params)
     }
 }

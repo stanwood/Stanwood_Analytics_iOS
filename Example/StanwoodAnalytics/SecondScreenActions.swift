@@ -14,6 +14,6 @@ protocol SecondScreenActionable {
 
 extension Actions: SecondScreenActionable {
     func setTracking(enable: Bool, viewController: UIViewController?) {
-        AnalyticsService.setTracking(enable: enable,viewController:viewController)
+        AnalyticsService.setTracking(enable: enable, viewController: viewController)
     }
 }

@@ -13,17 +13,17 @@ class SecondScreenPresenter {
     var actions: SecondScreenActionable!
     unowned var viewController: SecondScreenViewController
     var parameters: SecondScreenParameterable!
-    
+
     init(viewController: SecondScreenViewController, actions: SecondScreenActionable, parameters: SecondScreenParameterable) {
         self.viewController = viewController
         self.actions = actions
         self.parameters = parameters
     }
-    
+
     func switchDidChangeAction(isOn: Bool) {
         actions?.setTracking(enable: isOn, viewController: viewController)
     }
-    
+
     func crashButtonAction() {
         Crashlytics.sharedInstance().crash()
     }
