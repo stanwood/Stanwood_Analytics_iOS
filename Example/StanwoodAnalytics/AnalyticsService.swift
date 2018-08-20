@@ -120,13 +120,9 @@ struct AnalyticsService {
             #endif
 
         #else
-            analytics = analyticsBuilder.build()
+           analytics = analyticsBuilder.setDebuggerNotifications(enabled: true).build()
+
         #endif
-         
-    #else
-        analytics = analyticsBuilder.setDebuggerNotifications(enabled: true).build()
-    #endif
-        
     }
 
     static func trackingEnabled() -> Bool {

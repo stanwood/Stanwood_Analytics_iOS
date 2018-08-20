@@ -122,4 +122,25 @@ public struct TrackingParameters {
 
         return line1
     }
+    
+    public func payload() -> [String:String] {
+        var payload: [String:String] = [StanwoodAnalytics.Keys.eventName: eventName]
+        if itemId != nil {
+            payload[StanwoodAnalytics.Keys.itemId] = itemId
+        }
+        if category != nil {
+            payload[StanwoodAnalytics.Keys.category] = category
+        }
+        
+        if contentType != nil {
+            payload[StanwoodAnalytics.Keys.contentType] = contentType
+        }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        payload[StanwoodAnalytics.Keys.createdAt] = dateFormatter.string(from: Date())
+        return payload
+        
+        return payload
+    }
 }
