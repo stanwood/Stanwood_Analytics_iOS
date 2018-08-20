@@ -137,7 +137,10 @@ public struct TrackingParameters {
         if contentType != nil {
             payload[StanwoodAnalytics.Keys.contentType] = contentType
         }
-        
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        payload[StanwoodAnalytics.Keys.createdAt] = dateFormatter.string(from: Date())
         return payload
     }
 }
@@ -181,6 +184,7 @@ open class StanwoodAnalytics {
         public static let itemId = "itemId"
         public static let contentType = "contentType"
         public static let category = "category"
+        public static let createdAt = "createdAt"
         
         public static let notificationName = "io.stanwood.debugger.didReceiveAnalyticsItem"
     }
