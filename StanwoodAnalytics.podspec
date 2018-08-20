@@ -48,8 +48,7 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
       ss.frameworks = ['FirebaseCore',
       'FirebaseInstanceID',
       'FirebaseAnalytics',
-      'FirebaseCoreDiagnostics',
-      'FirebaseNanoPB']
+      'FirebaseCoreDiagnostics']
   end
   
   s.subspec 'Fabric' do |ss|
