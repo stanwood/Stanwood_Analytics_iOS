@@ -33,4 +33,7 @@ identifier_name:
     - id
     - URL
     - GlobalAPIKey
+variable_name:
+min_length:
+    warning: 2
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
