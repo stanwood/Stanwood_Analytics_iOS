@@ -140,7 +140,5 @@ public struct TrackingParameters {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         payload[StanwoodAnalytics.Keys.createdAt] = dateFormatter.string(from: Date())
         return payload
-        
-        return payload
     }
 }
