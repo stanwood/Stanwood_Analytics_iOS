@@ -9,10 +9,6 @@
 import Foundation
 
 struct FirstScreenWireframe {
-    //    static func makeViewController() -> ViewController {
-    //
-    //    }
-
     static func prepare(viewController: ViewController, actions: FirstScreenActionable) {
         let presenter = FirstScreenPresenter(viewController: viewController, actions: actions)
         viewController.presenter = presenter
