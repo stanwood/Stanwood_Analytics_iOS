@@ -47,7 +47,7 @@ open class StanwoodAnalytics {
     private var trackers: [Tracker] = []
     /// :nodoc:
     private var notificationsEnabled = false
-    /// :nodoc:
+    private var postNotificationsEnabled: Bool = false
     private let options: UNAuthorizationOptions = [.alert]
     /// :nodoc:
     private let trackingOptOut = "tracking_opt_out"
@@ -66,6 +66,15 @@ open class StanwoodAnalytics {
         public static let userName = "userName"
         public static let screenName = "screenName"
         public static let screenClass = "screenClass"
+
+        // Used in the dictionary payload of the notification posted to the debugger.
+        public static let eventName = "eventName"
+        public static let itemId = "itemId"
+        public static let contentType = "contentType"
+        public static let category = "category"
+        public static let createdAt = "createdAt"
+
+        public static let notificationName = "io.stanwood.debugger.didReceiveAnalyticsItem"
     }
 
     /**
@@ -96,6 +105,7 @@ open class StanwoodAnalytics {
         trackers = builder.trackers
 
         notificationsEnabled = builder.notificationsEnabled
+        postNotificationsEnabled = builder.postNotificationsEnabled
 
         if notificationsEnabled == true {
             addNotifications(with: builder.notificationDelegate!)
@@ -115,7 +125,7 @@ open class StanwoodAnalytics {
         center.requestAuthorization(options: options) {
             granted, _ in
             if !granted {
-                print("Something went wrong")
+                print("Stanwood Analytics Warning: Notifications permission is not granted by the user.")
             }
         }
 
@@ -128,7 +138,14 @@ open class StanwoodAnalytics {
         center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
 
-    /// :nodoc:
+    fileprivate func postNotification(trackingParameters: TrackingParameters) {
+        let notificationCentre = NotificationCenter.default
+        let payload = trackingParameters.payload()
+        let notification = Notification.init(name: Notification.Name(rawValue: Keys.notificationName), object: nil, userInfo: payload)
+        notificationCentre.post(notification)
+    }
+
+    // NODOC
     private func start() {
         trackers.forEach {
             $0.start()
@@ -154,6 +171,10 @@ open class StanwoodAnalytics {
             trackers.forEach { $0.track(trackingParameters: trackingParameters) }
 
             showNotification(with: trackingParameters.debugInfo())
+
+            if postNotificationsEnabled == true {
+                postNotification(trackingParameters: trackingParameters)
+            }
         }
     }
 
@@ -320,12 +341,8 @@ open class StanwoodAnalytics {
         var trackers: [Tracker] = []
         var notificationsEnabled = false
         var notificationDelegate: UIViewController?
+        var postNotificationsEnabled: Bool = false
 
-        /**
-         Add a tracker to the builder.
-
-         - Parameter tracker
-         */
         public func add(tracker: Tracker) -> Builder {
             trackers.append(tracker)
             return self
@@ -340,9 +357,11 @@ open class StanwoodAnalytics {
             return self
         }
 
-        /**
-         Build the analytics object.
-         */
+        public func setDebuggerNotifications(enabled: Bool) -> Builder {
+            postNotificationsEnabled = enabled
+            return self
+        }
+
         public func build() -> StanwoodAnalytics {
             return StanwoodAnalytics(builder: self)
         }

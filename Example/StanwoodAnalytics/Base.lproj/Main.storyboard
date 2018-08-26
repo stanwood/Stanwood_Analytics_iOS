@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26I-vd-IFN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26I-vd-IFN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="356" y="65.217391304347828"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Second Screen View Controller-->
         <scene sceneID="Gts-6H-CAC">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="qp1-Hl-WKr" customClass="SecondViewController" customModule="StanwoodAnalytics_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondScreenViewController" id="qp1-Hl-WKr" customClass="SecondScreenViewController" customModule="StanwoodAnalytics_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wq3-PZ-fDc"/>
                         <viewControllerLayoutGuide type="bottom" id="Up0-6b-kD6"/>

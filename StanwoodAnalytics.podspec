@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodAnalytics'
-  s.version          = '1.0.8'
+  s.version          = '1.1.1'
   s.summary          = 'StanwoodAnalytics encapsulates the frameworks Stanwood uses from various vendors used in analytics and logging.'
   s.description      = <<-DESC
 A framework to encapsulate analytics and logging frameworks from Fabric, Crashlytics, Google, Firebase and BugFender.
