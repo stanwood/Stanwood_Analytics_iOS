@@ -74,7 +74,11 @@ struct DefaultParameterMapper: ParameterMapper {
 
 struct AnalyticsService {
     static var analytics: StanwoodAnalytics?
-
+    
+    static func notificationName() -> String {
+        return StanwoodAnalytics.Keys.notificationName
+    }
+    
     // static let shared
 
     static func configure(notificationDelegate: UNUserNotificationCenterDelegate? = nil) {
@@ -116,7 +120,8 @@ struct AnalyticsService {
             #endif
 
         #else
-            analytics = analyticsBuilder.build()
+           analytics = analyticsBuilder.setDebuggerNotifications(enabled: true).build()
+
         #endif
     }
 
