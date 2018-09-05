@@ -29,7 +29,9 @@ checks:
   identical-code:
     enabled: false
 exclude_patterns:
+  - "Example/"
   - "docs/"
+  - "Frameworks/"
 plugins:
   swiftlint:
     enabled: true
