@@ -6,6 +6,8 @@
 
 [![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
+[![Build Status](https://app.bitrise.io/app/5179611a33857ebf/status.svg?token=H42t71dnrDDzKsmJGycNQQ&branch=master)](https://app.bitrise.io/app/5179611a33857ebf)
+
 The Stanwood Analytics framework is a wrapper to reduce the effort involved in adding analytics and logging frameworks to iOS projects and to make the implementation consistent. The pod consists of a base install, and optional extras defined as sub-specs. There is still work in progress to add support for more frameworks. 
 
 1. Fabric [Base]
