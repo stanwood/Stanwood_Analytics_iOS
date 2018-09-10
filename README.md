@@ -2,11 +2,8 @@
 
 [![Swift Version](https://img.shields.io/badge/Swift-4.0.x-orange.svg)]()
 [![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]()
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/972a1a6db90348bfb7e072cd3e0705ac)](https://www.codacy.com/app/remi.robert/Dotzu?utm_source=github.com&utm_medium=referral&utm_content=remirobert/Dotzu&utm_campaign=badger)
 
-[![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
-[![Build Status](https://app.bitrise.io/app/5179611a33857ebf/status.svg?token=H42t71dnrDDzKsmJGycNQQ&branch=master)](https://app.bitrise.io/app/5179611a33857ebf)
+[![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![Build Status](https://app.bitrise.io/app/5179611a33857ebf/status.svg?token=H42t71dnrDDzKsmJGycNQQ&branch=master)](https://app.bitrise.io/app/5179611a33857ebf)
 
 The Stanwood Analytics framework is a wrapper to reduce the effort involved in adding analytics and logging frameworks to iOS projects and to make the implementation consistent. The pod consists of a base install, and optional extras defined as sub-specs. There is still work in progress to add support for more frameworks. 
 
