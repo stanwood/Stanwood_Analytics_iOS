@@ -10,35 +10,12 @@ import Foundation
 
 protocol SecondViewParametable {
 
-
-
-
-
 }
 
-                    class DataProvider: SecondViewParametable {
-
-             				let appData: AppData!
-
-
-
-
-
+class DataProvider: SecondViewParametable {
+    let appData: AppData!
 
     init(with appData: AppData) {
-
-
-                             self.appData = appData
+        self.appData = appData
     }
 }
-
-
-
-
-
-
-
-
-
-
-
