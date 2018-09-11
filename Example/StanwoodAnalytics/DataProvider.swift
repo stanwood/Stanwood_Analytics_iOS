@@ -9,10 +9,10 @@
 import Foundation
 
 protocol SecondScreenParameterable {
+
 }
 
 class DataProvider: SecondScreenParameterable {
-
     let appData: AppData!
 
     init(with appData: AppData) {
