@@ -8,14 +8,37 @@
 
 import Foundation
 
-protocol SecondScreenParameterable {
+protocol SecondViewParametable {
+
+
+
+
+
 }
 
-class DataProvider: SecondScreenParameterable {
+                    class DataProvider: SecondViewParametable {
 
-    let appData: AppData!
+             				let appData: AppData!
+
+
+
+
+
 
     init(with appData: AppData) {
-        self.appData = appData
+
+
+                             self.appData = appData
     }
 }
+
+
+
+
+
+
+
+
+
+
+
