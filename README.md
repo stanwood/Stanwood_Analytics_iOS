@@ -332,7 +332,9 @@ pod 'StanwoodAnalytics', git: 'git@github.com:stanwood/Stanwood_Analytics_iOS.gi
 
 ## Release Notes
 
-1.1.0: Added support for Code Climate Quality, Danger. Extended the framework to support posting notifications of events that are used in the Debugger pod. This will be a huge help in debugging analytics. 
+1.1.2: Updated the Code Climate and Danger files. Added badges. 
+
+1.1.0: Added support for Code Climate Quality, Danger. Extended the framework to support posting notifications of events that are used in the Debugger pod. This will be a huge help in debugging analytics.
 
 1.0.1: Updating the example project and readme to reflect changes in the API for 0.9 onwards.
 
