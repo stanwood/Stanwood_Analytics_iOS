@@ -1,7 +1,9 @@
 # Stanwood Analytics iOS
 
 [![Swift Version](https://img.shields.io/badge/Swift-4.0.x-orange.svg)]()
-[![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]()
+[![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)]()
+[![Platform](https://img.shields.io/cocoapods/p/Stanwood_Analytics_iOS.svg?style=flat)](http://cocoapods.org/pods/Stanwood_Analytics_iOS)
+
 
 [![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![Build Status](https://app.bitrise.io/app/5179611a33857ebf/status.svg?token=H42t71dnrDDzKsmJGycNQQ&branch=master)](https://app.bitrise.io/app/5179611a33857ebf)
 
