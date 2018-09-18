@@ -2,10 +2,7 @@
 
 [![Swift Version](https://img.shields.io/badge/Swift-4.2-orange.svg)]()
 [![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]() [![Pod Version](https://cocoapod-badges.herokuapp.com/v/$PODNAME/badge.png)]()
-[![License](https://cocoapod-badges.herokuapp.com/l/Stanwood_Analytics_iOS/badge.svg)](http://cocoapods.org/pods/Stanwood_Analytics_iOS)
-
-
-[![Build Status](https://app.bitrise.io/app/5179611a33857ebf/status.svg?token=H42t71dnrDDzKsmJGycNQQ&branch=master)](https://app.bitrise.io/app/5179611a33857ebf) [![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![License](https://cocoapod-badges.herokuapp.com/l/Stanwood_Analytics_iOS/badge.svg)](http://cocoapods.org/pods/Stanwood_Analytics_iOS) [![Build Status](https://app.bitrise.io/app/5179611a33857ebf/status.svg?token=H42t71dnrDDzKsmJGycNQQ&branch=master)](https://app.bitrise.io/app/5179611a33857ebf) [![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 The Stanwood Analytics framework is a wrapper to reduce the effort involved in adding analytics and logging frameworks to iOS projects and to make the implementation consistent. The pod consists of a base install, and optional extras defined as sub-specs. There is still work in progress to add support for more frameworks. 
 
