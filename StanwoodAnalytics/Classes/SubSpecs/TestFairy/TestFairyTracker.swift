@@ -71,14 +71,12 @@ open class TestFairyTracker: Tracker {
     /// - Parameter trackerKeys: TrackerKeys struct
     open override func track(trackerKeys: TrackerKeys) {
 
-        for (key, value) in trackerKeys.customKeys {
-            if key == StanwoodAnalytics.Keys.identifier {
-                if let userId = value as? String {
-                    TestFairy.setUserId(userId)
-                }
+        for (key, value) in trackerKeys.customKeys where key == StanwoodAnalytics.Keys.identifier {
+            if let userId = value as? String {
+                TestFairy.setUserId(userId)
             }
         }
-    }
+    }   
 
     /// Buiulder for the tracker.
     open class TestFairyBuilder: Tracker.Builder {
