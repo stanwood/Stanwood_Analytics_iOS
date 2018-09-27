@@ -89,9 +89,9 @@ PODS:
   - GoogleUtilities/Reachability (5.2.3):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.0)
-  - Mixpanel-swift (2.4.1):
-    - Mixpanel-swift/Complete (= 2.4.1)
-  - Mixpanel-swift/Complete (2.4.1)
+  - Mixpanel-swift (2.4.5):
+    - Mixpanel-swift/Complete (= 2.4.5)
+  - Mixpanel-swift/Complete (2.4.5)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -117,7 +117,7 @@ PODS:
   - StanwoodAnalytics/Google (1.1.1):
     - StanwoodAnalytics/Core
   - StanwoodAnalytics/Mixpanel (1.1.1):
-    - Mixpanel-swift
+    - Mixpanel-swift (~> 2.4.5)
     - StanwoodAnalytics/Core
   - StanwoodAnalytics/TestFairy (1.1.1):
     - StanwoodAnalytics/Core
@@ -171,10 +171,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GoogleUtilities: 6f681e27050c5e130325e89fa0316dfca826f954
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
-  Mixpanel-swift: f70ce852e1b246ca524ac4bc2db384e7186dcd2a
+  Mixpanel-swift: a9ed3dd197d8f2837920cec6be1acdb51d07b31a
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  StanwoodAnalytics: 00adf02bb6a48f852638d3e4801816387e0df2f6
+  StanwoodAnalytics: 0ef64891c1a63feff3146980aaf6b59e72f24c61
 
 PODFILE CHECKSUM: c4ac65d6342a3acaa0acb7ff0de632e51dcc31b8
 
