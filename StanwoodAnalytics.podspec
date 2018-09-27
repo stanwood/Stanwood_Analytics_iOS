@@ -78,7 +78,7 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
   end
   
   s.subspec 'Mixpanel' do |ss|
-      ss.dependency 'Mixpanel-swift'
+      ss.dependency 'Mixpanel-swift', '~> 2.4.5'
       ss.dependency 'StanwoodAnalytics/Core'
       ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Mixpanel/'
   end
