@@ -1,0 +1,10 @@
+/* 
+  English.strings
+  Pods
+
+  Created by Ronan on 23/05/2018.
+  
+*/
+
+"ALERT_MESSAGE" = "Uwaga, niektóre usługi wymagają ponownego uruchomienia aplikacji z menu 'multitasking' w celu całkowitego przerwania śledzenia danych analitycznych.";
+"ALERT_BUTTON_TITLE" = "OK";

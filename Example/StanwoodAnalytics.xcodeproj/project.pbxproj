@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		02F4CAC5F941B49CD5D3BA67 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		063CDD33216BD78700A4E9AE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		197B3A58EBDE8C03781DE3C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2D1409C42B3E371B35A10979 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		347859B13B53D64DD328FA7F /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -547,6 +548,7 @@
 			children = (
 				607FACDF1AFB9204008FA782 /* Base */,
 				AE8C311620B547F600A44DB9 /* de */,
+				063CDD33216BD78700A4E9AE /* pl */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
