@@ -98,28 +98,28 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.6.1)
-  - StanwoodAnalytics (1.1.1):
-    - StanwoodAnalytics/Base (= 1.1.1)
-  - StanwoodAnalytics/Base (1.1.1):
+  - StanwoodAnalytics (1.1.5):
+    - StanwoodAnalytics/Base (= 1.1.5)
+  - StanwoodAnalytics/Base (1.1.5):
     - StanwoodAnalytics/Core
     - StanwoodAnalytics/Fabric
     - StanwoodAnalytics/Firebase
     - StanwoodAnalytics/TestFairy
-  - StanwoodAnalytics/BugFender (1.1.1):
+  - StanwoodAnalytics/BugFender (1.1.5):
     - BugfenderSDK (= 1.5)
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Core (1.1.1)
-  - StanwoodAnalytics/Fabric (1.1.1):
+  - StanwoodAnalytics/Core (1.1.5)
+  - StanwoodAnalytics/Fabric (1.1.5):
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Firebase (1.1.1):
+  - StanwoodAnalytics/Firebase (1.1.5):
     - Firebase/Analytics
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Google (1.1.1):
+  - StanwoodAnalytics/Google (1.1.5):
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Mixpanel (1.1.1):
+  - StanwoodAnalytics/Mixpanel (1.1.5):
     - Mixpanel-swift (~> 2.4.5)
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/TestFairy (1.1.1):
+  - StanwoodAnalytics/TestFairy (1.1.5):
     - StanwoodAnalytics/Core
 
 DEPENDENCIES:
@@ -174,7 +174,7 @@ SPEC CHECKSUMS:
   Mixpanel-swift: a9ed3dd197d8f2837920cec6be1acdb51d07b31a
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  StanwoodAnalytics: 0ef64891c1a63feff3146980aaf6b59e72f24c61
+  StanwoodAnalytics: 8b2eea14a5918c95bd6feddd8dd256beb1834f4c
 
 PODFILE CHECKSUM: c4ac65d6342a3acaa0acb7ff0de632e51dcc31b8
 

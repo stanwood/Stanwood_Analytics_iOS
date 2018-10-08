@@ -1,0 +1,10 @@
+/* 
+  English.strings
+  Pods
+
+  Created by Ronan on 23/05/2018.
+  
+*/
+
+"ALERT_MESSAGE" = "Veuillez noter que certains services ont besoin que vous redémarriez l’application depuis le menu multitâche a fin que le suivi s’arrête complètement.";
+"ALERT_BUTTON_TITLE" = "OK";
