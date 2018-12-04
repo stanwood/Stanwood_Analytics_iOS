@@ -49,7 +49,7 @@ The changes in the switch setting are tracked in the frameworks using 2 keys: "t
 
 - 1. Crashlytics & Fabric
 
-Follow the [install instructions for Fabric](https://fabric.io/kits/ios/crashlytics/install) to add the run script and API key additions to the Info.plist. Do not add the pods to the Podfile, nor call the initialize function - this framework handles that part.
+Follow the [install instructions for Crashlytics](https://firebase.google.com/docs/crashlytics/get-started?authuser=0) to add the run script. Do not add the pods to the Podfile, nor call the initialize function - this framework handles that part.
 
 Note that the run script path will be different to that stated on the Fabric website.
 
