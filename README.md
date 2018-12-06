@@ -89,11 +89,17 @@ Add the following code into the AppDelegate, or a helper class. Create a tracker
 let testFairyKey = "abc123def456"
 
 let fabricTracker = FabricTracker.FabricBuilder(context: application, key: nil).build()
-let testFairyTracker = TestFairyTracker.TestFairyBuilder(context: application, key: testFairyKey).build()
 
 let analyticsBuilder = StanwoodAnalytics.builder()
-   .add(tracker: fabricTracker)
-   .add(tracker: testFairyTracker)
+.add(tracker: fabricTracker)
+
+#if DEBUG || STAGE
+
+let testFairyTracker = TestFairyTracker.TestFairyBuilder(context: application, key: testFairyKey).build()
+analyticsBuilder = analyticsBuilder.add(tracker: testFairyTracker)
+
+#endif
+
 analytics = analyticsBuilder.build()       
 ```
 
