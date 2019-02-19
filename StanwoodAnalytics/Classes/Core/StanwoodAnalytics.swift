@@ -138,9 +138,8 @@ open class StanwoodAnalytics {
         center.delegate = delegate as? UNUserNotificationCenterDelegate
     }
 
-    fileprivate func postNotification(trackingParameters: TrackingParameters) {
+    fileprivate func postNotification(payload: [String:String]) {
         let notificationCentre = NotificationCenter.default
-        let payload = trackingParameters.payload()
         let notification = Notification.init(name: Notification.Name(rawValue: Keys.notificationName), object: nil, userInfo: payload)
         notificationCentre.post(notification)
     }
@@ -173,7 +172,7 @@ open class StanwoodAnalytics {
             showNotification(with: trackingParameters.debugInfo())
 
             if postNotificationsEnabled == true {
-                postNotification(trackingParameters: trackingParameters)
+                postNotification(payload: trackingParameters.payload())
             }
         }
     }
@@ -301,6 +300,10 @@ open class StanwoodAnalytics {
             trackers.forEach { $0.track(trackerKeys: trackerKeys) }
 
             showNotification(with: serializeKeys(trackerKeys: trackerKeys))
+            
+            if postNotificationsEnabled == true {
+                postNotification(payload: trackerKeys.payload())
+            }
         }
     }
 

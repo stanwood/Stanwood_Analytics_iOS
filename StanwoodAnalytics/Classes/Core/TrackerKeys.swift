@@ -31,4 +31,21 @@ public struct TrackerKeys {
 
     public init() {
     }
+    
+    public func payload() -> [String:String] {
+        var payload: [String:String] = customKeys.mapValues({ "\($0)" })
+        
+        if payload[StanwoodAnalytics.Keys.eventName] == nil {
+            if let _ = payload[StanwoodAnalytics.Keys.screenName] {
+                payload[StanwoodAnalytics.Keys.eventName] = "screen_view"
+            } else {
+                payload[StanwoodAnalytics.Keys.eventName] = "custom"
+            }
+        }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        payload[StanwoodAnalytics.Keys.createdAt] = dateFormatter.string(from: Date())
+        return payload
+    }
 }
