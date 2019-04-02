@@ -264,17 +264,11 @@ open class StanwoodAnalytics {
 
     /// :nodoc:
     private func showAlert(on viewController: UIViewController? = nil) {
-        var rootViewController: UIViewController
-
-        if viewController == nil {
-            rootViewController = (UIApplication.shared.keyWindow?.rootViewController)!
-
-            if rootViewController is UINavigationController {
-                let controller = rootViewController as! UINavigationController
-                rootViewController = controller.visibleViewController!
-            }
-        } else {
-            rootViewController = viewController!
+        
+        guard var rootViewController = viewController ?? UIApplication.shared.keyWindow?.rootViewController else { return }
+        
+        if let rootNav = rootViewController as? UINavigationController {
+            rootViewController = rootNav.visibleViewController ?? rootViewController
         }
 
         let message = localised(key: "ALERT_MESSAGE")
