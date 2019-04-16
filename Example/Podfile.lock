@@ -102,28 +102,30 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
-  - StanwoodAnalytics (1.1.6):
-    - StanwoodAnalytics/Base (= 1.1.6)
-  - StanwoodAnalytics/Base (1.1.6):
+  - StanwoodAnalytics (1.1.8):
+    - StanwoodAnalytics/Base (= 1.1.8)
+  - StanwoodAnalytics/Base (1.1.8):
     - StanwoodAnalytics/Core
     - StanwoodAnalytics/Fabric
     - StanwoodAnalytics/Firebase
     - StanwoodAnalytics/TestFairy
-  - StanwoodAnalytics/BugFender (1.1.6):
+  - StanwoodAnalytics/BugFender (1.1.8):
     - BugfenderSDK (= 1.5)
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Core (1.1.6)
-  - StanwoodAnalytics/Fabric (1.1.6):
+  - StanwoodAnalytics/Core (1.1.8)
+  - StanwoodAnalytics/Fabric (1.1.8):
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Firebase (1.1.6):
+  - StanwoodAnalytics/Firebase (1.1.8):
     - Firebase/Analytics
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Google (1.1.6):
+  - StanwoodAnalytics/Google (1.1.8):
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/Mixpanel (1.1.6):
+  - StanwoodAnalytics/IOL (1.1.8):
+    - StanwoodAnalytics/Core
+  - StanwoodAnalytics/Mixpanel (1.1.8):
     - Mixpanel-swift (~> 2.4.5)
     - StanwoodAnalytics/Core
-  - StanwoodAnalytics/TestFairy (1.1.6):
+  - StanwoodAnalytics/TestFairy (1.1.8):
     - StanwoodAnalytics/Core
 
 DEPENDENCIES:
@@ -134,6 +136,7 @@ DEPENDENCIES:
   - StanwoodAnalytics (from `../`)
   - StanwoodAnalytics/BugFender (from `../`)
   - StanwoodAnalytics/Google (from `../`)
+  - StanwoodAnalytics/IOL (from `../`)
   - StanwoodAnalytics/Mixpanel (from `../`)
 
 SPEC REPOS:
@@ -178,8 +181,8 @@ SPEC CHECKSUMS:
   Mixpanel-swift: a9ed3dd197d8f2837920cec6be1acdb51d07b31a
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  StanwoodAnalytics: 866a614da53831142ba52377516f741780ca7133
+  StanwoodAnalytics: db8a82478b1146264baa6c1edda7a1d5b7062f35
 
-PODFILE CHECKSUM: c4ac65d6342a3acaa0acb7ff0de632e51dcc31b8
+PODFILE CHECKSUM: 3a3d54cbe8a9466ff211ba6881c6dceb21d58237
 
 COCOAPODS: 1.5.3

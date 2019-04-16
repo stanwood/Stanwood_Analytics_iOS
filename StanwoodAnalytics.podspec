@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodAnalytics'
-  s.version          = '1.1.7'
+  s.version          = '1.1.8'
   s.summary          = 'StanwoodAnalytics encapsulates the frameworks Stanwood uses from various vendors used in analytics and logging.'
   s.description      = <<-DESC
 A framework to encapsulate analytics and logging frameworks from Fabric, Crashlytics, Google, Firebase and BugFender.
@@ -99,6 +99,18 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
       'SystemConfiguration'
       ]
       ss.libraries = ['z', 'sqlite3']
+  end
+  
+  s.subspec 'IOL' do |ss|
+      ss.dependency 'StanwoodAnalytics/Core'
+      ss.vendored_frameworks = 'StanwoodAnalytics/Frameworks/INFOnlineLibrary/iphoneos/INFOnlineLibrary.framework'#, 'StanwoodAnalytics/Frameworks/INFOnlineLibrary/iphonesimulator/iphonesimulator-INFOnlineLibrary.framework'
+
+	  ss.pod_target_xcconfig = {
+      'OTHER_LDFLAGS' => '$(inherited) -framework INFOnlineLibrary',
+      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/StanwoodAnalytics/StanwoodAnalytics/Frameworks/INFOnlineLibrary/$(PLATFORM_NAME)/'
+  }
+  
+      ss.frameworks = 'AdSupport'
   end
   
 end

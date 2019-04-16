@@ -1,0 +1,6 @@
+framework module INFOnlineLibrary {
+  umbrella header "INFOnlineLibrary.h"
+
+  export *
+  module * { export * }
+}
