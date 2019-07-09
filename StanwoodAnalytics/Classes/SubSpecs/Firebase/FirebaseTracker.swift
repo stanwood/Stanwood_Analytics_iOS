@@ -99,7 +99,7 @@ open class FirebaseTracker: Tracker {
             parameterMapper = builder.parameterMapper
         }
 
-        AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(StanwoodAnalytics.trackingEnabled())
+        Analytics.setAnalyticsCollectionEnabled(StanwoodAnalytics.trackingEnabled())
 
         if FirebaseApp.app() == nil {
 
@@ -131,12 +131,12 @@ open class FirebaseTracker: Tracker {
 
     /// Calls the enable function of the analytics collection function of the FirebaseAnalytics framework.
     open override func start() {
-        AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(true)
+        Analytics.setAnalyticsCollectionEnabled(true)
     }
 
     /// Sets the analytics collection enabled or disabled.
     open override func setTracking(enabled: Bool) {
-        AnalyticsConfiguration.shared().setAnalyticsCollectionEnabled(enabled)
+        Analytics.setAnalyticsCollectionEnabled(enabled)
     }
 
     /// Track data in the TrackingParameters struct into FirebaseAnalytics.
