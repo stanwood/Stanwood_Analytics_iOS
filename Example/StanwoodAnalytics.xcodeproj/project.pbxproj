@@ -331,8 +331,11 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				de,
+				pl,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -373,7 +376,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh",
 				"${PODS_ROOT}/../../StanwoodAnalytics/Assets/StanwoodAnalytics.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -382,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		504DDCA1502089994E48823D /* [CP] Copy Pods Resources */ = {
@@ -391,7 +394,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh",
 				"${PODS_ROOT}/../../StanwoodAnalytics/Assets/StanwoodAnalytics.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -400,7 +403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D71C191DBF5CEEDB2F5BCF19 /* [CP] Embed Pods Frameworks */ = {
@@ -409,7 +412,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BugfenderSDK/BugfenderSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -430,7 +433,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E82563F4CB330FAA686EA386 /* [CP] Check Pods Manifest.lock */ = {
@@ -475,7 +478,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-00567490/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -486,7 +489,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
