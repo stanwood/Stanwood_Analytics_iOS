@@ -17,6 +17,5 @@ end
 
 target 'StanwoodAnalytics_Tests' do
     pod 'StanwoodAnalytics', :path => '../'
-    pod 'Firebase'
 end
 

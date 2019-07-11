@@ -2,8 +2,6 @@ PODS:
   - BugfenderSDK (1.5.0):
     - BugfenderSDK/Swift (= 1.5.0)
   - BugfenderSDK/Swift (1.5.0)
-  - Firebase (6.4.0):
-    - Firebase/Core (= 6.4.0)
   - Firebase/Analytics (6.4.0):
     - Firebase/Core
   - Firebase/Core (6.4.0):
@@ -119,7 +117,6 @@ PODS:
     - StanwoodAnalytics/Core
 
 DEPENDENCIES:
-  - Firebase
   - Firebase/Performance
   - Firebase/RemoteConfig
   - StanwoodAnalytics (from `../`)
@@ -167,6 +164,6 @@ SPEC CHECKSUMS:
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   StanwoodAnalytics: 21ae0bca2a1d1e1e5cdb054987f63961b78e7d1d
 
-PODFILE CHECKSUM: 779b7af4e95e7ed40bb03d5f483767315fd0c462
+PODFILE CHECKSUM: b29dbe375ed9a8c62ecd7a8d230e47fa86ae6cce
 
 COCOAPODS: 1.7.4
