@@ -2,8 +2,8 @@ PODS:
   - BugfenderSDK (1.5.0):
     - BugfenderSDK/Swift (= 1.5.0)
   - BugfenderSDK/Swift (1.5.0)
-  - Firebase (6.4.0):
-    - Firebase/Core (= 6.4.0)
+  - Firebase/Analytics (6.4.0):
+    - Firebase/Core
   - Firebase/Core (6.4.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 6.0.3)
@@ -71,8 +71,7 @@ PODS:
   - StanwoodAnalytics/Fabric (1.1.8):
     - StanwoodAnalytics/Core
   - StanwoodAnalytics/Firebase (1.1.8):
-    - Firebase
-    - FirebaseAnalytics
+    - Firebase/Analytics (~> 6.4.0)
     - StanwoodAnalytics/Core
   - StanwoodAnalytics/Google (1.1.8):
     - StanwoodAnalytics/Core
@@ -114,7 +113,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
   Mixpanel-swift: a9ed3dd197d8f2837920cec6be1acdb51d07b31a
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  StanwoodAnalytics: bf256bb760644f123a2b739906e2aac9c393906e
+  StanwoodAnalytics: bc8ab0d16c4d1429d90e5e9620473168e54333bb
 
 PODFILE CHECKSUM: fff843d54feacf1a3f83cf2b4cd0ef59abf5a6a1
 
