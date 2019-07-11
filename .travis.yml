@@ -1,0 +1,20 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+os: osx
+osx_image: xcode10.2
+language: objective-c
+branches:
+  only:
+    - master
+before_install:
+  - gem install cocoapods
+  - pod install --project-directory=Example
+before_script:
+  - 'echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config'
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - pod lib lint --allow-warnings
