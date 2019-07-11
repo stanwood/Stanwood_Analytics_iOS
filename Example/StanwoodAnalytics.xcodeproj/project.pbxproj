@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		321F62F7B0FFD08B61F2BAE9 /* Pods_StanwoodAnalytics_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB586729A0D6B97C2099216E /* Pods_StanwoodAnalytics_Tests.framework */; };
+		5C8F1490DB6258C466AD6DCB /* Pods_StanwoodAnalytics_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82ADA0BC61ACB076F6DD60C /* Pods_StanwoodAnalytics_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AB99543BE552F19F01D4986B /* Pods_StanwoodAnalytics_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE66E42FB9FB9FA46E7B126 /* Pods_StanwoodAnalytics_Tests.framework */; };
 		AF36CF87208F59E900D59D11 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36CF86208F59E900D59D11 /* DataProvider.swift */; };
 		AF36CF89208F59F900D59D11 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36CF88208F59F900D59D11 /* AppData.swift */; };
 		AF36CF8E208F63E300D59D11 /* SecondWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF36CF8D208F63E300D59D11 /* SecondWireframe.swift */; };
@@ -30,7 +31,6 @@
 		AFE651DC208A463600047252 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE651DB208A463600047252 /* AppController.swift */; };
 		AFE651E0208A484A00047252 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE651DF208A484A00047252 /* Configuration.swift */; };
 		AFE651E2208E239E00047252 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE651E1208E239E00047252 /* Logger.swift */; };
-		BA2C450AD53B0928CEC4D35F /* Pods_StanwoodAnalytics_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD5F226606623B266DEBFF /* Pods_StanwoodAnalytics_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F4CAC5F941B49CD5D3BA67 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		063CDD33216BD78700A4E9AE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		197B3A58EBDE8C03781DE3C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2D1409C42B3E371B35A10979 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		347859B13B53D64DD328FA7F /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FE66E42FB9FB9FA46E7B126 /* Pods_StanwoodAnalytics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanwoodAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ECE7C2AC135FA9405BF8C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4D3986270DC4353F971FF886 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Example.debug.xcconfig"; path = "Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StanwoodAnalytics_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanwoodAnalytics_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +59,8 @@
 		607FACE51AFB9204008FA782 /* StanwoodAnalytics_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanwoodAnalytics_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		69AE26B96C3F1160771C877A /* Pods-StanwoodAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6B75E043DC3E968CD7CA0D20 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Tests.release.xcconfig"; path = "Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8F7EE09F01B8B5F5633AE68E /* Pods-StanwoodAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Example.release.xcconfig"; path = "Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9345552363E2AA897DECBDB3 /* StanwoodAnalytics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StanwoodAnalytics.podspec; path = ../StanwoodAnalytics.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE8C311620B547F600A44DB9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AF36CF86208F59E900D59D11 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		AFE651DB208A463600047252 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		AFE651DF208A484A00047252 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		AFE651E1208E239E00047252 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		CB586729A0D6B97C2099216E /* Pods_StanwoodAnalytics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanwoodAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDBD5F226606623B266DEBFF /* Pods_StanwoodAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanwoodAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC2383B074BB90C3E2DFCA2 /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StanwoodAnalytics_Tests.debug.xcconfig"; path = "Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E82ADA0BC61ACB076F6DD60C /* Pods_StanwoodAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StanwoodAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2C450AD53B0928CEC4D35F /* Pods_StanwoodAnalytics_Example.framework in Frameworks */,
+				5C8F1490DB6258C466AD6DCB /* Pods_StanwoodAnalytics_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,13 +97,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321F62F7B0FFD08B61F2BAE9 /* Pods_StanwoodAnalytics_Tests.framework in Frameworks */,
+				AB99543BE552F19F01D4986B /* Pods_StanwoodAnalytics_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2790F177074C085C4D3A6340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E82ADA0BC61ACB076F6DD60C /* Pods_StanwoodAnalytics_Example.framework */,
+				2FE66E42FB9FB9FA46E7B126 /* Pods_StanwoodAnalytics_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +120,8 @@
 				607FACD21AFB9204008FA782 /* Example for StanwoodAnalytics */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				847F8603374425C469BE3F8B /* Pods */,
-				CDED8265763987DF05467530 /* Frameworks */,
+				982FCA25EFB8A3FAAF007570 /* Pods */,
+				2790F177074C085C4D3A6340 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,15 +186,16 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		847F8603374425C469BE3F8B /* Pods */ = {
+		982FCA25EFB8A3FAAF007570 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D1409C42B3E371B35A10979 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */,
-				69AE26B96C3F1160771C877A /* Pods-StanwoodAnalytics_Example.release.xcconfig */,
-				347859B13B53D64DD328FA7F /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */,
-				02F4CAC5F941B49CD5D3BA67 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */,
+				4D3986270DC4353F971FF886 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */,
+				8F7EE09F01B8B5F5633AE68E /* Pods-StanwoodAnalytics_Example.release.xcconfig */,
+				BCC2383B074BB90C3E2DFCA2 /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */,
+				6B75E043DC3E968CD7CA0D20 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		AF36CF8A208F637000D59D11 /* Modules */ = {
@@ -250,15 +260,6 @@
 			name = "Stanwood ";
 			sourceTree = "<group>";
 		};
-		CDED8265763987DF05467530 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DDBD5F226606623B266DEBFF /* Pods_StanwoodAnalytics_Example.framework */,
-				CB586729A0D6B97C2099216E /* Pods_StanwoodAnalytics_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,12 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "StanwoodAnalytics_Example" */;
 			buildPhases = (
-				EB4676044F2CB58CF0B81466 /* [CP] Check Pods Manifest.lock */,
+				B4AD37F14C53D0BE9FB380CE /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				D71C191DBF5CEEDB2F5BCF19 /* [CP] Embed Pods Frameworks */,
-				282EBDB6852CFDC95195C3A9 /* [CP] Copy Pods Resources */,
+				A0B397576881F78255C6CB9D /* [CP] Embed Pods Frameworks */,
+				FD7565A63436563F0B03581D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,12 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "StanwoodAnalytics_Tests" */;
 			buildPhases = (
-				E82563F4CB330FAA686EA386 /* [CP] Check Pods Manifest.lock */,
+				9AE355F22384E4DB96E25F31 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				EF19F57CD24EC17A8482A7C7 /* [CP] Embed Pods Frameworks */,
-				504DDCA1502089994E48823D /* [CP] Copy Pods Resources */,
+				55490D90E54F43ADA2E20A5C /* [CP] Embed Pods Frameworks */,
+				B8E906A220D6263DE1CE033E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -370,43 +371,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		282EBDB6852CFDC95195C3A9 /* [CP] Copy Pods Resources */ = {
+		55490D90E54F43ADA2E20A5C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh",
-				"${PODS_ROOT}/../../StanwoodAnalytics/Assets/StanwoodAnalytics.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-00567490/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StanwoodAnalytics.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		504DDCA1502089994E48823D /* [CP] Copy Pods Resources */ = {
+		9AE355F22384E4DB96E25F31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh",
-				"${PODS_ROOT}/../../StanwoodAnalytics/Assets/StanwoodAnalytics.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StanwoodAnalytics.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-StanwoodAnalytics_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D71C191DBF5CEEDB2F5BCF19 /* [CP] Embed Pods Frameworks */ = {
+		A0B397576881F78255C6CB9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,34 +443,20 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E82563F4CB330FAA686EA386 /* [CP] Check Pods Manifest.lock */ = {
+		B4AD37F14C53D0BE9FB380CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StanwoodAnalytics_Tests-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB4676044F2CB58CF0B81466 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-StanwoodAnalytics_Example-checkManifestLockResult.txt",
 			);
@@ -472,24 +465,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF19F57CD24EC17A8482A7C7 /* [CP] Embed Pods Frameworks */ = {
+		B8E906A220D6263DE1CE033E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-00567490/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh",
+				"${PODS_ROOT}/../../StanwoodAnalytics/Assets/StanwoodAnalytics.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StanwoodAnalytics.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Tests/Pods-StanwoodAnalytics_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7565A63436563F0B03581D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh",
+				"${PODS_ROOT}/../../StanwoodAnalytics/Assets/StanwoodAnalytics.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StanwoodAnalytics.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StanwoodAnalytics_Example/Pods-StanwoodAnalytics_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -662,7 +671,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D1409C42B3E371B35A10979 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */;
+			baseConfigurationReference = 4D3986270DC4353F971FF886 /* Pods-StanwoodAnalytics_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -695,7 +704,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69AE26B96C3F1160771C877A /* Pods-StanwoodAnalytics_Example.release.xcconfig */;
+			baseConfigurationReference = 8F7EE09F01B8B5F5633AE68E /* Pods-StanwoodAnalytics_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -726,7 +735,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 347859B13B53D64DD328FA7F /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */;
+			baseConfigurationReference = BCC2383B074BB90C3E2DFCA2 /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = ZC4L7BE562;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -748,7 +757,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02F4CAC5F941B49CD5D3BA67 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */;
+			baseConfigurationReference = 6B75E043DC3E968CD7CA0D20 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = ZC4L7BE562;
 				FRAMEWORK_SEARCH_PATHS = (

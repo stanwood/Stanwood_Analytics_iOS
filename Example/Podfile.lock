@@ -12,9 +12,6 @@ PODS:
   - Firebase/Performance (6.4.0):
     - Firebase/CoreOnly
     - FirebasePerformance (~> 3.1.1)
-  - Firebase/RemoteConfig (6.4.0):
-    - Firebase/CoreOnly
-    - FirebaseRemoteConfig (~> 4.2.0)
   - FirebaseABTesting (3.0.0):
     - FirebaseCore (~> 6.0)
     - Protobuf (~> 3.5)
@@ -118,7 +115,6 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Performance
-  - Firebase/RemoteConfig
   - StanwoodAnalytics (from `../`)
   - StanwoodAnalytics/BugFender (from `../`)
   - StanwoodAnalytics/Google (from `../`)
@@ -164,6 +160,6 @@ SPEC CHECKSUMS:
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   StanwoodAnalytics: 21ae0bca2a1d1e1e5cdb054987f63961b78e7d1d
 
-PODFILE CHECKSUM: b29dbe375ed9a8c62ecd7a8d230e47fa86ae6cce
+PODFILE CHECKSUM: 540a49d2f6fa3a348577db808089528bd845f6ee
 
 COCOAPODS: 1.7.4
