@@ -1,7 +1,8 @@
 # Stanwood Analytics iOS
 
 [![Swift Version](https://img.shields.io/badge/Swift-4.2-orange.svg)]()
-[![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]() [![Pod Version](https://cocoapod-badges.herokuapp.com/v/StanwoodAnalytics/badge.png)]()
+[![iOS 8+](https://img.shields.io/badge/iOS-10+-EB7943.svg)]() 
+[![Pod Version](https://cocoapod-badges.herokuapp.com/v/StanwoodAnalytics/badge.png)]()
 [![CodeClimate Badge](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![License](https://cocoapod-badges.herokuapp.com/l/StanwoodAnalytics/badge.svg)](http://cocoapods.org/pods/StanwoodAnalytics)
 [![Build Status](https://travis-ci.org/stanwood/Stanwood_Analytics_iOS.svg?branch=master)](https://travis-ci.org/stanwood/Stanwood_Analytics_iOS) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://stanwood.github.io/Stanwood_Analytics_iOS/)
 
