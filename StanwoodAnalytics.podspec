@@ -45,9 +45,8 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
       ss.dependency 'StanwoodAnalytics/Core'
       ss.dependency 'Firebase/Analytics', '~> 6.4.0'
       ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Firebase/'
-      ss.frameworks = ['FirebaseCore',
+      ss.frameworks = [
       'FirebaseInstanceID',
-      'FirebaseAnalytics',
       'FirebaseCoreDiagnostics']
   end
   
