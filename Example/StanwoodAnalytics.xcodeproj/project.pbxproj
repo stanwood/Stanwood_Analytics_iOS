@@ -194,7 +194,6 @@
 				BCC2383B074BB90C3E2DFCA2 /* Pods-StanwoodAnalytics_Tests.debug.xcconfig */,
 				6B75E043DC3E968CD7CA0D20 /* Pods-StanwoodAnalytics_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -697,7 +696,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "StanwoodAnalytics/StanwoodAnalytics_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Debug;
@@ -728,7 +727,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "StanwoodAnalytics/StanwoodAnalytics_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 			};
 			name = Release;
