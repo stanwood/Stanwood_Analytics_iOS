@@ -112,10 +112,6 @@ open class StanwoodAnalytics {
         }
 
         trackingEnable = DataStore.trackingEnabled
-
-        if trackingEnable == true {
-            trackSwitch(enabled: trackingEnable)
-        }
     }
 
     /// :nodoc:
@@ -156,7 +152,7 @@ open class StanwoodAnalytics {
      The Builder for this class.
 
      */
-    open static func builder() -> Builder {
+    public static func builder() -> Builder {
         return Builder()
     }
 
@@ -183,7 +179,7 @@ open class StanwoodAnalytics {
             let content = UNMutableNotificationContent()
             content.title = "Track event"
             content.body = message
-            content.sound = UNNotificationSound.default()
+            content.sound = UNNotificationSound.default
 
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
             let center = UNUserNotificationCenter.current()
@@ -200,7 +196,7 @@ open class StanwoodAnalytics {
     /// Tracking Enabled. This is the value used for the next application start.
     ///
     /// - Returns: Bool value that is stored in UserDefaults.
-    open static func trackingEnabled() -> Bool {
+    public static func trackingEnabled() -> Bool {
         return DataStore.trackingEnabled
     }
 
