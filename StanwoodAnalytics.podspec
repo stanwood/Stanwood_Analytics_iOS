@@ -13,6 +13,7 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
   s.source           = { :git => 'https://github.com/stanwood/Stanwood_Analytics_iOS.git', :tag => s.version.to_s}
   
   s.ios.deployment_target = '10.0'
+  s.swift_version = '5'
   s.static_framework = true
   s.default_subspec = 'Base'
 

@@ -8,16 +8,12 @@ target 'StanwoodAnalytics_Example' do
   pod 'StanwoodAnalytics', :path => '../'
   pod 'StanwoodAnalytics/BugFender', :path => '../'
   pod 'StanwoodAnalytics/Google', :path => '../'
-  pod 'StanwoodAnalytics/Mixpanel', :path => '../'
-
-  pod 'Firebase/RemoteConfig'
-  pod 'Firebase/Auth'
+  pod 'StanwoodAnalytics/Mixpanel', :path => '../'  
   pod 'Firebase/Performance'
-  
+  pod 'Firebase/RemoteConfig'
 end
 
 target 'StanwoodAnalytics_Tests' do
     pod 'StanwoodAnalytics', :path => '../'
-    pod 'Firebase'
 end
 
