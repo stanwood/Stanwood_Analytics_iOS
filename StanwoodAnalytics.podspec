@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodAnalytics'
-  s.version          = '1.1.8'
+  s.version          = '1.1.10'
+  s.swift_version   = '5.0'
   s.summary          = 'StanwoodAnalytics encapsulates the frameworks Stanwood uses from various vendors used in analytics and logging.'
   s.description      = <<-DESC
 A framework to encapsulate analytics and logging frameworks from Fabric, Crashlytics, Google, Firebase and BugFender.
@@ -79,7 +80,7 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
   end
   
   s.subspec 'Mixpanel' do |ss|
-      ss.dependency 'Mixpanel-swift', '~> 2.4.5'
+      ss.dependency 'Mixpanel-swift'
       ss.dependency 'StanwoodAnalytics/Core'
       ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Mixpanel/'
   end
