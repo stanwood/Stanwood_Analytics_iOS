@@ -39,7 +39,6 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
       ss.dependency 'StanwoodAnalytics/Core'
       ss.dependency 'StanwoodAnalytics/Fabric'
       ss.dependency 'StanwoodAnalytics/Firebase'
-      ss.dependency 'StanwoodAnalytics/TestFairy'
   end
   
   s.subspec 'Firebase' do |ss|
@@ -63,19 +62,6 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
       ss.dependency 'BugfenderSDK', '1.5'
       ss.dependency 'StanwoodAnalytics/Core'
       ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/BugFender/'
-  end
-  
-  s.subspec 'TestFairy' do |ss|
-      ss.ios.vendored_library = 'Frameworks/libTestFairy.a'
-      ss.dependency 'StanwoodAnalytics/Core'
-      ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/TestFairy/*.{swift,h,m}'
-      ss.frameworks = [
-      'CoreMedia',
-      'CoreMotion',
-      'AVFoundation',
-      'SystemConfiguration',
-      'OpenGLES'
-      ]
   end
   
   s.subspec 'Mixpanel' do |ss|

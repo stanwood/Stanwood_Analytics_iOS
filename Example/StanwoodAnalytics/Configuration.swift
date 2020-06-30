@@ -11,7 +11,6 @@ import Foundation
 struct Configuration {
     struct Static {
         struct Analytics {
-            static let testFairyKey = "your-key-here"
             static let bugFenderKey = "your-key-here"
             static let googleTrackingKey = "your-key-here"
             static let mixpanelToken = "your-key-here"

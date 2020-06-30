@@ -126,7 +126,6 @@ PODS:
     - StanwoodAnalytics/Core
     - StanwoodAnalytics/Fabric
     - StanwoodAnalytics/Firebase
-    - StanwoodAnalytics/TestFairy
   - StanwoodAnalytics/BugFender (1.1.10):
     - BugfenderSDK (= 1.5)
     - StanwoodAnalytics/Core
@@ -140,8 +139,6 @@ PODS:
     - StanwoodAnalytics/Core
   - StanwoodAnalytics/Mixpanel (1.1.10):
     - Mixpanel-swift
-    - StanwoodAnalytics/Core
-  - StanwoodAnalytics/TestFairy (1.1.10):
     - StanwoodAnalytics/Core
 
 DEPENDENCIES:
@@ -207,8 +204,8 @@ SPEC CHECKSUMS:
   Mixpanel-swift: 9118aa461d7ad4bb66718b0d4d826e6487bb0105
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
-  StanwoodAnalytics: 1daf18bf183376187da16fb571b171cd3e6ff01f
+  StanwoodAnalytics: 9931e14cb177871374b4636eb629077b07acf6d7
 
 PODFILE CHECKSUM: c4ac65d6342a3acaa0acb7ff0de632e51dcc31b8
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
