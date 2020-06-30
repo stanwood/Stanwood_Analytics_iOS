@@ -102,9 +102,6 @@ struct AnalyticsService {
 
         #if DEBUG || BETA
 
-            let testFairyTracker = TestFairyTracker.TestFairyBuilder(context: application, key: Configuration.Static.Analytics.testFairyKey).build()
-            analyticsBuilder = analyticsBuilder.add(tracker: testFairyTracker)
-
             #if BF_ENABLED
                 let bugfenderTracker = BugfenderTracker.BugfenderBuilder(context: application, key: bugFenderKey)
                     .setUIEventLogging(enable: true)

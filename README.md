@@ -8,7 +8,6 @@ The Stanwood Analytics framework is a wrapper to reduce the effort involved in a
 
 1. Fabric [Base]
 1. Crashlytics [Base]
-1. TestFairy [Base]
 1. Firebase Analytics [Base] 
 1. GoogleAnalytics
 1. MixPanel
@@ -37,7 +36,7 @@ The Stanwood Analytics framework is a wrapper to reduce the effort involved in a
 
 ## Example
 
-Before running the project, it is recommended to register with both Fabric and Firebase Analytics. Optionally register with Google Analytics, Mixpanel, BugFender and TestFairy. Set the keys in the Configuration.swift file. 
+Before running the project, it is recommended to register with both Fabric and Firebase Analytics. Optionally register with Google Analytics, Mixpanel and BugFender. Set the keys in the Configuration.swift file. 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -70,7 +69,7 @@ it, add the following line to your Podfile:
 pod 'StanwoodAnalytics'
 ```
 
-This framework has has a base install that by default includes Fabric, Crashlytics, FirebaseAnalytics and TestFairy. Sub specs are defined for BugFender, Google Analytics and Mixpanel.
+This framework has has a base install that by default includes Fabric, Crashlytics and FirebaseAnalytics. Sub specs are defined for BugFender, Google Analytics and Mixpanel.
 
 ```ruby
 pod 'StanwoodAnalytics/Mixpanel'
@@ -86,8 +85,6 @@ Add the following code into the AppDelegate, or a helper class. Create a tracker
 
 
 ```
-let testFairyKey = "abc123def456"
-
 let fabricTracker = FabricTracker.FabricBuilder(context: application, key: nil).build()
 
 let analyticsBuilder = StanwoodAnalytics.builder()
@@ -95,8 +92,8 @@ let analyticsBuilder = StanwoodAnalytics.builder()
 
 #if DEBUG || STAGE
 
-let testFairyTracker = TestFairyTracker.TestFairyBuilder(context: application, key: testFairyKey).build()
-analyticsBuilder = analyticsBuilder.add(tracker: testFairyTracker)
+let bugfenderTracker = BugfenderTracker.BugfenderBuilder(context: application, key: bugFenderKey)
+analyticsBuilder = analyticsBuilder.add(tracker: bugfenderTracker)
 
 #endif
 
@@ -314,7 +311,6 @@ If Fabric and Crashltyics are already in use in a project, it is necessary to re
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'BugfenderSDK'
-  pod 'TestFairy'
   pod 'GoogleAnalytics'
   pod 'Mixpanel'
 
