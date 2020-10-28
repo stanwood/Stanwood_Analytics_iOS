@@ -24,19 +24,19 @@
 //  THE SOFTWARE.
 
 import Foundation
-import Crashlytics
-import Fabric
+import FirebaseCore
+import FirebaseCrashlytics
 
 /// Fabric Tracker
 ///
 /// For this tracker to work, it is necessary to insert the Fabric and Crashlytics configuration into the Info.plist,
 /// and add a run script phase that calls Fabric.framework/run with the token.
-open class FabricTracker: Tracker {
+open class CrashlyticsTracker: Tracker {
 
     /// Init function
     ///
     /// - Parameter builder: Tracker builder
-    init(builder: FabricBuilder) {
+    init(builder: CrashlyticsBuilder) {
         super.init(builder: builder)
 
         if StanwoodAnalytics.trackingEnabled() == true {
@@ -47,7 +47,9 @@ open class FabricTracker: Tracker {
     /// Start the tracking. This function verifies that the Fabric key has been defined in the Application Info.plist
     open override func start() {
         if hasFabricKey() == true {
-            Fabric.with([Crashlytics.self])
+            if FirebaseApp.app() == nil {
+                FirebaseApp.configure()
+            }
         } else {
             print("StanwoodAnalytics Error: The Fabric API key is not found in the Info.plist.")
         }
@@ -73,9 +75,9 @@ open class FabricTracker: Tracker {
             + "ItemId: \(String(describing: trackingParameters.itemId))"
 
         #if DEBUG || STAGE
-            CLSNSLogv("%s", getVaList([logMessage]))
+            Crashlytics.crashlytics().log("\(logMessage)")
         #else
-            CLSLogv("%s", getVaList([logMessage]))
+            //CLSLogv("%s", getVaList([logMessage]))
         #endif
     }
 
@@ -90,7 +92,7 @@ open class FabricTracker: Tracker {
     ///
     /// - Parameter error: NSError
     open override func track(error: NSError) {
-        Crashlytics.sharedInstance().recordError(error)
+        Crashlytics.crashlytics().record(error: error)
     }
 
     /**
@@ -115,37 +117,24 @@ open class FabricTracker: Tracker {
 
         for (key, value) in customKeys {
             if key == StanwoodAnalytics.Keys.identifier {
-                let identifier = value as? String
-                Crashlytics.sharedInstance().setUserIdentifier(identifier)
-            } else if key == StanwoodAnalytics.Keys.email {
-                let email = value as? String
-                Crashlytics.sharedInstance().setUserEmail(email)
-            } else if key == StanwoodAnalytics.Keys.userName {
-                let userName = value as? String
-                Crashlytics.sharedInstance().setUserName(userName)
-            } else {
-                if let intValue = value as? Int32 {
-                    Crashlytics.sharedInstance().setIntValue(intValue, forKey: key)
-                } else if let floatValue = value as? Float {
-                    Crashlytics.sharedInstance().setFloatValue(floatValue, forKey: key)
-                } else if let boolValue = value as? Bool {
-                    Crashlytics.sharedInstance().setBoolValue(boolValue, forKey: key)
-                } else if let stringValue = value as? NSString {
-                    Crashlytics.sharedInstance().setObjectValue(stringValue, forKey: key)
+                if let identifier = value as? String {
+                    Crashlytics.crashlytics().setUserID(identifier)
                 }
+            } else {
+                Crashlytics.crashlytics().setCustomValue(value, forKey: key)
             }
         }
     }
 
     /// The builder class for this tracker. Although the application is a required parameter, it is not used.
-    open class FabricBuilder: Tracker.Builder {
+    open class CrashlyticsBuilder: Tracker.Builder {
 
         public override init(context: UIApplication, key: String?) {
             super.init(context: context, key: key)
         }
 
-        open override func build() -> FabricTracker {
-            return FabricTracker(builder: self)
+        open override func build() -> CrashlyticsTracker {
+            return CrashlyticsTracker(builder: self)
         }
     }
 }
