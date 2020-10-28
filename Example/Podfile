@@ -6,7 +6,7 @@ platform :ios, '13.3'
 
 target 'StanwoodAnalytics_Example' do
   pod 'StanwoodAnalytics', :path => '../'
-  pod 'StanwoodAnalytics/BugFender', :path => '../'
+  #pod 'StanwoodAnalytics/BugFender', :path => '../'
   pod 'StanwoodAnalytics/Google', :path => '../'
   pod 'StanwoodAnalytics/Mixpanel', :path => '../'
 
