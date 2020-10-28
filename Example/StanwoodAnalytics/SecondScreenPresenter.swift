@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Crashlytics
+import FirebaseCrashlytics
 
 class SecondScreenPresenter {
     var actions: SecondScreenActionable!
@@ -25,6 +25,6 @@ class SecondScreenPresenter {
     }
 
     func crashButtonAction() {
-        Crashlytics.sharedInstance().crash()
+        fatalError("user instigated crash")
     }
 }

@@ -2,7 +2,7 @@
 use_frameworks!
 inhibit_all_warnings!
 
-platform :ios, '10.0'
+platform :ios, '13.3'
 
 target 'StanwoodAnalytics_Example' do
   pod 'StanwoodAnalytics', :path => '../'

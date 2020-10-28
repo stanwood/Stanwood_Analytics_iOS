@@ -9,7 +9,7 @@
 import UIKit
 import StanwoodAnalytics
 import UserNotifications
-import Crashlytics
+import FirebaseCrashlytics
 
 struct CustomMapFunction: MapFunction {
     public func mapCategory(parameters: TrackingParameters) -> String? {
@@ -83,7 +83,7 @@ struct AnalyticsService {
 
     static func configure(notificationDelegate: UNUserNotificationCenterDelegate? = nil) {
         let application = UIApplication.shared
-        let fabricTracker = FabricTracker.FabricBuilder(context: application, key: nil).build()
+        let fabricTracker = CrashlyticsTracker.CrashlyticsBuilder(context: application, key: nil).build()
         let parameterMapper = DefaultParameterMapper()
         let firebaseTracker = FirebaseTracker.FirebaseBuilder(context: application, configFileName: Configuration.Static.Analytics.firebaseConfigFileName)
             .add(mapper: parameterMapper)
@@ -193,16 +193,16 @@ struct AnalyticsService {
 
                 #if BF_ENABLED
                     BFLog(message, [])
-                    Bugfender.log(lineNumber: line,
-                                  method: method,
-                                  file: filename,
-                                  level: .default,
-                                  tag: tag,
-                                  message: message)
+                Bugfender.log(lineNumber: line,
+                              method: method,
+                              file: filename,
+                              level: .default,
+                              tag: tag,
+                              message: message)
                 #endif
-                Swift.print(message)
+            Swift.print(message)
             #else
-                CLSLogv("\(filename).\(method), line: \(line) $ \(message)", getVaList([]))
+            Crashlytics.crashlytics().log("\(filename).\(method), line: \(line) $ \(message)")
             #endif
         }
     }

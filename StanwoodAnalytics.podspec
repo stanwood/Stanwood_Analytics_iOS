@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'StanwoodAnalytics'
-  s.version          = '1.1.10'
+  s.version          = '1.2.0'
   s.swift_version   = '5.0'
   s.summary          = 'StanwoodAnalytics encapsulates the frameworks Stanwood uses from various vendors used in analytics and logging.'
   s.description      = <<-DESC
-A framework to encapsulate analytics and logging frameworks from Fabric, Crashlytics, Google, Firebase and BugFender.
+A framework to encapsulate analytics and logging frameworks from Crashlytics, Google, Firebase and BugFender.
                        DESC
 
   s.homepage         = 'https://github.com/stanwood/Stanwood_Analytics_iOS'
@@ -12,7 +12,7 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
   s.author           = { 'stanwood' => 'ios.frameworks@stanwood.io' }
   s.source           = { :git => 'https://github.com/stanwood/Stanwood_Analytics_iOS.git', :tag => s.version.to_s}
   
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.3'
   s.static_framework = true
   s.default_subspec = 'Base'
 
@@ -37,7 +37,7 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
   
   s.subspec 'Base' do |ss|
       ss.dependency 'StanwoodAnalytics/Core'
-      ss.dependency 'StanwoodAnalytics/Fabric'
+      ss.dependency 'StanwoodAnalytics/Crashlytics'
       ss.dependency 'StanwoodAnalytics/Firebase'
       ss.dependency 'StanwoodAnalytics/TestFairy'
   end
@@ -47,16 +47,19 @@ A framework to encapsulate analytics and logging frameworks from Fabric, Crashly
       ss.dependency 'Firebase/Analytics'
       ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Firebase/'
       ss.frameworks = ['FirebaseCore',
-      'FirebaseInstanceID',
       'FirebaseAnalytics',
       'FirebaseCoreDiagnostics']
   end
   
-  s.subspec 'Fabric' do |ss|
+  s.subspec 'Crashlytics' do |ss|
+      ss.dependency 'Firebase/Crashlytics'
+      ss.dependency 'Firebase/Analytics'
       ss.dependency 'StanwoodAnalytics/Core'
-      ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Fabric/'
-      ss.ios.vendored_frameworks = ['Frameworks/Crashlytics.framework',
-      'Frameworks/Fabric.framework']
+      ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/Crashlytics/'
+      ss.frameworks = ['FirebaseCore',
+      'FirebaseAnalytics',
+      'FirebaseCrashlytics',
+      'FirebaseCoreDiagnostics']
   end
   
   s.subspec 'BugFender' do |ss|
