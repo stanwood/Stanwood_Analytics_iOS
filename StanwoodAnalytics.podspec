@@ -63,7 +63,7 @@ A framework to encapsulate analytics and logging frameworks from Crashlytics, Go
   end
   
   s.subspec 'BugFender' do |ss|
-      ss.dependency 'BugfenderSDK', '1.5'
+      ss.dependency 'BugfenderSDK'
       ss.dependency 'StanwoodAnalytics/Core'
       ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/BugFender/'
   end
