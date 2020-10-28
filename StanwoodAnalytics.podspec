@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.swift_version   = '5.0'
   s.summary          = 'StanwoodAnalytics encapsulates the frameworks Stanwood uses from various vendors used in analytics and logging.'
   s.description      = <<-DESC
-A framework to encapsulate analytics and logging frameworks from Crashlytics, Google, Firebase and BugFender.
+A framework to encapsulate analytics and logging frameworks from Crashlytics, Google, and Firebase.
                        DESC
 
   s.homepage         = 'https://github.com/stanwood/Stanwood_Analytics_iOS'
@@ -62,11 +62,11 @@ A framework to encapsulate analytics and logging frameworks from Crashlytics, Go
       'FirebaseCoreDiagnostics']
   end
   
-  s.subspec 'BugFender' do |ss|
-      ss.dependency 'BugfenderSDK', '1.8'
-      ss.dependency 'StanwoodAnalytics/Core'
-      ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/BugFender/'
-  end
+#  s.subspec 'BugFender' do |ss|
+#      ss.dependency 'BugfenderSDK', '1.8'
+#      ss.dependency 'StanwoodAnalytics/Core'
+#      ss.source_files = 'StanwoodAnalytics/Classes/SubSpecs/BugFender/'
+#  end
   
   s.subspec 'TestFairy' do |ss|
       ss.ios.vendored_library = 'Frameworks/libTestFairy.a'
